@@ -558,3 +558,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
+
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/dept1/dept1-settings.inc');
+}
