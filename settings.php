@@ -210,6 +210,7 @@
  *   );
  * @endcode
  */
+/*
 $databases = array (
   'default' =>
   array (
@@ -225,6 +226,7 @@ $databases = array (
     ),
   ),
 );
+*/
 
 /**
  * Access control for update.php script.
