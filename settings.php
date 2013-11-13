@@ -575,13 +575,23 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
-var_dump($_SERVER);
+//var_dump($_SERVER);
 
+if (isest($_SERVER['AH_SITE_GROUP'])) {
+  $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
+  $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
+  if (file_exists($file)) {
+    require ($file);
+  }
+}
+
+/*
 if (file_exists('/var/www/site-php/dept1/dept1-settings.inc')) {
   require('/var/www/site-php/dept1/dept1-settings.inc');
 }
 if (file_exists('/var/www/site-php/umnsandbox/umnsandbox-settings.inc')) {
   require('/var/www/site-php/umnsandbox/umnsandbox-settings.inc');
 }
+*/
 
 $conf['install_profile'] = 'umn';
