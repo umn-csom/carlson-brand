@@ -575,8 +575,11 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
-//var_dump($_SERVER);
-
+/**
+ * If running on an Acquia Cloud server, include the settings extension file
+ * for that site.  The $SERVER variable includes various AH_ properties for
+ * the specific site instance.
+ */
 if (isset($_SERVER['AH_SITE_GROUP'])) {
   $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
   $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
@@ -584,14 +587,5 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
     require ($file);
   }
 }
-
-/*
-if (file_exists('/var/www/site-php/dept1/dept1-settings.inc')) {
-  require('/var/www/site-php/dept1/dept1-settings.inc');
-}
-if (file_exists('/var/www/site-php/umnsandbox/umnsandbox-settings.inc')) {
-  require('/var/www/site-php/umnsandbox/umnsandbox-settings.inc');
-}
-*/
 
 $conf['install_profile'] = 'umn';
