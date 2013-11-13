@@ -575,8 +575,11 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
-if (file_exists('/var/www/site-php')) {
+if (file_exists('/var/www/site-php/dept1/dept1-settings.inc')) {
   require('/var/www/site-php/dept1/dept1-settings.inc');
+}
+if (file_exists('/var/www/site-php/umnsandbox/umnsandbox-settings.inc')) {
+  require('/var/www/site-php/umnsandbox/umnsandbox-settings.inc');
 }
 
 $conf['install_profile'] = 'umn';
