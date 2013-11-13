@@ -577,7 +577,7 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
 
 //var_dump($_SERVER);
 
-if (isest($_SERVER['AH_SITE_GROUP'])) {
+if (isset($_SERVER['AH_SITE_GROUP'])) {
   $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
   $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
   if (file_exists($file)) {
