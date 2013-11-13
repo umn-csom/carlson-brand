@@ -575,6 +575,8 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
+var_dump($_SERVER);
+
 if (file_exists('/var/www/site-php/dept1/dept1-settings.inc')) {
   require('/var/www/site-php/dept1/dept1-settings.inc');
 }
