@@ -210,23 +210,7 @@
  *   );
  * @endcode
  */
-/*
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => 'umn',
-      'username' => 'test',
-      'password' => 'test',
-      'host' => 'sql.palantir.net',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
-*/
+$databases = array();
 
 /**
  * Access control for update.php script.
@@ -258,7 +242,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'iWbXeZwtLJ8YTRJbMzPUOgwKDY2875NcTk5ni2rGMh8';
+$drupal_hash_salt = '';
 
 /**
  * Base URL (optional).
@@ -580,7 +564,6 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
  * for that site.  The $SERVER variable includes various AH_ properties for
  * the specific site instance.
  */
-/*
 if (isset($_SERVER['AH_SITE_GROUP'])) {
   $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
   $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
@@ -588,7 +571,3 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
     require ($file);
   }
 }
-  */
-
-
-//$conf['install_profile'] = 'umn';
