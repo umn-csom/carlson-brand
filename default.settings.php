@@ -559,6 +559,15 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
-if (file_exists('/var/www/site-php')) {
-  require('/var/www/site-php/dept1/dept1-settings.inc');
+/**
+ * If running on an Acquia Cloud server, include the settings extension file
+ * for that site.  The $SERVER variable includes various AH_ properties for
+ * the specific site instance.
+ */
+if (isset($_SERVER['AH_SITE_GROUP'])) {
+  $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
+  $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
+  if (file_exists($file)) {
+    require ($file);
+  }
 }
