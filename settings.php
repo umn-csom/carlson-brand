@@ -580,6 +580,7 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
  * for that site.  The $SERVER variable includes various AH_ properties for
  * the specific site instance.
  */
+/*
 if (isset($_SERVER['AH_SITE_GROUP'])) {
   $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
   $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
@@ -587,5 +588,6 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
     require ($file);
   }
 }
+  */
 
 //$conf['install_profile'] = 'umn';
