@@ -588,4 +588,4 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
   }
 }
 
-$conf['install_profile'] = 'umn';
+//$conf['install_profile'] = 'umn';
