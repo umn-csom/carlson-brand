@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the umn general page content type feature.
+ */
+
+include_once 'umn_general_page_content_type.features.inc';

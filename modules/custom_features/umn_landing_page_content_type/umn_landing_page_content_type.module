@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the umn landing page content type feature.
+ */
+
+include_once 'umn_landing_page_content_type.features.inc';

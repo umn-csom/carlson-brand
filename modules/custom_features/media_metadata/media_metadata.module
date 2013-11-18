@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Media metadata feature.
+ */
+
+include_once 'media_metadata.features.inc';

@@ -1,0 +1,10 @@
+name = UMN Portal
+description = UMN Portal support
+core = 7.x
+package = UMN Features
+php = 5.2.4
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = portal
+features_exclude[dependencies][ctools] = ctools

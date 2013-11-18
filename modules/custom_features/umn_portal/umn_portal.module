@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * UMN portal integration.
+ *
+ * @copyright Copyright (c) 2013 Palantir.net
+ */
+
+include_once 'umn_portal.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function umn_portal_form_alter(&$form, &$form_state, $form_id) {
+  // If we're editing a node that already exists, expose a URL to use for
+  // embedding into the UMN Portal.
+  if (isset($form['#node_edit_form']) && $form['#node_edit_form']) {
+
+    if (isset($form['#node']->nid) && $form['#node']->nid) {
+      $form['umn_portal'] = array(
+        '#type' => 'textfield',
+        '#title' => t('UMN Portal URL'),
+        '#default_value' => url('node/' . $form['#node']->nid . '/portal', array('absolute' => TRUE)),
+        '#disabled' => TRUE,
+        '#description' => t('To embed this page in the UMN Portal, copy the above URL into the appropriate form in the Portal.'),
+        '#weight' => 10,
+      );
+    }
+  }
+}
+
