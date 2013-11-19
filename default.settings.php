@@ -571,3 +571,8 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
     require ($file);
   }
 }
+
+// The SimpleSaml module needs an absolute path to the library, but that is
+// variable depending on the environment. Derive it dynamically based on "it's
+// a sibling directory of the docroot".
+$conf['simplesamlphp_auth_installdir'] = realpath(dirname(__FILE__) . '/../../..') . '/simplesamlphp';
