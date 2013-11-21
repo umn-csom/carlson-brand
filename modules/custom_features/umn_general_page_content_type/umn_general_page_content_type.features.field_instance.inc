@@ -144,6 +144,12 @@ function umn_general_page_content_type_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -471,8 +477,8 @@ function umn_general_page_content_type_field_default_field_instances() {
   t('Body');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
-  t('Parent');
   t('Free Tags');
+  t('Parent');
   t('Path slug');
   t('Pull Quote');
   t('Related Content');

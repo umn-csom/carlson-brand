@@ -32,6 +32,12 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -169,8 +175,8 @@ function umn_landing_page_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
-  t('Parent');
   t('Free Tags');
+  t('Parent');
   t('Path slug');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
 

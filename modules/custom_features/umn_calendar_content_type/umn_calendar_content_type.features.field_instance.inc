@@ -80,6 +80,55 @@ function umn_calendar_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-calendar-field_parent'
+  $field_instances['node-calendar-field_parent'] = array(
+    'bundle' => 'calendar',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent',
+    'label' => 'Parent',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 43,
+    ),
+  );
+
   // Exported field_instance: 'node-calendar-field_path_slug'
   $field_instances['node-calendar-field_path_slug'] = array(
     'bundle' => 'calendar',
@@ -175,64 +224,15 @@ function umn_calendar_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-calendar-field_parent'
-  $field_instances['node-calendar-field_parent'] = array(
-    'bundle' => 'calendar',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 43,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Free Tags');
   t('Google calendar');
+  t('Parent');
   t('Path slug');
   t('Place a url for a google calendar. Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar. Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area. Copy the url from the pop-up into this field. Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
   t('Please add tags related to the content in this node, separated by commas. ');
-  t('Parent');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
 
   return $field_instances;

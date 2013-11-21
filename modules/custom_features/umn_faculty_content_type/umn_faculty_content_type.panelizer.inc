@@ -324,21 +324,12 @@ faculty',
     $pane = new stdClass();
     $pane->pid = 'new-8';
     $pane->panel = 'sidebar';
-    $pane->type = 'menu_tree';
-    $pane->subtype = '_active';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-umn_customizations-level-two';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => '_active',
-      'parent_mlid' => '_active:_active:_active:_active:0',
-      'title_link' => 0,
-      'admin_title' => '',
-      'level' => '2',
-      'follow' => 0,
-      'depth' => 0,
-      'expanded' => 0,
-      'sort' => 0,
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();

@@ -19,6 +19,7 @@ dependencies[] = phone
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
+dependencies[] = umn_field_definitions
 dependencies[] = umn_news_content_type
 dependencies[] = views
 dependencies[] = views_content

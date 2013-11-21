@@ -11,6 +11,7 @@ function umn_calendar_content_type_defaultconfig_features() {
   return array(
     'umn_calendar_content_type' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -126,4 +127,20 @@ function umn_calendar_content_type_defaultconfig_field_default_fields() {
   t('Place a url for a google calendar. Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar. Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area. Copy the url from the pop-up into this field. Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function umn_calendar_content_type_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'easy_social_calendar_enable';
+  $strongarm->value = 1;
+  $export['easy_social_calendar_enable'] = $strongarm;
+
+  return $export;
 }
