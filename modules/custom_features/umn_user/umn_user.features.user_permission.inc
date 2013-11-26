@@ -327,6 +327,7 @@ function umn_user_user_default_permissions() {
     'name' => 'administer panelizer taxonomy_term panopoly_categories defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panelizer',
@@ -533,6 +534,16 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'workbench',
+  );
+
+  // Exported permission: administer_umn_search.
+  $permissions['administer_umn_search'] = array(
+    'name' => 'administer_umn_search',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site manager' => 'site manager',
+    ),
+    'module' => 'umn_search',
   );
 
   // Exported permission: administer_workbench_workflows.
