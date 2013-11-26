@@ -116,7 +116,7 @@ function umn_responsive_menu_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'responsive_menus_media_size';
-  $strongarm->value = '768';
+  $strongarm->value = '520';
   $export['responsive_menus_media_size'] = $strongarm;
 
   $strongarm = new stdClass();

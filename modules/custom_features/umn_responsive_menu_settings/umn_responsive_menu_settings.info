@@ -2,6 +2,7 @@ name = UMN Responsive Menu Settings
 description = Provides the settings for the responsive menu module.
 core = 7.x
 package = UMN Features
+php = 5.2.4
 version = 7.x-1.0
 project = umn_responsive_menu_settings
 dependencies[] = ctools
