@@ -10,6 +10,72 @@
 function umn_landing_page_content_type_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-landing_page-field_hero_image'
+  $field_instances['node-landing_page-field_hero_image'] = array(
+    'bundle' => 'landing_page',
+    'deleted' => 0,
+    'description' => 'Upload a large image for display in the hero area of the landing page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'hero_800x300',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'hero_800x300',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero_image',
+    'label' => 'Hero Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x300',
+      'title_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-landing_page-field_parent'
   $field_instances['node-landing_page-field_parent'] = array(
     'bundle' => 'landing_page',
@@ -61,7 +127,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 32,
+      'weight' => 5,
     ),
   );
 
@@ -168,7 +234,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 32,
+      'weight' => 6,
     ),
   );
 
@@ -176,9 +242,11 @@ function umn_landing_page_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Free Tags');
+  t('Hero Image');
   t('Parent');
   t('Path slug');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
+  t('Upload a large image for display in the hero area of the landing page.');
 
   return $field_instances;
 }
