@@ -131,6 +131,7 @@ function umn_landing_page_content_type_panelizer_defaults() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'hero_image_default',
     );
     $pane->css = array();
     $pane->extras = array();
