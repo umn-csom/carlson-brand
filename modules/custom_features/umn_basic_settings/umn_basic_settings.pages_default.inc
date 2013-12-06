@@ -157,49 +157,6 @@ function umn_basic_settings_default_page_manager_handlers() {
   $pane->locks = array();
   $display->content['new-4'] = $pane;
   $display->panels['sub_header'][0] = 'new-4';
-  $pane = new stdClass();
-  $pane->pid = 'new-5';
-  $pane->panel = 'sub_header';
-  $pane->type = 'entity_field';
-  $pane->subtype = 'node:field_hero_image';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'label' => 'hidden',
-    'formatter' => 'file_rendered',
-    'delta_limit' => 0,
-    'delta_offset' => '0',
-    'delta_reversed' => FALSE,
-    'formatter_settings' => array(
-      'file_view_mode' => 'hero_image',
-    ),
-    'context' => array(),
-    'override_title' => 0,
-    'override_title_text' => '',
-    'view_mode' => NULL,
-    'widget_title' => NULL,
-    'items_per_page' => NULL,
-    'exposed' => array(
-      'sort_by' => NULL,
-      'sort_order' => NULL,
-    ),
-    'use_pager' => NULL,
-    'pager_id' => NULL,
-    'offset' => NULL,
-    'link_to_view' => NULL,
-    'more_link' => NULL,
-    'path' => NULL,
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 1;
-  $pane->locks = array();
-  $display->content['new-5'] = $pane;
-  $display->panels['sub_header'][1] = 'new-5';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
