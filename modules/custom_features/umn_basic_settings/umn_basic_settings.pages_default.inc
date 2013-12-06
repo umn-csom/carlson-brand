@@ -47,6 +47,7 @@ function umn_basic_settings_default_page_manager_handlers() {
   $display->layout = 'base_theme_no_wrapper';
   $display->layout_settings = array(
     'main_classes' => '',
+    'site_name_classes' => '',
     'sub_header_classes' => '',
     'footer_links_classes' => '',
     'sub_footer_classes' => '',
@@ -61,6 +62,7 @@ function umn_basic_settings_default_page_manager_handlers() {
       'sub_header' => NULL,
       'footer_links' => NULL,
       'sub_footer' => NULL,
+      'site_name' => NULL,
     ),
   );
   $display->cache = array();
@@ -109,7 +111,7 @@ function umn_basic_settings_default_page_manager_handlers() {
   $display->panels['main'][1] = 'new-2';
   $pane = new stdClass();
   $pane->pid = 'new-3';
-  $pane->panel = 'sub_header';
+  $pane->panel = 'site_name';
   $pane->type = 'token';
   $pane->subtype = 'variable:site_name';
   $pane->shown = TRUE;
@@ -124,12 +126,15 @@ function umn_basic_settings_default_page_manager_handlers() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
   $display->content['new-3'] = $pane;
-  $display->panels['sub_header'][0] = 'new-3';
+  $display->panels['site_name'][0] = 'new-3';
   $pane = new stdClass();
   $pane->pid = 'new-4';
   $pane->panel = 'sub_header';
@@ -148,10 +153,10 @@ function umn_basic_settings_default_page_manager_handlers() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 0;
   $pane->locks = array();
   $display->content['new-4'] = $pane;
-  $display->panels['sub_header'][1] = 'new-4';
+  $display->panels['sub_header'][0] = 'new-4';
   $pane = new stdClass();
   $pane->pid = 'new-5';
   $pane->panel = 'sub_header';
@@ -166,7 +171,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'file_view_mode' => 'default',
+      'file_view_mode' => 'hero_image',
     ),
     'context' => array(),
     'override_title' => 0,
@@ -191,13 +196,14 @@ function umn_basic_settings_default_page_manager_handlers() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 1;
   $pane->locks = array();
   $display->content['new-5'] = $pane;
-  $display->panels['sub_header'][2] = 'new-5';
+  $display->panels['sub_header'][1] = 'new-5';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
+
 
   $export['site_template_panel_context'] = $handler;
 

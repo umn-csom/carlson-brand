@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Media View Modes feature.
+ */
+
+include_once 'umn_media_view_modes.features.inc';
