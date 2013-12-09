@@ -576,3 +576,8 @@ if (isset($_SERVER['AH_SITE_GROUP'])) {
 // variable depending on the environment. Derive it dynamically based on "it's
 // a sibling directory of the docroot".
 $conf['simplesamlphp_auth_installdir'] = realpath(dirname(__FILE__) . '/../../..') . '/simplesamlphp';
+
+// Always allow uid 1 to login directly with no SAML. This is in $conf rather
+// than a feature because we do not want to allow sites to override this.
+// This value is a comma-delimited string.
+$conf['simplesamlphp_auth_allowdefaultloginusers'] = '1';
