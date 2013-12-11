@@ -48,6 +48,18 @@ function umn_staff_content_type_panelizer_defaults() {
       'contentcolumn2' => NULL,
       'contentfooter' => NULL,
     ),
+    'contentcolumn1' => array(
+      'style' => 'generic_content_default',
+    ),
+    'contentcolumn2' => array(
+      'style' => 'generic_content_default',
+    ),
+    'contentfooter' => array(
+      'style' => 'generic_content_default',
+    ),
+    'contentheader' => array(
+      'style' => 'generic_content_default',
+    ),
   );
   $display->cache = array();
   $display->title = '%node:title';

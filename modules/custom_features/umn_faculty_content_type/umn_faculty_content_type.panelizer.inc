@@ -51,6 +51,9 @@ faculty',
       'contentcolumn2' => NULL,
       'contentfooter' => NULL,
     ),
+    'contentheader' => array(
+      'style' => 'generic_content_default',
+    ),
   );
   $display->cache = array();
   $display->title = '%node:title';

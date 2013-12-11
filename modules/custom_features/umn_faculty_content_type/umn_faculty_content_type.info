@@ -104,3 +104,4 @@ features_exclude[field_base][field_related_content] = field_related_content
 features_exclude[field_base][field_landscape_picture] = field_landscape_picture
 features_exclude[field_base][field_portrait_picture] = field_portrait_picture
 features_exclude[field_base][field_additional_content] = field_additional_content
+features_exclude[dependencies][umn_news_content_type] = umn_news_content_type

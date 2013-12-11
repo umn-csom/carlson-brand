@@ -2,7 +2,6 @@ name = umn staff content type
 description = Staff content type, settings, and views
 core = 7.x
 package = UMN Features
-php = 5.2.4
 version = 7.x-1.0
 project = umn_staff_content_type
 dependencies[] = addressfield

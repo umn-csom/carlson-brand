@@ -39,6 +39,9 @@ function umn_general_page_content_type_panelizer_defaults() {
       'sidebar' => NULL,
       'contentmain' => NULL,
     ),
+    'contentmain' => array(
+      'style' => 'generic_content_default',
+    ),
   );
   $display->cache = array();
   $display->title = '%node:title';
