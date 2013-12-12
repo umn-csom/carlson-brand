@@ -2,7 +2,6 @@ name = UMN basic settings
 description = Basic settings for a umn site
 core = 7.x
 package = UMN Features
-php = 5.2.4
 version = 7.x-1.0
 project = umn_basic_settings
 dependencies[] = ctools
