@@ -10,6 +10,62 @@
 function umn_landing_page_content_type_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-landing_page-field_body'
+  $field_instances['node-landing_page-field_body'] = array(
+    'bundle' => 'landing_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If you\'d like a description to appear next to the hero image, please place that here. Please note that for optimal results, this should be two sentences at the most.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_body',
+    'label' => 'Description',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-landing_page-field_hero_image'
   $field_instances['node-landing_page-field_hero_image'] = array(
     'bundle' => 'landing_page',
@@ -18,13 +74,9 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'hero_800x300',
-        ),
-        'type' => 'image',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'hidden',
@@ -80,7 +132,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -135,7 +187,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -195,62 +247,12 @@ function umn_landing_page_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-landing_page-field_tags'
-  $field_instances['node-landing_page-field_tags'] = array(
-    'bundle' => 'landing_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_tags',
-    'label' => 'Free Tags',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 6,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
+  t('Description');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
-  t('Free Tags');
   t('Hero Image');
+  t('If you\'d like a description to appear next to the hero image, please place that here. Please note that for optimal results, this should be two sentences at the most.');
   t('Parent');
   t('Path slug');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');

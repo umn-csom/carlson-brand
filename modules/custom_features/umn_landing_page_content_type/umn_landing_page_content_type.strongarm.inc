@@ -50,7 +50,7 @@ function umn_landing_page_content_type_strongarm() {
           'weight' => '2',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '7',
         ),
       ),
       'display' => array(
