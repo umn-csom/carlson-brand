@@ -110,7 +110,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->pid = 'new-2';
     $pane->panel = 'hero_image_region';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_body';
+    $pane->subtype = 'node:field_hero_image_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
