@@ -601,3 +601,15 @@ $conf['simplesamlphp_auth_installdir'] = realpath(dirname(__FILE__) . '/../../..
 // than a feature because we do not want to allow sites to override this.
 // This value is a comma-delimited string.
 $conf['simplesamlphp_auth_allowdefaultloginusers'] = '1';
+
+// Enable memcache.
+$conf['cache_backends'][] = './sites/all/modules/contrib/memcache/memcache.inc';
+$conf['cache_default_class'] = 'MemCacheDrupal';
+$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+
+// Acquia's environmet does not need any memcache prefixing. Palantir's shared
+// memcache instance, however, does, and it doesn't hurt a system that doesn't
+// care to have a prefix.
+if (!isset($_ENV['AH_SITE_GROUP'])) {
+  $conf['memcache_key_prefix'] = $databases['default']['default']['database'];
+}
