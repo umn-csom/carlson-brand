@@ -559,13 +559,33 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
+
+// Set $_ENV variables for Acquia host information, which we'll need later.
+// We use $_ENV here instead of $_SERVER so that these configuration blocks
+// work through Drush as well as a web request.
+if (file_exists('/var/www/site-scripts/site-info.php')) {
+  // Extract environment info using Acquia's own tool for it.
+  require_once '/var/www/site-scripts/site-info.php';
+  list($ah_site_name, $ah_site_group, $ah_site_env, ) = ah_site_info();
+
+  if (!isset($_ENV['AH_SITE_NAME'])) {
+    $_ENV['AH_SITE_NAME'] = $ah_site_name;
+  }
+  if (!isset($_ENV['AH_SITE_GROUP'])) {
+    $_ENV['AH_SITE_GROUP'] = $ah_site_group;
+  }
+  if (!isset($_ENV['AH_SITE_ENVIRONMENT'])) {
+    $_ENV['AH_SITE_ENVIRONMENT'] = $ah_site_env;
+  }
+}
+
 /**
  * If running on an Acquia Cloud server, include the settings extension file
  * for that site.  The $SERVER variable includes various AH_ properties for
  * the specific site instance.
  */
-if (isset($_SERVER['AH_SITE_GROUP'])) {
-  $site_group = str_replace(array('..', '/'), '', $_SERVER['AH_SITE_GROUP']);
+if (isset($_ENV['AH_SITE_GROUP'])) {
+  $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
   $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
   if (file_exists($file)) {
     require ($file);
