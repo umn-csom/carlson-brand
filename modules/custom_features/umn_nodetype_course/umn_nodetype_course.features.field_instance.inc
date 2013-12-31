@@ -161,7 +161,7 @@ function umn_nodetype_course_field_default_field_instances() {
     'bundle' => 'course',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Choose a term or terms to group by degree e.g. undergraduate, graduate studies, etc.',
+    'description' => 'Choose a term or terms to group by degree e.g. undergraduate, graduate studies, etc. If no options are available, please contact the administrator to create them.',
     'display' => array(
       'default' => array(
         'label' => 'above',
