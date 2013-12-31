@@ -83,7 +83,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_additional_content',
-      'label' => 'Additional Content',
+      'label' => 'Additional content',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -334,7 +334,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_landscape_picture',
-      'label' => 'Landscape Picture',
+      'label' => 'Landscape picture',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -618,7 +618,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_person_familyname',
-      'label' => 'Family Name',
+      'label' => 'Family name',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -702,7 +702,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_person_givenname',
-      'label' => 'Given Name',
+      'label' => 'Given name',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -867,7 +867,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_portrait_picture',
-      'label' => 'Portrait Picture',
+      'label' => 'Portrait picture',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -990,7 +990,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_related_content',
-      'label' => 'Related Content',
+      'label' => 'Related content',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,

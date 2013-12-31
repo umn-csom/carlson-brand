@@ -207,7 +207,7 @@ function umn_calendar_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tags',
-    'label' => 'Free Tags',
+    'label' => 'Free tags',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,

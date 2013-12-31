@@ -44,7 +44,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_additional_content',
-    'label' => 'Additional Content',
+    'label' => 'Additional content',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -268,7 +268,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_pull_quote',
-    'label' => 'Pull Quote',
+    'label' => 'Pull quote',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -329,7 +329,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_related_content',
-    'label' => 'Related Content',
+    'label' => 'Related content',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -382,7 +382,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tags',
-    'label' => 'Free Tags',
+    'label' => 'Free tags',
     'required' => FALSE,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -433,7 +433,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_uploaded_files',
-    'label' => 'Uploaded Files',
+    'label' => 'Uploaded files',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -480,11 +480,11 @@ function umn_general_page_content_type_field_default_field_instances() {
   t('Free Tags');
   t('Parent');
   t('Path slug');
-  t('Pull Quote');
+  t('Pull quote');
   t('Related Content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
-  t('Uploaded Files');
+  t('Uploaded files');
 
   return $field_instances;
 }

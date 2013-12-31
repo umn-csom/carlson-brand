@@ -81,7 +81,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_additional_content',
-      'label' => 'Additional Content',
+      'label' => 'Additional content',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -333,7 +333,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_pull_quote',
-      'label' => 'Pull Quote',
+      'label' => 'Pull quote',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -435,7 +435,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_related_content',
-      'label' => 'Related Content',
+      'label' => 'Related content',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -519,7 +519,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_uploaded_files',
-      'label' => 'Uploaded Files',
+      'label' => 'Uploaded files',
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
@@ -565,10 +565,10 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
   t('Path slug');
-  t('Pull Quote');
+  t('Pull quote');
   t('Related Content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
-  t('Uploaded Files');
+  t('Uploaded files');
 
   return $fields;
 }

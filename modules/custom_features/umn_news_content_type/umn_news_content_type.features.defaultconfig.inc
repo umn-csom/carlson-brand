@@ -83,7 +83,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_additional_content',
-      'label' => 'Additional Content',
+      'label' => 'Additional content',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -544,7 +544,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_publication_date',
-      'label' => 'Publication Date',
+      'label' => 'Publication date',
       'required' => 0,
       'settings' => array(
         'default_value' => 'now',
@@ -632,7 +632,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_pull_quote',
-      'label' => 'Pull Quote',
+      'label' => 'Pull quote',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -734,7 +734,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_related_content',
-      'label' => 'Related Content',
+      'label' => 'Related content',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -905,7 +905,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_uploaded_files',
-      'label' => 'Uploaded Files',
+      'label' => 'Uploaded files',
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
@@ -959,12 +959,12 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
   t('Never shown to the user; this is a catch all for unmappable import content.');
   t('Path slug');
   t('Please note that while you can upload image files to this field, this field should not be used for images you want to display in the article.');
-  t('Publication Date');
-  t('Pull Quote');
+  t('Publication date');
+  t('Pull quote');
   t('Related Content');
   t('Tags');
   t('Upload an image to go with this article.');
-  t('Uploaded Files');
+  t('Uploaded files');
 
   return $fields;
 }

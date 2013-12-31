@@ -67,7 +67,7 @@ function umn_news_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_tags']['label'] = '';
   $handler->display->display_options['fields']['field_tags']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tags']['delta_offset'] = '0';
-  /* Field: Content: Publication Date */
+  /* Field: Content: Publication date */
   $handler->display->display_options['fields']['field_publication_date']['id'] = 'field_publication_date';
   $handler->display->display_options['fields']['field_publication_date']['table'] = 'field_data_field_publication_date';
   $handler->display->display_options['fields']['field_publication_date']['field'] = 'field_publication_date';
@@ -98,7 +98,7 @@ function umn_news_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_uploaded_files']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_uploaded_files']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_uploaded_files']['delta_offset'] = '0';
-  /* Field: Content: Pull Quote */
+  /* Field: Content: Pull quote */
   $handler->display->display_options['fields']['field_pull_quote']['id'] = 'field_pull_quote';
   $handler->display->display_options['fields']['field_pull_quote']['table'] = 'field_data_field_pull_quote';
   $handler->display->display_options['fields']['field_pull_quote']['field'] = 'field_pull_quote';
