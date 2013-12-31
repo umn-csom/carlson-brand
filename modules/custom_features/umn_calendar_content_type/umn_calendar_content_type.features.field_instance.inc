@@ -178,6 +178,55 @@ function umn_calendar_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-calendar-field_related_content'
+  $field_instances['node-calendar-field_related_content'] = array(
+    'bundle' => 'calendar',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_related_content',
+    'label' => 'Related content',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 45,
+    ),
+  );
+
   // Exported field_instance: 'node-calendar-field_tags'
   $field_instances['node-calendar-field_tags'] = array(
     'bundle' => 'calendar',
@@ -227,12 +276,14 @@ function umn_calendar_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
-  t('Free Tags');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
+  t('Free tags');
   t('Google calendar');
   t('Parent');
   t('Path slug');
   t('Place a url for a google calendar. Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar. Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area. Copy the url from the pop-up into this field. Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
   t('Please add tags related to the content in this node, separated by commas. ');
+  t('Related content');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
 
   return $field_instances;
