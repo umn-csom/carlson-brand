@@ -69,13 +69,6 @@ function umn_calendar_content_type_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'easy_social_calendar_enable';
-  $strongarm->value = 1;
-  $export['easy_social_calendar_enable'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'easy_social_calendar_type';
   $strongarm->value = '1';
   $export['easy_social_calendar_type'] = $strongarm;
@@ -143,6 +136,14 @@ function umn_calendar_content_type_strongarm() {
           'default' => array(
             'weight' => '101',
             'visible' => TRUE,
+          ),
+          'featured' => array(
+            'weight' => '101',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '101',
+            'visible' => FALSE,
           ),
         ),
       ),
