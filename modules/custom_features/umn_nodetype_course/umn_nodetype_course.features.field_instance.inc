@@ -65,7 +65,7 @@ function umn_nodetype_course_field_default_field_instances() {
     'bundle' => 'course',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the range of the number of credits that can be earned for this course.',
+    'description' => 'Select a term to group courses within a degree. E.g. ARTS courses have course types like Photography, Ceramics etc.',
     'display' => array(
       'default' => array(
         'label' => 'above',
