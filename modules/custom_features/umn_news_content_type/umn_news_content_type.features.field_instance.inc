@@ -260,61 +260,6 @@ function umn_news_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_parent'
-  $field_instances['node-news-field_parent'] = array(
-    'bundle' => 'news',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 11,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-news-field_path_slug'
   $field_instances['node-news-field_path_slug'] = array(
     'bundle' => 'news',
@@ -696,14 +641,12 @@ function umn_news_content_type_field_default_field_instances() {
   t('Image');
   t('Lede');
   t('Never shown to the user; this is a catch all for unmappable import content.');
-  t('Parent');
   t('Path slug');
   t('Please note that while you can upload image files to this field, this field should not be used for images you want to display in the article.');
   t('Publication Date');
   t('Pull Quote');
   t('Related Content');
   t('Tags');
-  t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Upload an image to go with this article.');
   t('Uploaded Files');
 
