@@ -725,7 +725,12 @@ faculty',
   $display = new panels_display();
   $display->layout = 'flexible';
   $display->layout_settings = array();
-  $display->panel_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
   $display->cache = array();
   $display->title = '%node:title';
   $display->content = array();
@@ -747,7 +752,9 @@ faculty',
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -756,78 +763,6 @@ faculty',
     $display->panels['center'][0] = 'new-21';
     $pane = new stdClass();
     $pane->pid = 'new-22';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_related_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-22'] = $pane;
-    $display->panels['center'][1] = 'new-22';
-    $pane = new stdClass();
-    $pane->pid = 'new-23';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_additional_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['center'][2] = 'new-23';
-    $pane = new stdClass();
-    $pane->pid = 'new-24';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_body';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['center'][3] = 'new-24';
-    $pane = new stdClass();
-    $pane->pid = 'new-25';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_address';
@@ -843,15 +778,17 @@ faculty',
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['center'][4] = 'new-25';
+    $display->content['new-22'] = $pane;
+    $display->panels['center'][1] = 'new-22';
     $pane = new stdClass();
-    $pane->pid = 'new-26';
+    $pane->pid = 'new-23';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_email';
@@ -867,15 +804,17 @@ faculty',
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-26'] = $pane;
-    $display->panels['center'][5] = 'new-26';
+    $display->content['new-23'] = $pane;
+    $display->panels['center'][2] = 'new-23';
     $pane = new stdClass();
-    $pane->pid = 'new-27';
+    $pane->pid = 'new-24';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_landscape_picture';
@@ -891,87 +830,17 @@ faculty',
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 6;
-    $pane->locks = array();
-    $display->content['new-27'] = $pane;
-    $display->panels['center'][6] = 'new-27';
-    $pane = new stdClass();
-    $pane->pid = 'new-28';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_person_givenname';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
+    $pane->style = array(
+      'settings' => NULL,
     );
-    $pane->cache = array();
-    $pane->style = array();
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 7;
+    $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-28'] = $pane;
-    $display->panels['center'][7] = 'new-28';
+    $display->content['new-24'] = $pane;
+    $display->panels['center'][3] = 'new-24';
     $pane = new stdClass();
-    $pane->pid = 'new-29';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_person_familyname';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $display->content['new-29'] = $pane;
-    $display->panels['center'][8] = 'new-29';
-    $pane = new stdClass();
-    $pane->pid = 'new-30';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_portrait_picture';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 9;
-    $pane->locks = array();
-    $display->content['new-30'] = $pane;
-    $display->panels['center'][9] = 'new-30';
-    $pane = new stdClass();
-    $pane->pid = 'new-31';
+    $pane->pid = 'new-25';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -986,15 +855,17 @@ faculty',
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array(
       'css_class' => 'link-wrapper',
     );
     $pane->extras = array();
-    $pane->position = 10;
+    $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-31'] = $pane;
-    $display->panels['center'][10] = 'new-31';
+    $display->content['new-25'] = $pane;
+    $display->panels['center'][4] = 'new-25';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-21';
   $panelizer->display = $display;
@@ -1034,7 +905,7 @@ faculty',
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-32';
+    $pane->pid = 'new-26';
     $pane->panel = 'contentmain';
     $pane->type = 'node_title';
     $pane->subtype = 'node_title';
@@ -1057,10 +928,10 @@ faculty',
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-32'] = $pane;
-    $display->panels['contentmain'][0] = 'new-32';
+    $display->content['new-26'] = $pane;
+    $display->panels['contentmain'][0] = 'new-26';
     $pane = new stdClass();
-    $pane->pid = 'new-33';
+    $pane->pid = 'new-27';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_email';
@@ -1106,10 +977,10 @@ faculty',
         'contentmain' => 'contentmain',
       ),
     );
-    $display->content['new-33'] = $pane;
-    $display->panels['contentmain'][1] = 'new-33';
+    $display->content['new-27'] = $pane;
+    $display->panels['contentmain'][1] = 'new-27';
     $pane = new stdClass();
-    $pane->pid = 'new-34';
+    $pane->pid = 'new-28';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_phone';
@@ -1147,10 +1018,10 @@ faculty',
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-34'] = $pane;
-    $display->panels['contentmain'][2] = 'new-34';
+    $display->content['new-28'] = $pane;
+    $display->panels['contentmain'][2] = 'new-28';
     $pane = new stdClass();
-    $pane->pid = 'new-35';
+    $pane->pid = 'new-29';
     $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_portrait_picture';
@@ -1191,8 +1062,8 @@ faculty',
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-35'] = $pane;
-    $display->panels['sidebar'][0] = 'new-35';
+    $display->content['new-29'] = $pane;
+    $display->panels['sidebar'][0] = 'new-29';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;

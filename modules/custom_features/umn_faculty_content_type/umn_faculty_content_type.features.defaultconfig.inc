@@ -1019,12 +1019,12 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Faculty member\'s name.');
-  t('Family Name');
-  t('Given Name');
-  t('Landscape Picture');
+  t('Family name');
+  t('Given name');
+  t('Landscape picture');
   t('Phone');
-  t('Portrait Picture');
-  t('Related Content');
+  t('Portrait picture');
+  t('Related content');
   t('Short description');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
   t('Upload an image to be displayed in a landscape (wider than it is tall) format.');
