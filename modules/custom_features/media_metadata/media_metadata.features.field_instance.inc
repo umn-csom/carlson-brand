@@ -103,7 +103,7 @@ function media_metadata_field_default_field_instances() {
     'entity_type' => 'file',
     'field_name' => 'field_editorial_sections',
     'label' => 'Editorial Sections',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
       'wysiwyg_override' => 0,
