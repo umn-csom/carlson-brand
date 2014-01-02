@@ -13,49 +13,63 @@ function umn_staff_content_type_user_default_permissions() {
   // Exported permission: 'administer panelizer node staff breadcrumbs'.
   $permissions['administer panelizer node staff breadcrumbs'] = array(
     'name' => 'administer panelizer node staff breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff content'.
   $permissions['administer panelizer node staff content'] = array(
     'name' => 'administer panelizer node staff content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff context'.
   $permissions['administer panelizer node staff context'] = array(
     'name' => 'administer panelizer node staff context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff defaults'.
   $permissions['administer panelizer node staff defaults'] = array(
     'name' => 'administer panelizer node staff defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff layout'.
   $permissions['administer panelizer node staff layout'] = array(
     'name' => 'administer panelizer node staff layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff overview'.
   $permissions['administer panelizer node staff overview'] = array(
     'name' => 'administer panelizer node staff overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff settings'.
   $permissions['administer panelizer node staff settings'] = array(
     'name' => 'administer panelizer node staff settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -63,6 +77,7 @@ function umn_staff_content_type_user_default_permissions() {
   $permissions['create staff content'] = array(
     'name' => 'create staff content',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -74,6 +89,7 @@ function umn_staff_content_type_user_default_permissions() {
   $permissions['delete any staff content'] = array(
     'name' => 'delete any staff content',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
@@ -83,6 +99,7 @@ function umn_staff_content_type_user_default_permissions() {
   $permissions['delete own staff content'] = array(
     'name' => 'delete own staff content',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -94,6 +111,7 @@ function umn_staff_content_type_user_default_permissions() {
   $permissions['edit any staff content'] = array(
     'name' => 'edit any staff content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -104,6 +122,7 @@ function umn_staff_content_type_user_default_permissions() {
   $permissions['edit own staff content'] = array(
     'name' => 'edit own staff content',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',

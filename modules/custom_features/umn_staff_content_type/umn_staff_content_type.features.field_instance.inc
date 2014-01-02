@@ -19,9 +19,8 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'featured' => array(
@@ -271,9 +270,8 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'featured' => array(
@@ -463,9 +461,8 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'featured' => array(
@@ -519,9 +516,8 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'featured' => array(
@@ -771,9 +767,8 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 11,
       ),
       'featured' => array(
@@ -816,22 +811,22 @@ function umn_staff_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Address');
   t('Bio');
   t('Email');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
-  t('Family Name');
-  t('Free Tags');
-  t('Given Name');
-  t('Landscape Picture');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
+  t('Family name');
+  t('Free tags');
+  t('Given name');
+  t('Landscape picture');
   t('Parent');
   t('Phone');
-  t('Portrait Picture');
-  t('Related Content');
+  t('Portrait picture');
+  t('Related content');
   t('Short description');
   t('Staff member\'s name');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
