@@ -709,7 +709,7 @@ function umn_staff_content_type_field_default_field_instances() {
     'bundle' => 'staff',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -827,6 +827,7 @@ function umn_staff_content_type_field_default_field_instances() {
   t('Free Tags');
   t('Given Name');
   t('Landscape Picture');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Parent');
   t('Phone');
   t('Portrait Picture');

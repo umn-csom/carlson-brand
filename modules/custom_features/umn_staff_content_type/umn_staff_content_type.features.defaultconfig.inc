@@ -955,7 +955,7 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'staff',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1017,6 +1017,7 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
   t('Email');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Family Name');
   t('Given Name');
   t('Landscape Picture');
