@@ -488,7 +488,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'general_page',
       'deleted' => 0,
-      'description' => '',
+      'description' => 'You may upload files to attach to this page. Text documents and spreadsheets are allowed. These files will be available to the public once uploaded.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -570,6 +570,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
   t('Related content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
   t('Uploaded files');
+  t('You may upload files to attach to this page. Text documents and spreadsheets are allowed. These files will be available to the public once uploaded.');
 
   return $fields;
 }
