@@ -25,13 +25,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -75,13 +75,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -121,13 +121,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -171,13 +171,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -214,13 +214,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -264,13 +264,13 @@ function umn_nodetype_course_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -302,7 +302,7 @@ function umn_nodetype_course_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Catalog number');
-  t('Choose a term or terms to group by degree e.g. undergraduate, graduate studies, etc.');
+  t('Choose a term or terms to group by degree e.g. undergraduate, graduate studies, etc. If no options are available, please contact the administrator to create them.');
   t('Course type');
   t('Credits');
   t('Degree type');
@@ -310,6 +310,7 @@ function umn_nodetype_course_field_default_field_instances() {
   t('Enter a course number here. Typically a course number is a unique identifier like 3101 or 8001. It may contain letters.');
   t('Enter a paragraph text describing the course.');
   t('Enter the range of the number of credits that can be earned for this course.');
+  t('Select a term to group courses within a degree. E.g. ARTS courses have course types like Photography, Ceramics etc.');
   t('Subject');
   t('Subject or field of the course. Typically an acronym like ARTS or JOUR.');
 
