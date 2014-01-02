@@ -504,7 +504,7 @@ function umn_news_content_type_field_default_field_instances() {
     'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -685,7 +685,7 @@ function umn_news_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Body');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
@@ -693,6 +693,7 @@ function umn_news_content_type_field_default_field_instances() {
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
   t('Enter the body of this posting.');
   t('Enter the date this article should be listed as published. This may not always be the same as the date it is written.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Image');
   t('Lede');
   t('Never shown to the user; this is a catch all for unmappable import content.');
@@ -701,7 +702,7 @@ function umn_news_content_type_field_default_field_instances() {
   t('Please note that while you can upload image files to this field, this field should not be used for images you want to display in the article.');
   t('Publication date');
   t('Pull quote');
-  t('Related Content');
+  t('Related content');
   t('Tags');
   t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Upload an image to go with this article.');
