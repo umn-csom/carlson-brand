@@ -400,7 +400,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'general_page',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -560,13 +560,14 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Body');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Path slug');
   t('Pull quote');
-  t('Related Content');
+  t('Related content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
   t('Uploaded files');
 
