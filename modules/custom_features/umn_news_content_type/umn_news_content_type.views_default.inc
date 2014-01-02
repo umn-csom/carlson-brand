@@ -60,7 +60,7 @@ function umn_news_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_lede']['field'] = 'field_lede';
   $handler->display->display_options['fields']['field_lede']['label'] = '';
   $handler->display->display_options['fields']['field_lede']['element_label_colon'] = FALSE;
-  /* Field: Content: Free Tags */
+  /* Field: Content: Free tags */
   $handler->display->display_options['fields']['field_tags']['id'] = 'field_tags';
   $handler->display->display_options['fields']['field_tags']['table'] = 'field_data_field_tags';
   $handler->display->display_options['fields']['field_tags']['field'] = 'field_tags';
@@ -80,7 +80,7 @@ function umn_news_content_type_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Field: Content: Related Content */
+  /* Field: Content: Related content */
   $handler->display->display_options['fields']['field_related_content']['id'] = 'field_related_content';
   $handler->display->display_options['fields']['field_related_content']['table'] = 'field_data_field_related_content';
   $handler->display->display_options['fields']['field_related_content']['field'] = 'field_related_content';
@@ -90,7 +90,7 @@ function umn_news_content_type_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_related_content']['delta_offset'] = '0';
-  /* Field: Content: Uploaded Files */
+  /* Field: Content: Uploaded files */
   $handler->display->display_options['fields']['field_uploaded_files']['id'] = 'field_uploaded_files';
   $handler->display->display_options['fields']['field_uploaded_files']['table'] = 'field_data_field_uploaded_files';
   $handler->display->display_options['fields']['field_uploaded_files']['field'] = 'field_uploaded_files';
