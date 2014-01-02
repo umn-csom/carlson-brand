@@ -708,7 +708,7 @@ function umn_faculty_content_type_field_default_field_instances() {
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -814,12 +814,13 @@ function umn_faculty_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Address');
   t('Bio');
   t('Email');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Faculty member\'s name.');
   t('Family Name');
   t('Free Tags');
