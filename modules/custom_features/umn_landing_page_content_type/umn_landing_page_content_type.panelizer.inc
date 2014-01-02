@@ -145,37 +145,18 @@ function umn_landing_page_content_type_panelizer_defaults() {
   $display = new panels_display();
   $display->layout = 'flexible';
   $display->layout_settings = array();
-  $display->panel_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
   $display->cache = array();
   $display->title = '%node:title';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'center';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_path_slug';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['center'][0] = 'new-4';
-    $pane = new stdClass();
-    $pane->pid = 'new-5';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -190,17 +171,19 @@ function umn_landing_page_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array(
       'css_class' => 'link-wrapper',
     );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][1] = 'new-5';
+    $display->content['new-4'] = $pane;
+    $display->panels['center'][0] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-5';
+  $display->title_pane = 'new-4';
   $panelizer->display = $display;
   $export['node:landing_page:default:featured'] = $panelizer;
 
@@ -237,7 +220,7 @@ function umn_landing_page_content_type_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-5';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -261,10 +244,10 @@ function umn_landing_page_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['center'][0] = 'new-6';
+    $display->content['new-5'] = $pane;
+    $display->panels['center'][0] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-6';
+  $display->title_pane = 'new-5';
   $panelizer->display = $display;
   $export['node:landing_page:default:teaser'] = $panelizer;
 

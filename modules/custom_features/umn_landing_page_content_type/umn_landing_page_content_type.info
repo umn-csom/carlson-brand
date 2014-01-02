@@ -28,7 +28,6 @@ features[defaultconfig][] = strongarm:pathauto_node_landing_page_pattern
 features[features_api][] = api:2
 features[field_instance][] = node-landing_page-field_hero_image
 features[field_instance][] = node-landing_page-field_hero_image_description
-features[field_instance][] = node-landing_page-field_parent
 features[field_instance][] = node-landing_page-field_path_slug
 features[image][] = hero_800x300
 features[node][] = landing_page

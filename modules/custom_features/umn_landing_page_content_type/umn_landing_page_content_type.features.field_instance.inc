@@ -89,9 +89,8 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'featured' => array(
@@ -136,61 +135,6 @@ function umn_landing_page_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-landing_page-field_parent'
-  $field_instances['node-landing_page-field_parent'] = array(
-    'bundle' => 'landing_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'featured' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-landing_page-field_path_slug'
   $field_instances['node-landing_page-field_path_slug'] = array(
     'bundle' => 'landing_page',
@@ -200,9 +144,8 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'featured' => array(
@@ -252,10 +195,8 @@ function umn_landing_page_content_type_field_default_field_instances() {
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Hero image');
   t('Hero image description');
-  t('If desired, provide text you wish to appear alongside the Hero Image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');
-  t('Parent');
+  t('If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');
   t('Path slug');
-  t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Upload a large image for display in the hero area of the landing page.');
 
   return $field_instances;

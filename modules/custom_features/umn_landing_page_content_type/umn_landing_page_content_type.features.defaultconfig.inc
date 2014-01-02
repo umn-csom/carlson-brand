@@ -59,9 +59,8 @@ function umn_landing_page_content_type_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'featured' => array(
