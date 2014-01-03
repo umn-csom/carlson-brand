@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * umn_nodetype_course.strongarm.inc
+ * umn_course_content_type.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function umn_nodetype_course_strongarm() {
+function umn_course_content_type_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

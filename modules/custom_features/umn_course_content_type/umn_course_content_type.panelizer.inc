@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * umn_nodetype_course.panelizer.inc
+ * umn_course_content_type.panelizer.inc
  */
 
 /**
  * Implements hook_panelizer_defaults().
  */
-function umn_nodetype_course_panelizer_defaults() {
+function umn_course_content_type_panelizer_defaults() {
   $export = array();
 
   $panelizer = new stdClass();

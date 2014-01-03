@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * umn_nodetype_course.features.inc
+ * umn_course_content_type.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function umn_nodetype_course_ctools_plugin_api($module = NULL, $api = NULL) {
+function umn_course_content_type_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
@@ -19,7 +19,7 @@ function umn_nodetype_course_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function umn_nodetype_course_node_info() {
+function umn_course_content_type_node_info() {
   $items = array(
     'course' => array(
       'name' => t('Course'),

@@ -1,9 +1,9 @@
-name = UMN Nodetype: Course
-description = Provides a Course nodetype, field instances, and necessary vocabularies.
+name = UMN Course Content Type
+description = Provides a Course content type, field instances, and necessary vocabularies.
 core = 7.x
 package = UMN Features
 version = 7.x-1.0
-project = umn_nodetype_course
+project = umn_course_content_type
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = options

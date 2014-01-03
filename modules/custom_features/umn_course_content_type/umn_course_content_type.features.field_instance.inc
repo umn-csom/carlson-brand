@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * umn_nodetype_course.features.field_instance.inc
+ * umn_course_content_type.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function umn_nodetype_course_field_default_field_instances() {
+function umn_course_content_type_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-course-field_catalog_number'

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * umn_nodetype_course.features.taxonomy.inc
+ * umn_course_content_type.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function umn_nodetype_course_taxonomy_default_vocabularies() {
+function umn_course_content_type_taxonomy_default_vocabularies() {
   return array(
     'course_type' => array(
       'name' => 'Course type',
