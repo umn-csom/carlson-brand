@@ -559,7 +559,6 @@ if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
   require_once(dirname(__FILE__) .'/settings.local.php');
 }
 
-
 // Set $_ENV variables for Acquia host information, which we'll need later.
 // We use $_ENV here instead of $_SERVER so that these configuration blocks
 // work through Drush as well as a web request.
