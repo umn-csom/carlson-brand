@@ -27,7 +27,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'views',
   );
 
@@ -35,6 +37,7 @@ function umn_user_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'contributor' => 'contributor',
@@ -46,6 +49,7 @@ function umn_user_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -89,6 +93,7 @@ function umn_user_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
+      'administrator' => 'administrator',
       'user administrator' => 'user administrator',
     ),
     'module' => 'user',
@@ -131,6 +136,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer advanced pane settings'] = array(
     'name' => 'administer advanced pane settings',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -139,7 +145,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer breakpoints'.
   $permissions['administer breakpoints'] = array(
     'name' => 'administer breakpoints',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'breakpoints',
   );
 
@@ -159,6 +167,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
       'site manager' => 'site manager',
     ),
@@ -168,7 +177,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer default config'.
   $permissions['administer default config'] = array(
     'name' => 'administer default config',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'defaultconfig',
   );
 
@@ -194,6 +205,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer fieldable panels panes'] = array(
     'name' => 'administer fieldable panels panes',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -202,28 +214,36 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'administer files'.
   $permissions['administer files'] = array(
     'name' => 'administer files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'image',
   );
 
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'media',
   );
 
@@ -231,6 +251,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'menu',
@@ -249,7 +270,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer module filter'.
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'module_filter',
   );
 
@@ -267,6 +290,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -278,6 +302,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer pane access'] = array(
     'name' => 'administer pane access',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -287,6 +312,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer panelizer'] = array(
     'name' => 'administer panelizer',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panelizer',
@@ -437,6 +463,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -456,14 +483,18 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer pathauto'.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'pathauto',
   );
 
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'user',
   );
 
@@ -488,7 +519,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -504,7 +537,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'path',
   );
 
@@ -512,6 +547,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
+      'administrator' => 'administrator',
       'user administrator' => 'user administrator',
     ),
     'module' => 'user',
@@ -521,6 +557,7 @@ function umn_user_user_default_permissions() {
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
       'site manager' => 'site manager',
     ),
@@ -558,21 +595,27 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'system',
   );
 
   // Exported permission: 'bypass file access'.
   $permissions['bypass file access'] = array(
     'name' => 'bypass file access',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -588,7 +631,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'user',
   );
 
@@ -606,8 +651,22 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'create course content'.
+  $permissions['create course content'] = array(
+    'name' => 'create course content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'create fieldable basic_file'.
@@ -625,6 +684,7 @@ function umn_user_user_default_permissions() {
   $permissions['create fieldable fieldable_panels_pane'] = array(
     'name' => 'create fieldable fieldable_panels_pane',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -711,6 +771,7 @@ function umn_user_user_default_permissions() {
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -721,21 +782,38 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'path',
   );
 
   // Exported permission: 'delete any audio files'.
   $permissions['delete any audio files'] = array(
     'name' => 'delete any audio files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any course content'.
+  $permissions['delete any course content'] = array(
+    'name' => 'delete any course content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -743,6 +821,7 @@ function umn_user_user_default_permissions() {
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -751,7 +830,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'delete any video files'.
   $permissions['delete any video files'] = array(
     'name' => 'delete any video files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -770,6 +851,7 @@ function umn_user_user_default_permissions() {
   $permissions['delete fieldable fieldable_panels_pane'] = array(
     'name' => 'delete fieldable fieldable_panels_pane',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -856,15 +938,29 @@ function umn_user_user_default_permissions() {
   $permissions['delete own audio files'] = array(
     'name' => 'delete own audio files',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own course content'.
+  $permissions['delete own course content'] = array(
+    'name' => 'delete own course content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own document files'.
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -874,6 +970,7 @@ function umn_user_user_default_permissions() {
   $permissions['delete own image files'] = array(
     'name' => 'delete own image files',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -883,6 +980,7 @@ function umn_user_user_default_permissions() {
   $permissions['delete own video files'] = array(
     'name' => 'delete own video files',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -892,6 +990,7 @@ function umn_user_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -901,77 +1000,99 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'delete terms in editorial_sections'.
   $permissions['delete terms in editorial_sections'] = array(
     'name' => 'delete terms in editorial_sections',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in media_tags'.
   $permissions['delete terms in media_tags'] = array(
     'name' => 'delete terms in media_tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in panopoly_categories'.
   $permissions['delete terms in panopoly_categories'] = array(
     'name' => 'delete terms in panopoly_categories',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'download any audio files'.
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any document files'.
   $permissions['download any document files'] = array(
     'name' => 'download any document files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any image files'.
   $permissions['download any image files'] = array(
     'name' => 'download any image files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any video files'.
   $permissions['download any video files'] = array(
     'name' => 'download any video files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own audio files'.
   $permissions['download own audio files'] = array(
     'name' => 'download own audio files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own document files'.
   $permissions['download own document files'] = array(
     'name' => 'download own document files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own image files'.
   $permissions['download own image files'] = array(
     'name' => 'download own image files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own video files'.
   $permissions['download own video files'] = array(
     'name' => 'download own video files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -979,16 +1100,29 @@ function umn_user_user_default_permissions() {
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any course content'.
+  $permissions['edit any course content'] = array(
+    'name' => 'edit any course content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -999,6 +1133,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -1009,6 +1144,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -1030,6 +1166,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit fieldable fieldable_panels_pane'] = array(
     'name' => 'edit fieldable fieldable_panels_pane',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -1125,7 +1262,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'edit node machine name'.
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'defaultcontent',
   );
 
@@ -1133,6 +1272,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit own audio files'] = array(
     'name' => 'edit own audio files',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1140,10 +1280,23 @@ function umn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own course content'.
+  $permissions['edit own course content'] = array(
+    'name' => 'edit own course content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own document files'.
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1155,6 +1308,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1166,6 +1320,7 @@ function umn_user_user_default_permissions() {
   $permissions['edit own video files'] = array(
     'name' => 'edit own video files',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1176,21 +1331,27 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'edit terms in editorial_sections'.
   $permissions['edit terms in editorial_sections'] = array(
     'name' => 'edit terms in editorial_sections',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in media_tags'.
   $permissions['edit terms in media_tags'] = array(
     'name' => 'edit terms in media_tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in panopoly_categories'.
   $permissions['edit terms in panopoly_categories'] = array(
     'name' => 'edit terms in panopoly_categories',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1198,6 +1359,7 @@ function umn_user_user_default_permissions() {
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1226,7 +1388,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'notify of path changes'.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'pathauto',
   );
 
@@ -1234,6 +1398,7 @@ function umn_user_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -1243,7 +1408,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'user',
   );
 
@@ -1277,7 +1444,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'use panels caching features'.
   $permissions['use panels caching features'] = array(
     'name' => 'use panels caching features',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panels',
   );
 
@@ -1285,6 +1454,7 @@ function umn_user_user_default_permissions() {
   $permissions['use panels dashboard'] = array(
     'name' => 'use panels dashboard',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -1305,6 +1475,7 @@ function umn_user_user_default_permissions() {
   $permissions['use panels locks'] = array(
     'name' => 'use panels locks',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -1383,6 +1554,7 @@ function umn_user_user_default_permissions() {
   $permissions['view files'] = array(
     'name' => 'view files',
     'roles' => array(
+      'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
@@ -1393,6 +1565,7 @@ function umn_user_user_default_permissions() {
   $permissions['view own files'] = array(
     'name' => 'view own files',
     'roles' => array(
+      'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
@@ -1402,7 +1575,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'view own private files'.
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -1410,6 +1585,7 @@ function umn_user_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
@@ -1421,6 +1597,7 @@ function umn_user_user_default_permissions() {
   $permissions['view pane admin links'] = array(
     'name' => 'view pane admin links',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'panels',
@@ -1429,7 +1606,9 @@ function umn_user_user_default_permissions() {
   // Exported permission: 'view private files'.
   $permissions['view private files'] = array(
     'name' => 'view private files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -1437,6 +1616,7 @@ function umn_user_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
