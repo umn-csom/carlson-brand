@@ -50,7 +50,6 @@ features[field_instance][] = node-faculty-field_body
 features[field_instance][] = node-faculty-field_email
 features[field_instance][] = node-faculty-field_landscape_picture
 features[field_instance][] = node-faculty-field_lede
-features[field_instance][] = node-faculty-field_parent
 features[field_instance][] = node-faculty-field_person_address
 features[field_instance][] = node-faculty-field_person_familyname
 features[field_instance][] = node-faculty-field_person_givenname

@@ -122,61 +122,6 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-general_page-field_parent'
-  $field_instances['node-general_page-field_parent'] = array(
-    'bundle' => 'general_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-general_page-field_path_slug'
   $field_instances['node-general_page-field_path_slug'] = array(
     'bundle' => 'general_page',
@@ -478,12 +423,10 @@ function umn_general_page_content_type_field_default_field_instances() {
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
   t('Free Tags');
-  t('Parent');
   t('Path slug');
   t('Pull Quote');
   t('Related Content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
-  t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Uploaded Files');
 
   return $field_instances;

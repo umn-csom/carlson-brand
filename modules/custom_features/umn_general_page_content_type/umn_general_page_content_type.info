@@ -28,7 +28,6 @@ features[defaultconfig][] = field_default_fields:node-general_page-field_uploade
 features[features_api][] = api:2
 features[field_instance][] = node-general_page-field_additional_content
 features[field_instance][] = node-general_page-field_body
-features[field_instance][] = node-general_page-field_parent
 features[field_instance][] = node-general_page-field_path_slug
 features[field_instance][] = node-general_page-field_pull_quote
 features[field_instance][] = node-general_page-field_related_content

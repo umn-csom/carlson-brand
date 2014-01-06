@@ -41,7 +41,6 @@ features[field_base][] = field_landscape_picture
 features[field_base][] = field_lede
 features[field_base][] = field_media_source
 features[field_base][] = field_media_tags
-features[field_base][] = field_parent
 features[field_base][] = field_path_slug
 features[field_base][] = field_person_address
 features[field_base][] = field_person_familyname

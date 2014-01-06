@@ -318,61 +318,6 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_parent'
-  $field_instances['node-staff-field_parent'] = array(
-    'bundle' => 'staff',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 11,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-staff-field_person_address'
   $field_instances['node-staff-field_person_address'] = array(
     'bundle' => 'staff',
@@ -827,14 +772,12 @@ function umn_staff_content_type_field_default_field_instances() {
   t('Free Tags');
   t('Given Name');
   t('Landscape Picture');
-  t('Parent');
   t('Phone');
   t('Portrait Picture');
   t('Related Content');
   t('Short description');
   t('Staff member\'s name');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
-  t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Upload an image to be displayed in a landscape format.');
   t('Upload an image to be displayed in a portrait format');
 

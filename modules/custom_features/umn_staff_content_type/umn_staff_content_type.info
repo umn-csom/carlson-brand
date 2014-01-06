@@ -42,7 +42,6 @@ features[field_instance][] = node-staff-field_body
 features[field_instance][] = node-staff-field_email
 features[field_instance][] = node-staff-field_landscape_picture
 features[field_instance][] = node-staff-field_lede
-features[field_instance][] = node-staff-field_parent
 features[field_instance][] = node-staff-field_person_address
 features[field_instance][] = node-staff-field_person_familyname
 features[field_instance][] = node-staff-field_person_givenname
