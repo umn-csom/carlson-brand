@@ -319,61 +319,6 @@ function umn_faculty_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faculty-field_parent'
-  $field_instances['node-faculty-field_parent'] = array(
-    'bundle' => 'faculty',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 11,
-      ),
-      'featured' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_parent',
-    'label' => 'Parent',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-faculty-field_person_address'
   $field_instances['node-faculty-field_person_address'] = array(
     'bundle' => 'faculty',
@@ -822,17 +767,15 @@ function umn_faculty_content_type_field_default_field_instances() {
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Faculty member\'s name.');
-  t('Family name');
-  t('Free tags');
-  t('Given name');
-  t('Landscape picture');
-  t('Parent');
+  t('Family Name');
+  t('Free Tags');
+  t('Given Name');
+  t('Landscape Picture');
   t('Phone');
   t('Portrait picture');
   t('Related content');
   t('Short description');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
-  t('This data was imported from UMContent. It will not be visible to site visitors. This field may be used to help determine parent-child relationships between nodes for a menu.');
   t('Upload an image to be displayed in a landscape (wider than it is tall) format.');
   t('Upload an image to be displayed in a portrait (taller than it is wide) format');
 
