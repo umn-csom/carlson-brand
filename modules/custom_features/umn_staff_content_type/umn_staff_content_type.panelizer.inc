@@ -751,7 +751,7 @@ function umn_staff_content_type_panelizer_defaults() {
       'id' => '',
       'class' => '',
       'context' => 'panelizer',
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
