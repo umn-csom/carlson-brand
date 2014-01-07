@@ -657,18 +657,6 @@ function umn_user_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'create course content'.
-  $permissions['create course content'] = array(
-    'name' => 'create course content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create fieldable basic_file'.
   $permissions['create fieldable basic_file'] = array(
     'name' => 'create fieldable basic_file',
@@ -795,17 +783,6 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete any course content'.
-  $permissions['delete any course content'] = array(
-    'name' => 'delete any course content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete any document files'.
@@ -942,18 +919,6 @@ function umn_user_user_default_permissions() {
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own course content'.
-  $permissions['delete own course content'] = array(
-    'name' => 'delete own course content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own document files'.
@@ -1105,18 +1070,6 @@ function umn_user_user_default_permissions() {
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit any course content'.
-  $permissions['edit any course content'] = array(
-    'name' => 'edit any course content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit any document files'.
@@ -1279,18 +1232,6 @@ function umn_user_user_default_permissions() {
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own course content'.
-  $permissions['edit own course content'] = array(
-    'name' => 'edit own course content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own document files'.
