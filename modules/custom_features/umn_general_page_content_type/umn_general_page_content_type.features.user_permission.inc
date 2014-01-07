@@ -13,49 +13,63 @@ function umn_general_page_content_type_user_default_permissions() {
   // Exported permission: 'administer panelizer node general_page breadcrumbs'.
   $permissions['administer panelizer node general_page breadcrumbs'] = array(
     'name' => 'administer panelizer node general_page breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page content'.
   $permissions['administer panelizer node general_page content'] = array(
     'name' => 'administer panelizer node general_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page context'.
   $permissions['administer panelizer node general_page context'] = array(
     'name' => 'administer panelizer node general_page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page defaults'.
   $permissions['administer panelizer node general_page defaults'] = array(
     'name' => 'administer panelizer node general_page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page layout'.
   $permissions['administer panelizer node general_page layout'] = array(
     'name' => 'administer panelizer node general_page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page overview'.
   $permissions['administer panelizer node general_page overview'] = array(
     'name' => 'administer panelizer node general_page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node general_page settings'.
   $permissions['administer panelizer node general_page settings'] = array(
     'name' => 'administer panelizer node general_page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -63,9 +77,8 @@ function umn_general_page_content_type_user_default_permissions() {
   $permissions['create general_page content'] = array(
     'name' => 'create general_page content',
     'roles' => array(
-      'contributor' => 'contributor',
+      'administrator' => 'administrator',
       'editor' => 'editor',
-      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -74,7 +87,7 @@ function umn_general_page_content_type_user_default_permissions() {
   $permissions['delete any general_page content'] = array(
     'name' => 'delete any general_page content',
     'roles' => array(
-      'senior editor' => 'senior editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -83,9 +96,8 @@ function umn_general_page_content_type_user_default_permissions() {
   $permissions['delete own general_page content'] = array(
     'name' => 'delete own general_page content',
     'roles' => array(
-      'contributor' => 'contributor',
+      'administrator' => 'administrator',
       'editor' => 'editor',
-      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -94,8 +106,8 @@ function umn_general_page_content_type_user_default_permissions() {
   $permissions['edit any general_page content'] = array(
     'name' => 'edit any general_page content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
-      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -104,9 +116,8 @@ function umn_general_page_content_type_user_default_permissions() {
   $permissions['edit own general_page content'] = array(
     'name' => 'edit own general_page content',
     'roles' => array(
-      'contributor' => 'contributor',
+      'administrator' => 'administrator',
       'editor' => 'editor',
-      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );

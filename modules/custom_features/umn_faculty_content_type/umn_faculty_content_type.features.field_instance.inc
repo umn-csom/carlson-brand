@@ -767,10 +767,10 @@ function umn_faculty_content_type_field_default_field_instances() {
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Faculty member\'s name.');
-  t('Family Name');
-  t('Free Tags');
-  t('Given Name');
-  t('Landscape Picture');
+  t('Family name');
+  t('Free tags');
+  t('Given name');
+  t('Landscape picture');
   t('Phone');
   t('Portrait picture');
   t('Related content');

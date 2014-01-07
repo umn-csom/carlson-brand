@@ -250,7 +250,7 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_path_slug',
       'label' => 'Path slug',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'linkit' => array(
           'enable' => 0,

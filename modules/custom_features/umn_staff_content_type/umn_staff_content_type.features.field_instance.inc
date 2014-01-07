@@ -768,7 +768,6 @@ function umn_staff_content_type_field_default_field_instances() {
   t('Free tags');
   t('Given name');
   t('Landscape picture');
-  t('Parent');
   t('Phone');
   t('Portrait picture');
   t('Related content');

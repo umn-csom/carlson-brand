@@ -125,6 +125,29 @@ function umn_calendar_content_type_panelizer_defaults() {
     $display->panels['contentmain'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field_extra';
+    $pane->subtype = 'node:easy_social_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['contentmain'][2] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-umn_customizations-level-two';
@@ -142,8 +165,8 @@ function umn_calendar_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['sidebar'][0] = 'new-3';
+    $display->content['new-4'] = $pane;
+    $display->panels['sidebar'][0] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-2';
   $panelizer->display = $display;
@@ -177,7 +200,7 @@ function umn_calendar_content_type_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-5';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_google_calendar';
@@ -198,10 +221,10 @@ function umn_calendar_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['center'][0] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['center'][0] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -223,10 +246,10 @@ function umn_calendar_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][1] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['center'][1] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-5';
+  $display->title_pane = 'new-6';
   $panelizer->display = $display;
   $export['node:calendar:default:teaser'] = $panelizer;
 

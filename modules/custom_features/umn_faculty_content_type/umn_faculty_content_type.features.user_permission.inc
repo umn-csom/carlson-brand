@@ -13,49 +13,63 @@ function umn_faculty_content_type_user_default_permissions() {
   // Exported permission: 'administer panelizer node faculty breadcrumbs'.
   $permissions['administer panelizer node faculty breadcrumbs'] = array(
     'name' => 'administer panelizer node faculty breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty content'.
   $permissions['administer panelizer node faculty content'] = array(
     'name' => 'administer panelizer node faculty content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty context'.
   $permissions['administer panelizer node faculty context'] = array(
     'name' => 'administer panelizer node faculty context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty defaults'.
   $permissions['administer panelizer node faculty defaults'] = array(
     'name' => 'administer panelizer node faculty defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty layout'.
   $permissions['administer panelizer node faculty layout'] = array(
     'name' => 'administer panelizer node faculty layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty overview'.
   $permissions['administer panelizer node faculty overview'] = array(
     'name' => 'administer panelizer node faculty overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faculty settings'.
   $permissions['administer panelizer node faculty settings'] = array(
     'name' => 'administer panelizer node faculty settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -63,6 +77,7 @@ function umn_faculty_content_type_user_default_permissions() {
   $permissions['create faculty content'] = array(
     'name' => 'create faculty content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -73,6 +88,7 @@ function umn_faculty_content_type_user_default_permissions() {
   $permissions['delete any faculty content'] = array(
     'name' => 'delete any faculty content',
     'roles' => array(
+      'administrator' => 'administrator',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
@@ -82,6 +98,7 @@ function umn_faculty_content_type_user_default_permissions() {
   $permissions['delete own faculty content'] = array(
     'name' => 'delete own faculty content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -92,6 +109,7 @@ function umn_faculty_content_type_user_default_permissions() {
   $permissions['edit any faculty content'] = array(
     'name' => 'edit any faculty content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -102,6 +120,7 @@ function umn_faculty_content_type_user_default_permissions() {
   $permissions['edit own faculty content'] = array(
     'name' => 'edit own faculty content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
