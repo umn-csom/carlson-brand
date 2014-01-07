@@ -286,6 +286,16 @@ function umn_user_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'administer nodequeue'.
+  $permissions['administer nodequeue'] = array(
+    'name' => 'administer nodequeue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'nodequeue',
+  );
+
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
@@ -1384,6 +1394,26 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'manipulate all queues'.
+  $permissions['manipulate all queues'] = array(
+    'name' => 'manipulate all queues',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'nodequeue',
+  );
+
+  // Exported permission: 'manipulate queues'.
+  $permissions['manipulate queues'] = array(
+    'name' => 'manipulate queues',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'nodequeue',
   );
 
   // Exported permission: 'notify of path changes'.
