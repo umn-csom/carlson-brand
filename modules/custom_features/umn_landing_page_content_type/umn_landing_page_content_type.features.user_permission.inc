@@ -78,6 +78,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'create landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -96,6 +97,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'delete own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -105,6 +107,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'edit any landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -114,6 +117,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'edit own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
