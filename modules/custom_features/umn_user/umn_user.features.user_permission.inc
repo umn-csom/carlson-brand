@@ -107,6 +107,8 @@ function umn_user_user_default_permissions() {
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
     ),
     'module' => 'workbench',
   );
@@ -138,6 +140,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -304,6 +307,7 @@ function umn_user_user_default_permissions() {
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -314,6 +318,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -324,6 +329,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -365,6 +371,7 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -405,6 +412,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -415,6 +423,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -425,6 +434,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -435,6 +445,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -445,6 +456,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -455,6 +467,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -465,6 +478,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -475,6 +489,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -486,6 +501,7 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -495,6 +511,7 @@ function umn_user_user_default_permissions() {
     'name' => 'administer pathauto',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'pathauto',
   );
@@ -531,6 +548,8 @@ function umn_user_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -579,6 +598,7 @@ function umn_user_user_default_permissions() {
     'name' => 'administer workbench',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench',
   );
@@ -598,6 +618,7 @@ function umn_user_user_default_permissions() {
     'name' => 'administer_workbench_workflows',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_workflows',
   );
@@ -654,6 +675,7 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -791,6 +813,9 @@ function umn_user_user_default_permissions() {
     'name' => 'delete any audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -800,6 +825,9 @@ function umn_user_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -809,6 +837,7 @@ function umn_user_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -819,6 +848,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -926,6 +957,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete own audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -936,6 +969,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -946,6 +981,7 @@ function umn_user_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -956,6 +992,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
@@ -977,6 +1015,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete terms in editorial_sections',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -986,6 +1026,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete terms in media_tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -995,6 +1037,8 @@ function umn_user_user_default_permissions() {
     'name' => 'delete terms in panopoly_categories',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -1004,6 +1048,9 @@ function umn_user_user_default_permissions() {
     'name' => 'download any audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1013,6 +1060,9 @@ function umn_user_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1022,6 +1072,8 @@ function umn_user_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1040,6 +1092,9 @@ function umn_user_user_default_permissions() {
     'name' => 'download own audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1049,6 +1104,9 @@ function umn_user_user_default_permissions() {
     'name' => 'download own document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1058,6 +1116,9 @@ function umn_user_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1285,6 +1346,9 @@ function umn_user_user_default_permissions() {
     'name' => 'edit terms in editorial_sections',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -1294,6 +1358,9 @@ function umn_user_user_default_permissions() {
     'name' => 'edit terms in media_tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -1303,6 +1370,9 @@ function umn_user_user_default_permissions() {
     'name' => 'edit terms in panopoly_categories',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -1371,6 +1441,7 @@ function umn_user_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -1391,6 +1462,7 @@ function umn_user_user_default_permissions() {
     'name' => 'umn_headerfooter_customization_administer',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'umn_headerfooter_customization',
   );
@@ -1418,6 +1490,8 @@ function umn_user_user_default_permissions() {
     'name' => 'use panels caching features',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -1428,6 +1502,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -1439,6 +1514,7 @@ function umn_user_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -1449,6 +1525,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
@@ -1482,6 +1559,9 @@ function umn_user_user_default_permissions() {
     'name' => 'use workbench_media add form',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_media',
   );
@@ -1494,6 +1574,8 @@ function umn_user_user_default_permissions() {
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
     ),
     'module' => 'workbench_moderation',
   );
@@ -1506,8 +1588,52 @@ function umn_user_user_default_permissions() {
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
     ),
     'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'view advanced help index'.
+  $permissions['view advanced help index'] = array(
+    'name' => 'view advanced help index',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
+    ),
+    'module' => 'advanced_help',
+  );
+
+  // Exported permission: 'view advanced help popup'.
+  $permissions['view advanced help popup'] = array(
+    'name' => 'view advanced help popup',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
+    ),
+    'module' => 'advanced_help',
+  );
+
+  // Exported permission: 'view advanced help topic'.
+  $permissions['view advanced help topic'] = array(
+    'name' => 'view advanced help topic',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
+      'user administrator' => 'user administrator',
+    ),
+    'module' => 'advanced_help',
   );
 
   // Exported permission: 'view all unpublished content'.
@@ -1518,6 +1644,7 @@ function umn_user_user_default_permissions() {
       'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -1549,6 +1676,9 @@ function umn_user_user_default_permissions() {
     'name' => 'view own private files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'file_entity',
   );
@@ -1571,6 +1701,7 @@ function umn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'panels',
   );
