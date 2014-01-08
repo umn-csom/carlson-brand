@@ -457,7 +457,7 @@ function umn_staff_content_type_field_default_field_instances() {
     'bundle' => 'staff',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Staff member\'s name',
+    'description' => 'Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -776,7 +776,7 @@ function umn_staff_content_type_field_default_field_instances() {
   t('Portrait picture');
   t('Related content');
   t('Short description');
-  t('Staff member\'s name');
+  t('Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
   t('Upload an image to be displayed in a landscape format.');
   t('Upload an image to be displayed in a portrait format');
