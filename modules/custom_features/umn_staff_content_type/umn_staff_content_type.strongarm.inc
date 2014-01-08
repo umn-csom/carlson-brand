@@ -119,6 +119,14 @@ function umn_staff_content_type_strongarm() {
             'weight' => '9',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '101',
+            'visible' => FALSE,
+          ),
+          'featured' => array(
+            'weight' => '101',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),

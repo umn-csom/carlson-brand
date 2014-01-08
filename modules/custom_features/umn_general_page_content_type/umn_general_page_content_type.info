@@ -31,7 +31,6 @@ features[field_instance][] = node-general_page-field_body
 features[field_instance][] = node-general_page-field_path_slug
 features[field_instance][] = node-general_page-field_pull_quote
 features[field_instance][] = node-general_page-field_related_content
-features[field_instance][] = node-general_page-field_tags
 features[field_instance][] = node-general_page-field_uploaded_files
 features[node][] = general_page
 features[panelizer_defaults][] = node:general_page:default

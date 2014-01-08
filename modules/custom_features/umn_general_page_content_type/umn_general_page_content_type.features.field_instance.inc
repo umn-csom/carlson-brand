@@ -24,7 +24,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -36,7 +36,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -44,7 +44,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_additional_content',
-    'label' => 'Additional Content',
+    'label' => 'Additional content',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -80,7 +80,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 7,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -93,7 +93,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -136,7 +136,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -148,7 +148,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -157,7 +157,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_path_slug',
     'label' => 'Path slug',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'linkit' => array(
         'enable' => 0,
@@ -192,7 +192,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -205,7 +205,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -213,7 +213,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_pull_quote',
-    'label' => 'Pull Quote',
+    'label' => 'Pull quote',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -239,7 +239,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     'bundle' => 'general_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -251,7 +251,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -266,7 +266,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -274,7 +274,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_related_content',
-    'label' => 'Related Content',
+    'label' => 'Related content',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -292,62 +292,11 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-general_page-field_tags'
-  $field_instances['node-general_page-field_tags'] = array(
-    'bundle' => 'general_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_tags',
-    'label' => 'Free Tags',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-general_page-field_uploaded_files'
   $field_instances['node-general_page-field_uploaded_files'] = array(
     'bundle' => 'general_page',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'You may upload files to attach to this page. Text documents and spreadsheets are allowed. These files will be available to the public once uploaded.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -357,7 +306,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -370,7 +319,7 @@ function umn_general_page_content_type_field_default_field_instances() {
         'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -378,7 +327,7 @@ function umn_general_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_uploaded_files',
-    'label' => 'Uploaded Files',
+    'label' => 'Uploaded files',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -418,16 +367,17 @@ function umn_general_page_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Body');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
-  t('Free Tags');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Path slug');
-  t('Pull Quote');
-  t('Related Content');
+  t('Pull quote');
+  t('Related content');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
-  t('Uploaded Files');
+  t('Uploaded files');
+  t('You may upload files to attach to this page. Text documents and spreadsheets are allowed. These files will be available to the public once uploaded.');
 
   return $field_instances;
 }

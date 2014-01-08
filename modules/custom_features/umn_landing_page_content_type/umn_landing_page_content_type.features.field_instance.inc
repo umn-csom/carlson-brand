@@ -39,7 +39,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -47,7 +47,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_hero_image',
-    'label' => 'Hero Image',
+    'label' => 'Hero image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
@@ -85,17 +85,16 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'bundle' => 'landing_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If desired, provide text you wish to appear alongside the Hero Image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ',
+    'description' => 'If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -107,7 +106,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -115,7 +114,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_hero_image_description',
-    'label' => 'Hero Image Description',
+    'label' => 'Hero image description',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -145,13 +144,12 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -163,7 +161,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -195,9 +193,9 @@ function umn_landing_page_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
-  t('Hero Image');
-  t('Hero Image Description');
-  t('If desired, provide text you wish to appear alongside the Hero Image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');
+  t('Hero image');
+  t('Hero image description');
+  t('If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');
   t('Path slug');
   t('Upload a large image for display in the hero area of the landing page.');
 

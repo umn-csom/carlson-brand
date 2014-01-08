@@ -63,7 +63,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 8,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -75,7 +75,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 10,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -83,7 +83,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_additional_content',
-      'label' => 'Additional Content',
+      'label' => 'Additional content',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -146,7 +146,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -159,7 +159,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -235,7 +235,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -251,7 +251,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -342,7 +342,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 6,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -354,7 +354,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 8,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -426,7 +426,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 7,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -438,7 +438,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 9,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -517,7 +517,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -536,7 +536,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -544,7 +544,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_publication_date',
-      'label' => 'Publication Date',
+      'label' => 'Publication date',
       'required' => 0,
       'settings' => array(
         'default_value' => 'now',
@@ -611,7 +611,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 9,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -624,7 +624,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -632,7 +632,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_pull_quote',
-      'label' => 'Pull Quote',
+      'label' => 'Pull quote',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -699,7 +699,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'news',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -711,7 +711,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -726,7 +726,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 5,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -734,7 +734,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_related_content',
-      'label' => 'Related Content',
+      'label' => 'Related content',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -801,7 +801,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 10,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -814,7 +814,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -884,7 +884,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -897,7 +897,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
           'weight' => 6,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
@@ -905,7 +905,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_uploaded_files',
-      'label' => 'Uploaded Files',
+      'label' => 'Uploaded files',
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
@@ -946,7 +946,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Body');
   t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
@@ -954,17 +954,18 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
   t('Enter the body of this posting.');
   t('Enter the date this article should be listed as published. This may not always be the same as the date it is written.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Image');
   t('Lede');
   t('Never shown to the user; this is a catch all for unmappable import content.');
   t('Path slug');
   t('Please note that while you can upload image files to this field, this field should not be used for images you want to display in the article.');
-  t('Publication Date');
-  t('Pull Quote');
-  t('Related Content');
+  t('Publication date');
+  t('Pull quote');
+  t('Related content');
   t('Tags');
   t('Upload an image to go with this article.');
-  t('Uploaded Files');
+  t('Uploaded files');
 
   return $fields;
 }

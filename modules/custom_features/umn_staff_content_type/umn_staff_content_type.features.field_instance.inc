@@ -19,13 +19,12 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -37,7 +36,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 11,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -45,7 +44,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_additional_content',
-    'label' => 'Additional Content',
+    'label' => 'Additional content',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -86,7 +85,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -99,7 +98,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -143,7 +142,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -159,7 +158,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -200,7 +199,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -212,7 +211,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 10,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -220,7 +219,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_landscape_picture',
-    'label' => 'Landscape Picture',
+    'label' => 'Landscape picture',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -271,13 +270,12 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -289,7 +287,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 6,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -348,7 +346,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -366,7 +364,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -408,13 +406,12 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -426,7 +423,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 8,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -434,7 +431,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_person_familyname',
-    'label' => 'Family Name',
+    'label' => 'Family name',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -464,13 +461,12 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -482,7 +478,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 7,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -490,7 +486,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_person_givenname',
-    'label' => 'Given Name',
+    'label' => 'Given name',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -526,7 +522,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -539,7 +535,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -583,7 +579,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -599,7 +595,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -607,7 +603,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_portrait_picture',
-    'label' => 'Portrait Picture',
+    'label' => 'Portrait picture',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -654,7 +650,7 @@ function umn_staff_content_type_field_default_field_instances() {
     'bundle' => 'staff',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -666,7 +662,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 7,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -681,7 +677,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -689,7 +685,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_related_content',
-    'label' => 'Related Content',
+    'label' => 'Related content',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -716,13 +712,12 @@ function umn_staff_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 11,
       ),
       'featured' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -734,7 +729,7 @@ function umn_staff_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -742,7 +737,7 @@ function umn_staff_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tags',
-    'label' => 'Free Tags',
+    'label' => 'Free tags',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -761,20 +756,21 @@ function umn_staff_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Address');
   t('Bio');
   t('Email');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
-  t('Family Name');
-  t('Free Tags');
-  t('Given Name');
-  t('Landscape Picture');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
+  t('Family name');
+  t('Free tags');
+  t('Given name');
+  t('Landscape picture');
   t('Phone');
-  t('Portrait Picture');
-  t('Related Content');
+  t('Portrait picture');
+  t('Related content');
   t('Short description');
   t('Staff member\'s name');
   t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
