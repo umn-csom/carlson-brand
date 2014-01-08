@@ -15,6 +15,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'administer panelizer node course settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -140,6 +147,8 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'delete terms in course_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -149,6 +158,8 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'delete terms in degree_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -182,6 +193,9 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'edit terms in course_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
@@ -191,6 +205,9 @@ function umn_course_content_type_user_default_permissions() {
     'name' => 'edit terms in degree_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'taxonomy',
   );
