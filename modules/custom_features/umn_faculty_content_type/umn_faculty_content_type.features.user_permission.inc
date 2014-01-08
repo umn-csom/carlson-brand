@@ -15,6 +15,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'administer panelizer node faculty settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -78,6 +85,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'create faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -89,6 +97,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'delete any faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
@@ -99,6 +108,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'delete own faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -121,6 +131,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'edit own faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
