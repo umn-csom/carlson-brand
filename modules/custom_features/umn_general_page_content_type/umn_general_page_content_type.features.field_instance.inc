@@ -369,8 +369,8 @@ function umn_general_page_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Additional content');
   t('Body');
-  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
+  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Path slug');
   t('Pull quote');
