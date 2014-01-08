@@ -521,7 +521,7 @@ function umn_course_content_type_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_course';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-scheduler';
   $export['additional_settings__active_tab_course'] = $strongarm;
 
   $strongarm = new stdClass();
