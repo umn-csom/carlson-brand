@@ -120,6 +120,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'edit any calendar content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),

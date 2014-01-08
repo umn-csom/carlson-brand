@@ -120,6 +120,7 @@ function umn_faculty_content_type_user_default_permissions() {
     'name' => 'edit any faculty content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),

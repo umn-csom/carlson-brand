@@ -90,6 +90,7 @@ function umn_news_content_type_user_default_permissions() {
     'name' => 'delete any news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
@@ -100,6 +101,7 @@ function umn_news_content_type_user_default_permissions() {
     'name' => 'delete own news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
@@ -111,6 +113,7 @@ function umn_news_content_type_user_default_permissions() {
     'name' => 'edit any news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),

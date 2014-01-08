@@ -120,6 +120,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'edit any staff content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
