@@ -15,7 +15,7 @@ function umn_calendar_content_type_field_default_field_instances() {
     'bundle' => 'calendar',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Place a url for a google calendar. Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar. Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area. Copy the url from the pop-up into this field. Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ',
+    'description' => 'Place a url for a google calendar. <ol><li>Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar.  </li><li>Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area.  </li><li>Copy the url from the pop-up into this field. </li></ol>Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -184,7 +184,7 @@ function umn_calendar_content_type_field_default_field_instances() {
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Google calendar');
   t('Path slug');
-  t('Place a url for a google calendar. Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar. Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area. Copy the url from the pop-up into this field. Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
+  t('Place a url for a google calendar. <ol><li>Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar.  </li><li>Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area.  </li><li>Copy the url from the pop-up into this field. </li></ol>Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
   t('Related content');
 
   return $field_instances;
