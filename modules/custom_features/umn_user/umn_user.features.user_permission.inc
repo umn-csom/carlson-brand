@@ -508,6 +508,16 @@ function umn_user_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer scheduler'.
+  $permissions['administer scheduler'] = array(
+    'name' => 'administer scheduler',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'scheduler',
+  );
+
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -1375,6 +1385,17 @@ function umn_user_user_default_permissions() {
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'schedule (un)publishing of nodes'.
+  $permissions['schedule (un)publishing of nodes'] = array(
+    'name' => 'schedule (un)publishing of nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: 'select account cancellation method'.
