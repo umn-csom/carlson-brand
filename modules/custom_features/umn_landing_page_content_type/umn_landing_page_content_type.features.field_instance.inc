@@ -140,7 +140,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
     'bundle' => 'landing_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.',
+    'description' => 'Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -192,7 +192,7 @@ function umn_landing_page_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
+  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
   t('Hero image');
   t('Hero image description');
   t('If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');

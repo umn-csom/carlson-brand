@@ -417,7 +417,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'news',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => 'Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.',
+      'description' => 'Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -948,7 +948,7 @@ function umn_news_content_type_defaultconfig_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Additional content');
   t('Body');
-  t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
+  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
