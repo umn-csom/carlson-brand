@@ -149,6 +149,11 @@ function umn_news_content_type_strongarm() {
         'default' => 1,
         'choice' => 0,
       ),
+      'rss' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 1,
         'default' => 1,
@@ -603,6 +608,55 @@ function umn_news_content_type_strongarm() {
   $strongarm->name = 'save_continue_news';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_required_news';
+  $strongarm->value = 0;
+  $export['scheduler_publish_required_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_revision_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_revision_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_news';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_enable_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_required_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_required_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_revision_news';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_revision_news'] = $strongarm;
 
   return $export;
 }

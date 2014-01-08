@@ -78,7 +78,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'create general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -98,6 +100,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -108,6 +111,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -117,7 +121,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'edit own general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
