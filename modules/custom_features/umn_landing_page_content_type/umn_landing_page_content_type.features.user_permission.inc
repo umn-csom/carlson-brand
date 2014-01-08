@@ -15,6 +15,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node landing_page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -78,6 +85,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'create landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -87,6 +95,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'delete any landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -96,6 +105,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'delete own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -105,6 +115,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'edit any landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -114,6 +125,7 @@ function umn_landing_page_content_type_user_default_permissions() {
     'name' => 'edit own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
