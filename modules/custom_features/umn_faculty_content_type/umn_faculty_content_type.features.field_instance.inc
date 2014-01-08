@@ -15,7 +15,7 @@ function umn_faculty_content_type_field_default_field_instances() {
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.',
+    'description' => 'This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -780,7 +780,7 @@ function umn_faculty_content_type_field_default_field_instances() {
   t('Portrait picture');
   t('Related content');
   t('Short description');
-  t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
+  t('This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.');
   t('Upload an image to be displayed in a landscape (wider than it is tall) format.');
   t('Upload an image to be displayed in a portrait (taller than it is wide) format');
 
