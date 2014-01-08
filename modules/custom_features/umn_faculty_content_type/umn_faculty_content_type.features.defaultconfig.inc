@@ -1087,7 +1087,7 @@ function umn_faculty_content_type_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_faculty';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-scheduler';
   $export['additional_settings__active_tab_faculty'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1110,6 +1110,55 @@ function umn_faculty_content_type_defaultconfig_strongarm() {
   $strongarm->name = 'ant_php_faculty';
   $strongarm->value = 0;
   $export['ant_php_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_faculty';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_required_faculty';
+  $strongarm->value = 0;
+  $export['scheduler_publish_required_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_revision_faculty';
+  $strongarm->value = 0;
+  $export['scheduler_publish_revision_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_faculty';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_faculty';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_enable_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_required_faculty';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_required_faculty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_revision_faculty';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_revision_faculty'] = $strongarm;
 
   return $export;
 }
