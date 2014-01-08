@@ -15,6 +15,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'administer panelizer node general_page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -78,7 +85,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'create general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -88,6 +97,8 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'delete any general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -97,7 +108,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'delete own general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -107,7 +120,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'edit any general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
@@ -117,7 +132,9 @@ function umn_general_page_content_type_user_default_permissions() {
     'name' => 'edit own general_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'senior editor' => 'senior editor',
     ),
     'module' => 'node',
   );
