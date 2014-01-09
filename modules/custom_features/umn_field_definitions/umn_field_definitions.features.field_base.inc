@@ -970,7 +970,7 @@ function umn_field_definitions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'phone',
     'settings' => array(
-      'country' => 'ca',
+      'country' => 'int',
     ),
     'translatable' => 0,
     'type' => 'phone',

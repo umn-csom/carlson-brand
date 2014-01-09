@@ -384,9 +384,7 @@ function umn_faculty_content_type_field_default_field_instances() {
       'active' => 1,
       'module' => 'addressfield',
       'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
+        'available_countries' => array(),
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',

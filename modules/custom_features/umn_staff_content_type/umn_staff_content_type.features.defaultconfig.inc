@@ -536,9 +536,7 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'addressfield',
         'settings' => array(
-          'available_countries' => array(
-            'US' => 'US',
-          ),
+          'available_countries' => array(),
           'format_handlers' => array(
             'address' => 'address',
             'address-hide-country' => 0,
@@ -734,7 +732,7 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
       'locked' => 0,
       'module' => 'phone',
       'settings' => array(
-        'country' => 'ca',
+        'country' => 'int',
       ),
       'translatable' => 0,
       'type' => 'phone',
