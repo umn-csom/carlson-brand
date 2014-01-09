@@ -138,7 +138,7 @@ function media_metadata_defaultconfig_field_default_fields() {
       'bundle' => 'image',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter a description for users who cannot see the image.',
       'display' => array(
         'default' => array(
           'label' => 'above',

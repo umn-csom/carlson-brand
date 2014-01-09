@@ -54,7 +54,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'faculty',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => 'This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.',
+      'description' => 'This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -214,7 +214,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'faculty',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the faculty member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -489,7 +489,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
         ),
       ),
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the faculty member\'s office address. This will be displayed to the public.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -589,7 +589,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'faculty',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the faculty member\'s family name. (In Western naming conventions, the surname or last name.)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -673,7 +673,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'faculty',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => 'Faculty member\'s name.',
+      'description' => 'Faculty member\'s given name. (In Western naming conventions, usually the first name or forename.)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -746,7 +746,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
       'bundle' => 'faculty',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1017,8 +1017,12 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
   t('Email');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
+  t('Enter the faculty member\'s family name. (In Western naming conventions, the surname or last name.)');
+  t('Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number.');
+  t('Enter the faculty member\'s office address. This will be displayed to the public.');
+  t('Enter the faculty member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
-  t('Faculty member\'s name.');
+  t('Faculty member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('Family name');
   t('Given name');
   t('Landscape picture');
@@ -1026,7 +1030,7 @@ function umn_faculty_content_type_defaultconfig_field_default_fields() {
   t('Portrait picture');
   t('Related content');
   t('Short description');
-  t('This data was imported from UMContent. It will not be visible to site visitors. It should be replicated to the appropriate fields and then removed from here.');
+  t('This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.');
   t('Upload an image to be displayed in a landscape (wider than it is tall) format.');
   t('Upload an image to be displayed in a portrait (taller than it is wide) format');
 

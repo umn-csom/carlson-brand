@@ -265,7 +265,7 @@ function umn_news_content_type_field_default_field_instances() {
     'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.',
+    'description' => 'Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -632,10 +632,10 @@ function umn_news_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Additional content');
   t('Body');
-  t('Enter a "slug" string that will be used as a fragment of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased.');
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter a quote from the body that should be displayed outside the body. The quote should entice readers or highlight a key topic.');
+  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
   t('Enter the body of this posting.');
   t('Enter the date this article should be listed as published. This may not always be the same as the date it is written.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
