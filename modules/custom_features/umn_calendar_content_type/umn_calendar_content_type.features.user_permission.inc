@@ -15,6 +15,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'administer panelizer node calendar settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -113,6 +120,8 @@ function umn_calendar_content_type_user_default_permissions() {
     'name' => 'edit any calendar content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',

@@ -15,6 +15,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff context',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -90,6 +97,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'delete any staff content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
@@ -112,6 +120,7 @@ function umn_staff_content_type_user_default_permissions() {
     'name' => 'edit any staff content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'senior editor' => 'senior editor',
     ),
