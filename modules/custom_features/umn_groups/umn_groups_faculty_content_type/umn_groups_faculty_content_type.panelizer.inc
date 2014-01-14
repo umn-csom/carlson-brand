@@ -328,7 +328,7 @@ faculty',
     $pane->pid = 'new-8';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
-    $pane->subtype = 'menu_block-umn_groups_customizations-level-two';
+    $pane->subtype = 'menu_block-umn_customizations-level-two';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

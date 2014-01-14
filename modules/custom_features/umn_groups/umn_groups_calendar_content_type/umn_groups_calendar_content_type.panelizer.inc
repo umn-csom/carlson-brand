@@ -150,7 +150,7 @@ function umn_groups_calendar_content_type_panelizer_defaults() {
     $pane->pid = 'new-4';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
-    $pane->subtype = 'menu_block-umn_groups_customizations-level-two';
+    $pane->subtype = 'menu_block-umn_customizations-level-two';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
