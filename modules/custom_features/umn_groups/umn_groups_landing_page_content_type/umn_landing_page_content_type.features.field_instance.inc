@@ -1,0 +1,203 @@
+<?php
+/**
+ * @file
+ * umn_groups_landing_page_content_type.features.field_instance.inc
+ */
+
+/**
+ * Implements hook_field_default_field_instances().
+ */
+function umn_groups_landing_page_content_type_field_default_field_instances() {
+  $field_instances = array();
+
+  // Exported field_instance: 'node-landing_page-field_hero_image'
+  $field_instances['node-landing_page-field_hero_image'] = array(
+    'bundle' => 'landing_page',
+    'deleted' => 0,
+    'description' => 'Upload a large image for display in the hero area of the landing page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'hero_800x300',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero_image',
+    'label' => 'Hero image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x300',
+      'title_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
+        'preview_image_style' => 'medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-landing_page-field_hero_image_description'
+  $field_instances['node-landing_page-field_hero_image_description'] = array(
+    'bundle' => 'landing_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero_image_description',
+    'label' => 'Hero image description',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-landing_page-field_path_slug'
+  $field_instances['node-landing_page-field_path_slug'] = array(
+    'bundle' => 'landing_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_path_slug',
+    'label' => 'Path slug',
+    'required' => 1,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
+  t('Hero image');
+  t('Hero image description');
+  t('If desired, provide text you wish to appear alongside the Hero image here. For optimal aesthetics, please keep the number of sentences to between 1-3. ');
+  t('Path slug');
+  t('Upload a large image for display in the hero area of the landing page.');
+
+  return $field_instances;
+}
