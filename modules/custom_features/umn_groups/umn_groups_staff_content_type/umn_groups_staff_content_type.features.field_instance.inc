@@ -764,9 +764,10 @@ function umn_groups_staff_content_type_field_default_field_instances() {
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the staff member\'s family name. (In Western naming conventions, the surname or last name.)');
-  t('Enter the staff member\'s office phone number. This will be displayed to the public. Must be a valid phone number.');
+  t('Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('Enter the staff member\'s office address. This will be displayed to the public.');
   t('Enter the staff member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.');
+  t('Enter the staff member\'s office phone number. This will be displayed to the public. Must be a valid phone number.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Family name');
   t('Free tags');
@@ -776,7 +777,6 @@ function umn_groups_staff_content_type_field_default_field_instances() {
   t('Portrait picture');
   t('Related content');
   t('Short description');
-  t('Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.');
   t('Upload an image to be displayed in a landscape format.');
   t('Upload an image to be displayed in a portrait format');

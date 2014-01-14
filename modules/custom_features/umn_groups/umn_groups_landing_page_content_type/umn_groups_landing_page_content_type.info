@@ -17,6 +17,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = umn_field_definitions
+dependencies[] = umn_groups_group_content_type
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[defaultconfig][] = field_default_fields:node-landing_page-field_path_slug
