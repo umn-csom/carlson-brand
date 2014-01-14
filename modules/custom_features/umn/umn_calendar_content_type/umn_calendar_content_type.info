@@ -1,4 +1,4 @@
-name = umn calendar content type
+name = UMN Calendar content type
 description = Calendar content type and settings
 core = 7.x
 package = UMN Features

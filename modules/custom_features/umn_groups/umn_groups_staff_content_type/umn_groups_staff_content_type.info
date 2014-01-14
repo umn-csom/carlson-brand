@@ -1,4 +1,4 @@
-name = umn staff content type
+name = UMN Groups Staff content type
 description = Staff content type, settings, and views
 core = 7.x
 package = UMN Groups Features
@@ -18,7 +18,7 @@ dependencies[] = phone
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = umn_groups_field_definitions
+dependencies[] = umn_field_definitions
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = panelizer:panelizer:1

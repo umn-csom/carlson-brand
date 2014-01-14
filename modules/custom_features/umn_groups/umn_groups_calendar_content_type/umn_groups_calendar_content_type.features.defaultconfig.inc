@@ -59,7 +59,7 @@ function umn_groups_calendar_content_type_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'umn_groups_gcalendar',
+          'module' => 'umn_gcalendar',
           'settings' => array(
             'calendar_timezone' => 'America/Chicago',
             'ctz' => 'America/Chicago',

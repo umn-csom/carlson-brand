@@ -1,4 +1,4 @@
-name = umn faculty content type
+name = UMN Faculty content type
 description = Umn faculty content type, settings, and views
 core = 7.x
 package = UMN Features

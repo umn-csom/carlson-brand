@@ -1,4 +1,4 @@
-name = umn news content type
+name = UMN News content type
 description = news content type, settings, and views
 core = 7.x
 package = UMN Features

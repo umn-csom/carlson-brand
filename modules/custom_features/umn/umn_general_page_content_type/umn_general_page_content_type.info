@@ -1,4 +1,4 @@
-name = umn general page content type
+name = UMN General Page content type
 description = General page content type and settings
 core = 7.x
 package = UMN Features

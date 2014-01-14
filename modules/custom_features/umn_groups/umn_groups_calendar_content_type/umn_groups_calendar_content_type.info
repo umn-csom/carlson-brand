@@ -1,4 +1,4 @@
-name = umn calendar content type
+name = UMN Groups Calendar content type
 description = Calendar content type and settings
 core = 7.x
 package = UMN Groups Features
@@ -13,8 +13,8 @@ dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = umn_groups_field_definitions
-dependencies[] = umn_groups_gcalendar
+dependencies[] = umn_field_definitions
+dependencies[] = umn_gcalendar
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[defaultconfig][] = field_default_fields:node-calendar-field_google_calendar

@@ -1,4 +1,4 @@
-name = UMN Groups import content type
+name = UMN Groups Import content type
 description = Imported content will be placed in this kind of node
 core = 7.x
 package = UMN Groups Features
@@ -9,7 +9,7 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = text
-dependencies[] = umn_groups_field_definitions
+dependencies[] = umn_field_definitions
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_instance][] = node-import-field_additional_content

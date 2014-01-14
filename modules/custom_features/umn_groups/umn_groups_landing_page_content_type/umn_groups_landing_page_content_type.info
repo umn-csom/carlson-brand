@@ -1,4 +1,4 @@
-name = umn landing page content type
+name = UMN Groups Landing Page content type
 description = Landing page content type and settings
 core = 7.x
 package = UMN Groups Features
@@ -16,7 +16,7 @@ dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = umn_groups_field_definitions
+dependencies[] = umn_field_definitions
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[defaultconfig][] = field_default_fields:node-landing_page-field_path_slug

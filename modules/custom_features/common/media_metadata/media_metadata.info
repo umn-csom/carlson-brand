@@ -1,7 +1,7 @@
 name = Media metadata
 description = Extra fields that are added to media's file entities to provide metadata
 core = 7.x
-package = UMN Features
+package = UMN Common Features
 php = 5.2.4
 version = 7.x-1.0
 project = media_metadata

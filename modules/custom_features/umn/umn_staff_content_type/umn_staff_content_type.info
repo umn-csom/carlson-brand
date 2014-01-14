@@ -1,4 +1,4 @@
-name = umn staff content type
+name = UMN Staff content type
 description = Staff content type, settings, and views
 core = 7.x
 package = UMN Features

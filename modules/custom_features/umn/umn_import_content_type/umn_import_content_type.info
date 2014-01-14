@@ -1,4 +1,4 @@
-name = UMN import content type
+name = UMN Import content type
 description = Imported content will be placed in this kind of node
 core = 7.x
 package = UMN Features

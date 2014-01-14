@@ -1,4 +1,4 @@
-name = UMN Course Content Type
+name = UMN Course content type
 description = Provides a Course content type, field instances, and necessary vocabularies.
 core = 7.x
 package = UMN Features
