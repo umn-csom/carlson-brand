@@ -1,4 +1,4 @@
-name = umn workbench
+name = UMN Workbench
 description = umn workbench settings
 core = 7.x
 package = UMN Common Features

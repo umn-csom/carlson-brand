@@ -1,4 +1,4 @@
-name = umn user
+name = UMN User
 description = User roles
 core = 7.x
 package = UMN Common Features
