@@ -1,7 +1,7 @@
 name = umn faculty content type
 description = Umn faculty content type, settings, and views
 core = 7.x
-package = UMN Features
+package = UMN Groups Features
 version = 7.x-1.0
 project = umn_groups_faculty_content_type
 dependencies[] = addressfield

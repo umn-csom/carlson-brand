@@ -1,7 +1,7 @@
 name = umn calendar content type
 description = Calendar content type and settings
 core = 7.x
-package = UMN Features
+package = UMN Groups Features
 version = 7.x-1.0
 project = umn_groups_calendar_content_type
 dependencies[] = ctools

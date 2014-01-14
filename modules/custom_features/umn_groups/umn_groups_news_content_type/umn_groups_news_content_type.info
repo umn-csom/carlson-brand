@@ -1,7 +1,7 @@
 name = umn news content type
 description = news content type, settings, and views
 core = 7.x
-package = UMN Features
+package = UMN Groups Features
 version = 7.x-1.0
 project = umn_groups_news_content_type
 dependencies[] = ctools

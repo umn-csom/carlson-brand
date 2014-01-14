@@ -1,7 +1,7 @@
-name = UMN Group content type
+name = UMN Groups Group content type
 description = Provides a Group nodetype and field instances.
 core = 7.x
-package = UMN Features
+package = UMN Groups Features
 version = 7.x-1.0
 project = umn_groups_group_content_type
 dependencies[] = ctools
