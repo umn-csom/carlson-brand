@@ -163,7 +163,7 @@ function umn_groups_news_content_type_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'gid' => array(
       'type' => 'context',
-      'context' => 'entity:node.og_group_ref',
+      'context' => 'entity:node.group_group',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
