@@ -1,0 +1,14 @@
+name = UMN Groups vocabularies
+description = Provides vocabularies required by UMN Groups content types.
+core = 7.x
+package = UMN Groups Features
+version = 7.x-1.0
+project = umn_groups_vocabularies
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = course_type
+features[taxonomy][] = degree_type
+features[taxonomy][] = editorial_sections
+features[taxonomy][] = media_tags
+project path = sites/umn.loc/modules/custom_features/umn_groups
