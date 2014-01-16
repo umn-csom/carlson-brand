@@ -15,7 +15,7 @@ function umn_import_content_type_field_default_field_instances() {
     'bundle' => 'import',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This field contains imported content that will eventually be moved to other fields, or removed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -112,9 +112,10 @@ function umn_import_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Content');
+  t('Additional content');
   t('Body');
   t('Enter the body of this posting.');
+  t('This field contains imported content that will eventually be moved to other fields, or removed.');
 
   return $field_instances;
 }
