@@ -80,15 +80,6 @@ function umn_groups_course_content_type_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer taxonomy_term course_type defaults'.
-  $permissions['administer panelizer taxonomy_term course_type defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term course_type defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'convert from course'.
   $permissions['convert from course'] = array(
     'name' => 'convert from course',
@@ -142,28 +133,6 @@ function umn_groups_course_content_type_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in course_type'.
-  $permissions['delete terms in course_type'] = array(
-    'name' => 'delete terms in course_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'senior editor' => 'senior editor',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'delete terms in degree_type'.
-  $permissions['delete terms in degree_type'] = array(
-    'name' => 'delete terms in degree_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'senior editor' => 'senior editor',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'edit any course content'.
   $permissions['edit any course content'] = array(
     'name' => 'edit any course content',
@@ -186,30 +155,6 @@ function umn_groups_course_content_type_user_default_permissions() {
       'senior editor' => 'senior editor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in course_type'.
-  $permissions['edit terms in course_type'] = array(
-    'name' => 'edit terms in course_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in degree_type'.
-  $permissions['edit terms in degree_type'] = array(
-    'name' => 'edit terms in degree_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'senior editor' => 'senior editor',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'taxonomy',
   );
 
   return $permissions;
