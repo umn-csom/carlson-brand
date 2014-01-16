@@ -22,16 +22,7 @@ function umn_groups_course_content_type_panelizer_defaults() {
   $panelizer->css = '';
   $panelizer->pipeline = 'ipe';
   $panelizer->contexts = array();
-  $panelizer->relationships = array(
-    0 => array(
-      'identifier' => 'Node from Node (on Node: Groups audience [og_group_ref])',
-      'keyword' => 'node',
-      'name' => 'entity_from_field:og_group_ref-node-node',
-      'delta' => 0,
-      'context' => 'relationship_entity_from_field:og_group_ref-node-node_1',
-      'id' => 1,
-    ),
-  );
+  $panelizer->relationships = array();
   $panelizer->access = array();
   $panelizer->view_mode = 'page_manager';
   $panelizer->css_class = '';
