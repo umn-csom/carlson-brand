@@ -160,10 +160,10 @@ function umn_groups_group_content_type_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_group';
   $strongarm->value = array(
-    'status' => 0,
+    'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 0,
+        'status' => 1,
         'default' => 0,
         'choice' => 0,
       ),
@@ -173,7 +173,7 @@ function umn_groups_group_content_type_strongarm() {
         'choice' => 0,
       ),
       'teaser' => array(
-        'status' => 0,
+        'status' => 1,
         'default' => 0,
         'choice' => 0,
       ),
