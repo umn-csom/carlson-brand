@@ -71,7 +71,7 @@ function umn_groups_staff_content_type_field_default_field_instances() {
     'default_value' => array(
       0 => array(
         'value' => '<h2>Speciality</h2><p></p><h2>Education</h2><p></p><h2>Background</h2><p></p><h2>Quote</h2><p></p><h2>Teaching</h2><p></p><h2>Select Publications</h2><p></p><h2>Awards</h2><p></p>',
-        'format' => 'umn_groups_wysiwyg',
+        'format' => 'umn_wysiwyg',
       ),
     ),
     'deleted' => 0,
