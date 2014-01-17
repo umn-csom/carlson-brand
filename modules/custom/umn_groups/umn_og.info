@@ -1,0 +1,4 @@
+name = UMN OG
+description = Integration with Organic Groups for UMN
+core = 7.x
+package = UMN
