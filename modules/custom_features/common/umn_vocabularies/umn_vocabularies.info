@@ -1,7 +1,7 @@
 name = UMN vocabularies
 description = Provides vocabularies required by UMN content types.
 core = 7.x
-package = UMN Features
+package = UMN Common Features
 version = 7.x-1.0
 project = umn_vocabularies
 dependencies[] = features
