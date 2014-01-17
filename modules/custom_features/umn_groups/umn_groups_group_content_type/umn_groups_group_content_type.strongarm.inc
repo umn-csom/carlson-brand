@@ -97,7 +97,29 @@ function umn_groups_group_content_type_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__group';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'featured' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
@@ -164,7 +186,7 @@ function umn_groups_group_content_type_strongarm() {
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,
-        'default' => 0,
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
@@ -174,7 +196,7 @@ function umn_groups_group_content_type_strongarm() {
       ),
       'teaser' => array(
         'status' => 1,
-        'default' => 0,
+        'default' => 1,
         'choice' => 0,
       ),
       'featured' => array(
@@ -492,8 +514,8 @@ function umn_groups_group_content_type_strongarm() {
     'entity_form_field-node:field_pull_quote' => 'entity_form_field-node:field_pull_quote',
     'entity_form_field-node:field_uploaded_files' => 'entity_form_field-node:field_uploaded_files',
     'entity_form_field-node:body' => 'entity_form_field-node:body',
-    'entity_form_field-node:group_group' => 'entity_form_field-node:group_group',
     'entity_form_field-node:field_hero_image' => 'entity_form_field-node:field_hero_image',
+    'entity_form_field-node:group_group' => 'entity_form_field-node:group_group',
     'entity_form_field-node:field_hero_image_description' => 'entity_form_field-node:field_hero_image_description',
     'entity_form_field-node:field_image' => 'entity_form_field-node:field_image',
     'entity_form_field-node:field_publication_date' => 'entity_form_field-node:field_publication_date',
@@ -543,8 +565,8 @@ function umn_groups_group_content_type_strongarm() {
     'entity_field-node:field_pull_quote' => 'entity_field-node:field_pull_quote',
     'entity_field-node:field_uploaded_files' => 'entity_field-node:field_uploaded_files',
     'entity_field-node:body' => 'entity_field-node:body',
-    'entity_field-node:group_group' => 'entity_field-node:group_group',
     'entity_field-node:field_hero_image' => 'entity_field-node:field_hero_image',
+    'entity_field-node:group_group' => 'entity_field-node:group_group',
     'entity_field-node:field_hero_image_description' => 'entity_field-node:field_hero_image_description',
     'entity_field-node:field_image' => 'entity_field-node:field_image',
     'entity_field-node:field_publication_date' => 'entity_field-node:field_publication_date',

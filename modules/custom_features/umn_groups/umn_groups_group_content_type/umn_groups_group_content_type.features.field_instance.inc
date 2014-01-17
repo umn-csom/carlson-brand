@@ -340,7 +340,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
     'description' => 'Please upload or select a large, representative image for this group.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -356,7 +356,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -414,7 +414,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
     'description' => 'Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
@@ -429,7 +429,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -463,7 +463,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
     'description' => 'Enter a comma-separated list of words to describe this group.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
@@ -476,7 +476,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
