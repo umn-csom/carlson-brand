@@ -384,9 +384,7 @@ function umn_faculty_content_type_field_default_field_instances() {
       'active' => 1,
       'module' => 'addressfield',
       'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
+        'available_countries' => array(),
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -515,7 +513,7 @@ function umn_faculty_content_type_field_default_field_instances() {
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number.',
+    'description' => 'Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -767,7 +765,7 @@ function umn_faculty_content_type_field_default_field_instances() {
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the faculty member\'s family name. (In Western naming conventions, the surname or last name.)');
-  t('Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number.');
+  t('Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.');
   t('Enter the faculty member\'s office address. This will be displayed to the public.');
   t('Enter the faculty member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
