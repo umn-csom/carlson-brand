@@ -1,0 +1,64 @@
+<?php
+/**
+ * @file
+ * Tests for UMN groups integration
+ */
+
+/**
+ * Tests the functionality of the Book module.
+ */
+class UmnGroupsTestCase extends DrupalWebTestCase {
+
+  /**
+   * A user with permission to create and edit nodes and to administer groups.
+   *
+   * @var object
+   */
+  protected $user;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'UMN OG integration',
+      'description' => 'Create groups and news items in the groups, then create a landing page with the news panel by group.',
+      'group' => 'UMN',
+    );
+  }
+
+  function setUp() {
+    parent::setUp(array(
+      'panopoly_core',
+    ));
+
+    $this->user = $this->drupalCreateUser(array(
+      'access content',
+      'access content overview',
+    ));
+
+  }
+
+    /**
+   * Tests the functionality of the book navigation block.
+   */
+  function testDisplayNewsByGroup() {
+    $this->assertFalse(FALSE);
+    $this->drupalLogin($this->user);
+    $modules = module_list();
+    debug(print_r($modules, 1));
+    debug(count($modules));
+    $this->assertFalse(FALSE);
+//    $this->createGroup('Foo');
+//    $this->createGroup('Bar');
+//    $this->assertFalse(FALSE);
+  }
+
+  function createGroup($name) {
+    $edit = array(
+      'title' => $name,
+      'event' => 'Publish',
+      'event_comment' => rand(),
+    );
+    $this->drupalPost('node/add/group', $edit, 'Save');
+  }
+
+}
+
