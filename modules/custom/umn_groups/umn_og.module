@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * UMN glue code for working with OG.
+ *
+ * @copyright Copyright (c) 2014 Palantir.net
+ */
+
+/**
+ * Implements hook_system_info_alter
+ */
+function umn_og_system_info_alter(&$info, $file, $type) {
+  $profile = drupal_get_profile();
+  switch ($profile) {
+    case 'umn':
+      // Hide umn_groups modules from the umn install profile.
+      if(isset($info['package']) && ($info['package'] == 'UMN Groups Features')) {
+        if(stripos($info['name'], 'content type')) {
+          $info['hidden'] = TRUE;
+        }
+      }
+      break;
+    case 'umn_groups':
+      // Hide umn modules from the umn_groups install profile.
+      if(isset($info['package']) && ($info['package'] == 'UMN Features')) {
+        if(stripos($info['name'], 'content type')) {
+          $info['hidden'] = TRUE;
+        }
+      }
+      break;
+    default:
+      break;
+  }
+}
