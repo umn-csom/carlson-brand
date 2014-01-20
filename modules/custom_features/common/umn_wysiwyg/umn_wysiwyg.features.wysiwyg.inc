@@ -98,7 +98,7 @@ function umn_wysiwyg_wysiwyg_default_profiles() {
       'toolbar_align' => 'left',
       'path_loc' => 'bottom',
       'resizing' => 1,
-      'verify_html' => 1,
+      'verify_html' => 0,
       'preformatted' => 0,
       'convert_fonts_to_spans' => 1,
       'remove_linebreaks' => 1,
