@@ -287,6 +287,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     'hero_image_region_classes' => '',
     'sub_header_classes' => '',
     'footer_links_classes' => '',
+    'department_footer_classes' => '',
     'sub_footer_classes' => '',
   );
   $display->panel_settings = array(
@@ -526,18 +527,37 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-14';
     $pane->panel = 'sub_header';
-    $pane->type = 'block';
-    $pane->subtype = 'menu_block-umn_customizations-level-one';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_group_facebook_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'link_absolute',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'relationship_entity_from_field:og_group_ref-node-node_1',
       'override_title' => 1,
       'override_title_text' => '',
+      'view_mode' => NULL,
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'primary_navigation_one',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -549,7 +569,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->pid = 'new-15';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_group_facebook_page';
+    $pane->subtype = 'node:field_group_linkedin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -590,7 +610,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->pid = 'new-16';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_group_linkedin';
+    $pane->subtype = 'node:field_group_youtube_channel';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -631,7 +651,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->pid = 'new-17';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_group_youtube_channel';
+    $pane->subtype = 'node:field_group_rss_feed';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -671,37 +691,18 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-18';
     $pane->panel = 'sub_header';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_group_rss_feed';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-umn_customizations-level-one';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'link_absolute',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_entity_from_field:og_group_ref-node-node_1',
       'override_title' => 1,
       'override_title_text' => '',
-      'view_mode' => NULL,
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'primary_navigation_one',
     );
     $pane->css = array();
     $pane->extras = array();
