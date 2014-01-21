@@ -5,3 +5,75 @@
  */
 
 include_once 'umn_og_workbench.features.inc';
+
+/**
+ * Implements hook_enable().
+ */
+function umn_og_workbench_enable() {
+  $enable = array(
+    'og_workbench_moderation_content',
+    'og_workbench_current_user',
+    'og_workbench_edits_by_user',
+    'og_workbench_recent_content',
+  );
+  $disable = array(
+    'workbench_moderation',
+    'workbench_current_user',
+    'workbench_edited',
+    'workbench_recent_content',
+  );
+  // Replace the default view with an overridden version.
+  umn_enable_disable($enable, $disable);
+}
+
+/**
+ * Implements hook_disable().
+ */
+function umn_og_workbench_disable() {
+  $disable = array(
+    'og_workbench_moderation_content',
+    'og_workbench_current_user',
+    'og_workbench_edits_by_user',
+    'og_workbench_recent_content',
+  );
+  $enable = array(
+    'workbench_moderation',
+    'workbench_current_user',
+    'workbench_edited',
+    'workbench_recent_content',
+  );
+  // Replace the default view with an overridden version.
+  umn_enable_disable($enable, $disable);
+}
+
+/**
+ * Enables and disables specified views, then clears the cache.
+ *
+ * @param array $enable
+ *  An array of views to make enabled.
+ * @param array $disable
+ *  An array of views to make disabled.
+ */
+function umn_enable_disable($enable, $disable) {
+
+  // List views that are already disabled.
+  $views_status = variable_get('views_defaults', array());
+
+  // Add the default view that we want to override to the disabled list.
+  foreach ($disable as $dis_view) {
+    $views_status[$dis_view] = TRUE;
+  }
+
+  // Make sure the overridden version of the view is NOT on the disable list.
+  foreach ($enable as $en_view) {
+    unset($views_status[$en_view]);
+  }
+
+  // Re-save the variable with the new list.
+  variable_set('views_defaults', $views_status);
+
+  // Clear the Views cache.
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+}
