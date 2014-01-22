@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function umn_groups_group_content_type_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "panelizer" && $api == "panelizer") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -21,10 +24,10 @@ function umn_groups_group_content_type_node_info() {
     'group' => array(
       'name' => t('Group'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('A group to which other types of content can belong.'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('Give this group a name.'),
     ),
   );
   return $items;

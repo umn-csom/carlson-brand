@@ -329,7 +329,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -649,7 +649,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'og_hide' => TRUE,
       ),
       'type' => 'options_onoff',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -962,6 +962,9 @@ function umn_groups_group_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Determine if this is an OG group.');
+  t('Enter a comma-separated list of words to describe this group.');
+  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
+  t('Free tags');
   t('Group');
   t('Group Facebook Page');
   t('Group LinkedIn');
@@ -969,10 +972,6 @@ function umn_groups_group_content_type_field_default_field_instances() {
   t('Group YouTube Channel');
   t('Group membership');
   t('Groups audience');
-  t('If your group has a Facebook Page, please place a link to it here.');
-  t('If your group has a LinkedIn Page, please place a link to it here.');
-  t('If your group has a RSS feed, please place a link to it here.');
-  t('If your group has a YouTube channel, please place a link to it here.');
   t('Request message');
   t('This is the text a user may send to the group administrators.');
 
