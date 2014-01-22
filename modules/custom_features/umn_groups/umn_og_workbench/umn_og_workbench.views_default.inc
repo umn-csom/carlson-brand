@@ -199,7 +199,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = 'Edited something recently and it\'s not in this list? If a content type isn\'t revisioned and you didn\'t create it, it will not show up in this list when you edit it. You can find it in the \'Content I Can Edit\' tab.';
+  $handler->display->display_options['footer']['area']['content'] = 'Edited something recently and it\'s not in this list? If a content type isn\'t revisioned and you didn\'t create it, it will not show up in this list when you edit it. You can find it in the \'Content I Can Edit\' tab. If this is unexpected, try checking the spelling of your filter term(s).';
   $handler->display->display_options['footer']['area']['format'] = 'plain_text';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
@@ -336,6 +336,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['filters']['title_1']['expose']['label'] = 'Group';
   $handler->display->display_options['filters']['title_1']['expose']['operator'] = 'title_1_op';
   $handler->display->display_options['filters']['title_1']['expose']['identifier'] = 'title_1';
+  $handler->display->display_options['filters']['title_1']['expose']['description'] = 'Supports partial matches';
   $handler->display->display_options['filters']['title_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -640,6 +641,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_dependent'] = 0;
+  $handler->display->display_options['filters']['title_1']['expose']['description'] = 'Supports partial matches';
 
   /* Display: Needs review page */
   $handler = $view->new_display('page', 'Needs review page', 'needs_review_page');
@@ -654,7 +656,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['content'] = 'This list displays content in the "Needs review" state that you can moderate. Currently there is no such content.';
+  $handler->display->display_options['empty']['area']['content'] = 'This list displays content in the "Needs review" state that you can moderate. Currently there is no such content. If this is unexpected, try checking the spelling of your filter term(s). If this is unexpected, try checking the spelling of your filter term(s).';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -715,6 +717,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['filters']['title_1']['expose']['label'] = 'Group';
   $handler->display->display_options['filters']['title_1']['expose']['operator'] = 'title_1_op';
   $handler->display->display_options['filters']['title_1']['expose']['identifier'] = 'title_1';
+  $handler->display->display_options['filters']['title_1']['expose']['description'] = 'Supports partial matches';
   $handler->display->display_options['filters']['title_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -745,7 +748,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['content'] = 'This list displays content you have created that is not published. Currently there is no such content.';
+  $handler->display->display_options['empty']['area']['content'] = 'This list displays content you have created that is not published. Currently there is no such content. If this is unexpected, try checking the spelling of your filter term(s).';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['path'] = 'admin/workbench/drafts';
   $handler->display->display_options['menu']['type'] = 'tab';
@@ -836,7 +839,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['content'] = 'There is no content available for you to edit.';
+  $handler->display->display_options['empty']['area']['content'] = 'There is no content available for you to edit. If this is unexpected, try checking the spelling of your filter term(s).';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
@@ -958,6 +961,7 @@ function umn_og_workbench_views_default_views() {
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['title_1']['expose']['autocomplete_dependent'] = 0;
+  $handler->display->display_options['filters']['title_1']['expose']['description'] = 'Supports partial matches';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
