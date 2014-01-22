@@ -10,19 +10,9 @@ include_once 'umn_og_workbench.features.inc';
  * Implements hook_enable().
  */
 function umn_og_workbench_enable() {
-  $enable = array(
-    'og_workbench_moderation_content',
-    'og_workbench_current_user',
-    'og_workbench_edits_by_user',
-    'og_workbench_recent_content',
-  );
-  $disable = array(
-    'workbench_moderation',
-    'workbench_current_user',
-    'workbench_edited',
-    'workbench_recent_content',
-  );
-  // Replace the default view with an overridden version.
+  // Replace the default views with overridden versions upon module enable.
+  $enable = umn_overridden_list();
+  $disable = umn_default_list();
   umn_enable_disable($enable, $disable);
 }
 
@@ -30,29 +20,47 @@ function umn_og_workbench_enable() {
  * Implements hook_disable().
  */
 function umn_og_workbench_disable() {
-  $disable = array(
-    'og_workbench_moderation_content',
-    'og_workbench_current_user',
-    'og_workbench_edits_by_user',
-    'og_workbench_recent_content',
-  );
-  $enable = array(
+  // Replace the overridden views with default versions upon module disable.
+  $disable = umn_overridden_list();
+  $enable = umn_default_list();
+  umn_enable_disable($enable, $disable);
+}
+
+/**
+ * A list of the default versions of the views.
+ * @return array
+ *   list of default views to be overridden.
+ */
+function umn_default_list() {
+  return array(
     'workbench_moderation',
     'workbench_current_user',
     'workbench_edited',
     'workbench_recent_content',
   );
-  // Replace the default view with an overridden version.
-  umn_enable_disable($enable, $disable);
+}
+
+/**
+ * A list of the overridden versions of the views.
+ * @return array
+ *   list of our custom views.
+ */
+function umn_overridden_list() {
+  return array(
+    'og_workbench_moderation_content',
+    'og_workbench_current_user',
+    'og_workbench_edits_by_user',
+    'og_workbench_recent_content',
+  );
 }
 
 /**
  * Enables and disables specified views, then clears the cache.
  *
  * @param array $enable
- *  An array of views to make enabled.
+ *  A list of views to make enabled.
  * @param array $disable
- *  An array of views to make disabled.
+ *  A list of views to make disabled.
  */
 function umn_enable_disable($enable, $disable) {
 
@@ -75,5 +83,44 @@ function umn_enable_disable($enable, $disable) {
   // Clear the Views cache.
   if (function_exists('views_invalidate_cache')) {
     views_invalidate_cache();
+  }
+}
+
+/**
+ * Implements hook_workbench_content_alter().
+ */
+function umn_og_workbench_workbench_content_alter(&$output) {
+  // Place the new, custom views in the dashboard.
+  $enable_views = umn_overridden_list();
+  foreach ($enable_views as $view_name) {
+    $output[$view_name] = array(
+      '#view' => $view_name,
+      '#view_display' => 'block_1',
+      '#attributes' => array(
+        'class' => array(
+          'clearfix',
+        ),
+      ),
+      '#theme' => 'workbench_element',
+    );
+  }
+  // Don't try to place old, disabled views in the dashboard.
+  $disable_views = umn_default_list();
+  foreach ($disable_views as $view_name) {
+    unset($output[$view_name]);
+  }
+
+  // Arrange things to look similar to the default dashboard.
+  foreach($output as $name => $element) {
+    if(strpos($name, 'current_user')) {
+      $output['#title'] = 'My Profile';
+      $output[$name]['#attributes']['class'][] = 'left';
+    }
+    else if (strpos($name, 'edits_by_user')) {
+      $output[$name]['#attributes']['class'][] = 'right';
+    }
+    else if ($name[0] !== '#') {
+      $output[$name]['#attributes']['style'][] = 'clear: both;';
+    }
   }
 }
