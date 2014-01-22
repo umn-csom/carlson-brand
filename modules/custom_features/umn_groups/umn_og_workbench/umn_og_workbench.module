@@ -113,14 +113,17 @@ function umn_og_workbench_workbench_content_alter(&$output) {
   // Arrange things to look similar to the default dashboard.
   foreach($output as $name => $element) {
     if(strpos($name, 'current_user')) {
-      $output['#title'] = 'My Profile';
+      $output[$name]['#title'] = 'My Profile';
       $output[$name]['#attributes']['class'][] = 'left';
     }
     else if (strpos($name, 'edits_by_user')) {
       $output[$name]['#attributes']['class'][] = 'right';
     }
-    else if ($name[0] !== '#') {
+    else if(strpos($name, 'recent_content')) {
       $output[$name]['#attributes']['style'][] = 'clear: both;';
+    }
+    else if ($name[0] !== '#'){
+      unset($output[$name]);
     }
   }
 }
