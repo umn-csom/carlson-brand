@@ -1,0 +1,16 @@
+name = UMN OG+Workbench
+description = Updates Workbench-provided Views to incorporate OG info
+core = 7.x
+package = UMN Groups Features
+version = 7.x-1.0
+project = umn_og_workbench
+dependencies[] = og_ui
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = og_workbench_current_user
+features[views_view][] = og_workbench_edits_by_user
+features[views_view][] = og_workbench_moderation_content
+features[views_view][] = og_workbench_recent_content
+features_exclude[dependencies][ctools] = ctools
+project path = sites/umn.loc/modules/custom_features/umn_groups
