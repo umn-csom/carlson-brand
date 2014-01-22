@@ -312,12 +312,33 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-7';
     $pane->panel = 'department_footer';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:2';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_group_footer';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'Full',
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'relationship_entity_from_field:og_group_ref-node-node_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'view_mode' => NULL,
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
     );
     $pane->cache = array();
     $pane->style = array(

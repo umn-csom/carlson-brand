@@ -397,6 +397,56 @@ function umn_groups_group_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-group-field_group_footer'
+  $field_instances['node-group-field_group_footer'] = array(
+    'bundle' => 'group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_group_footer',
+    'label' => 'Group Footer',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 45,
+    ),
+  );
+
   // Exported field_instance: 'node-group-field_group_linkedin'
   $field_instances['node-group-field_group_linkedin'] = array(
     'bundle' => 'group',
@@ -962,16 +1012,18 @@ function umn_groups_group_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Determine if this is an OG group.');
-  t('Enter a comma-separated list of words to describe this group.');
-  t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
-  t('Free tags');
   t('Group');
   t('Group Facebook Page');
+  t('Group Footer');
   t('Group LinkedIn');
   t('Group RSS Feed');
   t('Group YouTube Channel');
   t('Group membership');
   t('Groups audience');
+  t('If your group has a Facebook Page, please place a link to it here.');
+  t('If your group has a LinkedIn Page, please place a link to it here.');
+  t('If your group has a RSS feed, please place a link to it here.');
+  t('If your group has a YouTube channel, please place a link to it here.');
   t('Request message');
   t('This is the text a user may send to the group administrators.');
 
