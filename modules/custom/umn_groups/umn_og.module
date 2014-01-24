@@ -8,9 +8,29 @@
  */
 
 /**
- * Implements hook_system_info_alter
+ * Implements hook_system_info_alter().
  */
 function umn_og_system_info_alter(&$info, $file, $type) {
+  // Hide features modules from install profiles that don't use them.
+  umn_og_hide_unused_features($info);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function umn_og_form_alter(&$form, &$form_state, $form_id) {
+  // Hide secondary groups when there's no primary group selected.
+  if (isset($form['og_group_ref'])) {
+    $form['field_secondary_groups_audiences']['#states'] = array ('invisible' => array(':input[name="og_group_ref[und][0][default]"]' => array('value' => '_none')));
+  }
+}
+
+/**
+ * Hides unused features from other install profiles.
+ * @param array $info
+ *   The $info array from hook_system_info_alter().
+ */
+function umn_og_hide_unused_features(&$info) {
   $profile = drupal_get_profile();
   switch ($profile) {
     case 'umn':
