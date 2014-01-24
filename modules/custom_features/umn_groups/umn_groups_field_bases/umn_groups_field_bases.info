@@ -1,0 +1,13 @@
+name = UMN Groups field definitions
+description = Provides field_bases for OG-dependent fields
+core = 7.x
+package = UMN Groups Features
+version = 7.x-1.0
+project = umn_groups_field_bases
+dependencies[] = entityreference
+dependencies[] = features
+features[features_api][] = api:2
+features[field_base][] = field_secondary_groups_audiences
+features[field_base][] = og_group_ref_primary
+features[field_base][] = og_user_node
+project path = sites/umn.loc/modules/custom_features/umn_groups
