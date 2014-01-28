@@ -4,12 +4,3 @@
  * @file
  * @copyright Copyright (c) 2014 Palantir.net
  */
-
-/**
- * Implements hook_page_build().
- */
-function umn_cbs_migrate_page_build(&$page) {
-
-
-
-}
