@@ -63,7 +63,6 @@ features[panelizer_defaults][] = node:news:default:default
 features[panelizer_defaults][] = node:news:default:featured
 features[panelizer_defaults][] = node:news:default:full
 features[panelizer_defaults][] = node:news:default:teaser
-features[taxonomy][] = tags
 features[user_permission][] = administer panelizer node news breadcrumbs
 features[user_permission][] = administer panelizer node news content
 features[user_permission][] = administer panelizer node news context
