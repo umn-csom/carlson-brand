@@ -9,6 +9,14 @@
  */
 function umn_vocabularies_taxonomy_default_vocabularies() {
   return array(
+    'blogs' => array(
+      'name' => 'Blogs',
+      'machine_name' => 'blogs',
+      'description' => 'Each term represents a different blog to which a post may belong.',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'course_type' => array(
       'name' => 'Course type',
       'machine_name' => 'course_type',
