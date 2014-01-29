@@ -60,6 +60,49 @@ function umn_groups_blog_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog_post-field_blog'
+  $field_instances['node-blog_post-field_blog'] = array(
+    'bundle' => 'blog_post',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the blog to which this content belongs.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_blog',
+    'label' => 'Blog',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-blog_post-field_tags'
   $field_instances['node-blog_post-field_tags'] = array(
     'bundle' => 'blog_post',
@@ -240,8 +283,10 @@ function umn_groups_blog_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Attach any files that go with this content.');
+  t('Blog');
   t('Body');
   t('Groups audience');
+  t('Select the blog to which this content belongs.');
   t('Supply words or short phrases that characterize this content.');
   t('Tags');
   t('Uploaded files');
