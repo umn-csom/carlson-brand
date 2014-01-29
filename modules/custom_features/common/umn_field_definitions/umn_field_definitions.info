@@ -21,6 +21,7 @@ dependencies[] = umn_vocabularies
 features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = field_additional_content
+features[field_base][] = field_blog
 features[field_base][] = field_body
 features[field_base][] = field_campus_code
 features[field_base][] = field_catalog
