@@ -9,6 +9,14 @@
  */
 function umn_vocabularies_taxonomy_default_vocabularies() {
   return array(
+    'blogs' => array(
+      'name' => 'Blogs',
+      'machine_name' => 'blogs',
+      'description' => 'Each term represents a different blog to which a post may belong.',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'course_type' => array(
       'name' => 'Course type',
       'machine_name' => 'course_type',
@@ -37,6 +45,14 @@ function umn_vocabularies_taxonomy_default_vocabularies() {
       'name' => 'Media Tags',
       'machine_name' => 'media_tags',
       'description' => 'Free form tags to help categorize media',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'tags' => array(
+      'name' => 'Tags',
+      'machine_name' => 'tags',
+      'description' => 'Enter a comma-separated list of words to describe your content.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
