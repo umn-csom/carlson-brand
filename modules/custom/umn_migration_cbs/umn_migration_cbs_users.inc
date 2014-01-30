@@ -33,11 +33,10 @@ class CbsMigrationUser extends Migration {
       'init',
     );
 
-    db_set_active('migrate_target');
-    $query = db_select('users', 'u')
+    $query = Database::getConnection('default', 'cbs_old')
+      ->select('users', 'u')
       ->fields('u', $fields)
       ->condition('u.uid', 1, '>');
-    db_set_active();
     $this->source = new MigrateSourceSQL($query, $source_fields);
     $this->destination = new MigrateDestinationUser();
 
