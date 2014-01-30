@@ -20,11 +20,10 @@ class CbsMigrationWorkbench extends Migration {
       'description' => t('Description of the term.'),
     );
 
-
-    $query = db_select('taxonomy_term_data', 'td');
+    $query = Database::getConnection('default', 'cbs_old')
+      ->select('taxonomy_term_data', 'td');
     $query->join('taxonomy_vocabulary', 'tv', 'td.vid = tv.vid');
-    // @todo Change this condition to use the correct vocabulary name.
-    $query->condition('tv.name', 'Editorial Sections')
+    $query->condition('tv.name', 'blogs')
       ->fields('td', array('name', 'description', 'tid'));
 
     $this->source = new MigrateSourceSQL($query, $source_fields);
