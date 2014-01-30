@@ -606,7 +606,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  *
  */
 if (file_exists('/var/www/site-php')) {
-  if (preg_match('@([^\.]+)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+  if (preg_match('@([^\.]+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
     $db_name = $match[1];
     $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
