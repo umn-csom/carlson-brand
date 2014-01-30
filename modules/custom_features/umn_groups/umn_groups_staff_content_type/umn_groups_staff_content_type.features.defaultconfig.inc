@@ -734,7 +734,7 @@ function umn_groups_staff_content_type_defaultconfig_field_default_fields() {
       'locked' => 0,
       'module' => 'phone',
       'settings' => array(
-        'country' => 'ca',
+        'country' => 'int',
       ),
       'translatable' => 0,
       'type' => 'phone',
