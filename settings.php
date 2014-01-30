@@ -580,19 +580,6 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
 /**
  * If running on an Acquia Cloud server, include the settings extension file
- * for that site.  The $SERVER variable includes various AH_ properties for
- * the specific site instance.
- */
-//if (isset($_ENV['AH_SITE_GROUP'])) {
-//  $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
-//  $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
-//  if (file_exists($file)) {
-//    require ($file);
-//  }
-//}
-
-/**
- * If wrunning on an Acquia Cloud server, include the settings extension file
  * for that site. Specifically we want the database credentials, which must
  * match the domain prefix of the site. The following formats are supported:
  *
@@ -615,7 +602,6 @@ if (file_exists('/var/www/site-php')) {
     }
   }
 }
-
 
 // The SimpleSaml module needs an absolute path to the library, but that is
 // variable depending on the environment. Derive it dynamically based on "it's
