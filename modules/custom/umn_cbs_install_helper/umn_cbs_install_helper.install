@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install file for the UMN CBS module.
+ *
+ * @copyright Copyright (c) 2014 Palantir.net
+ */
+
+function umn_cbs_install_helper_install() {
+  module_enable(umn_cbs_modules_list());
+}
+
+function umn_cbs_install_helper_uninstall() {
+  module_disable(umn_cbs_modules_list());
+}
+
+/**
+ * Lists custom modules for CBS
+ * @return array
+ *   A list of modules to enable or disable
+ */
+function umn_cbs_modules_list() {
+  return array(
+    'umn_groups_blog_content_type',
+    'umn_groups_gallery_content_type',
+    'umn_groups_slideshow_content_type',
+  );
+}
