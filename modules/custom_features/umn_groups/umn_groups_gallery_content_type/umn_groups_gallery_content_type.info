@@ -24,6 +24,7 @@ features[field_instance][] = node-gallery-body
 features[field_instance][] = node-gallery-field_additional_content
 features[field_instance][] = node-gallery-field_images
 features[field_instance][] = node-gallery-field_secondary_groups_audiences
+features[field_instance][] = node-gallery-field_slideshow_s_
 features[field_instance][] = node-gallery-og_group_ref
 features[node][] = gallery
 features[og_features_permission][] = node:group:create gallery content
