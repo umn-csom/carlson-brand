@@ -55,16 +55,16 @@ class CbsMigrationUser extends Migration {
     $this->addFieldMapping('name', 'name')->dedupe('users', 'name');
     $this->addFieldMapping('pass', 'pass');
     $this->addFieldMapping('mail', 'mail');
-    $this->addFieldMapping('language', 'language')->defaultValue('');
-    $this->addFieldMapping('theme', 'theme')->defaultValue('');
-    $this->addFieldMapping('signature', 'signature')->defaultValue('');
-    $this->addFieldMapping('signature_format', 'signature_format')->defaultValue('umn_wysiwyg');
+    $this->addFieldMapping('language')->defaultValue('');
+    $this->addFieldMapping('theme')->defaultValue('');
+    $this->addFieldMapping('signature')->defaultValue('');
+    $this->addFieldMapping('signature_format')->defaultValue('umn_wysiwyg');
+    $this->addFieldMapping('timezone')->defaultValue(NULL);
+    $this->addFieldMapping('picture')->defaultValue(0);
     $this->addFieldMapping('created', 'created');
     $this->addFieldMapping('access', 'access');
     $this->addFieldMapping('login', 'login');
     $this->addFieldMapping('status', 'status')->defaultValue(1);
-    $this->addFieldMapping('timezone', 'timezone')->defaultValue(NULL);
-    $this->addFieldMapping('picture', 'picture')->defaultValue(0);
     $this->addFieldMapping('init', 'init')->defaultValue('');
     $this->addFieldMapping('roles')->defaultValue(2);
   }
