@@ -23,7 +23,7 @@ class CbsMigrationWorkbench extends Migration {
     $query = Database::getConnection('default', 'cbs_old')
       ->select('taxonomy_term_data', 'td');
     $query->join('taxonomy_vocabulary', 'tv', 'td.vid = tv.vid');
-    $query->condition('tv.name', 'blogs')
+    $query->condition('tv.machine_name', 'workbench_access')
       ->fields('td', array('name', 'description', 'tid'));
 
     $this->source = new MigrateSourceSQL($query, $source_fields);
