@@ -12,7 +12,6 @@ function umn_migration_cbs_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(
-      'CbsMigrationUser' => array('class_name' => 'CbsMigrationUser'),
       'CbsMigrationWorkbench' => array('class_name' => 'CbsMigrationWorkbench'),
     ),
   );
