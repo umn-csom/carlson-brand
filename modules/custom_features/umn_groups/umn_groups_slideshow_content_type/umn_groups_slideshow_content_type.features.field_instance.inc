@@ -239,55 +239,6 @@ function umn_groups_slideshow_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slideshow-field_slideshow_gallery'
-  $field_instances['node-slideshow-field_slideshow_gallery'] = array(
-    'bundle' => 'slideshow',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Select the gallery from which this slideshow draws content.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 2,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_slideshow_gallery',
-    'label' => 'Slideshow gallery',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-slideshow-og_group_ref'
   $field_instances['node-slideshow-og_group_ref'] = array(
     'bundle' => 'slideshow',
@@ -362,8 +313,6 @@ function umn_groups_slideshow_content_type_field_default_field_instances() {
   t('Secondary groups audiences');
   t('Select additional groups audiences for this content.');
   t('Select images to go with this content.');
-  t('Select the gallery from which this slideshow draws content.');
-  t('Slideshow gallery');
 
   return $field_instances;
 }

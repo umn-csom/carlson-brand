@@ -1445,13 +1445,13 @@ function umn_field_definitions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_slideshow_gallery'
-  $field_bases['field_slideshow_gallery'] = array(
+  // Exported field_base: 'field_slideshow_s_'
+  $field_bases['field_slideshow_s_'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_slideshow_gallery',
+    'field_name' => 'field_slideshow_s_',
     'foreign keys' => array(
       'node' => array(
         'columns' => array(
@@ -1479,7 +1479,7 @@ function umn_field_definitions_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'gallery' => 'gallery',
+          'slideshow' => 'slideshow',
         ),
       ),
       'target_type' => 'node',

@@ -24,7 +24,7 @@ function umn_groups_slideshow_content_type_node_info() {
     'slideshow' => array(
       'name' => t('Slideshow'),
       'base' => 'node_content',
-      'description' => t('Display Gallery content as a slideshow.'),
+      'description' => t('Display images in a slideshow.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

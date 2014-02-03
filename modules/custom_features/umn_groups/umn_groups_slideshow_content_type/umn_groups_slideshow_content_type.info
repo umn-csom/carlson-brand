@@ -25,7 +25,6 @@ features[field_instance][] = node-slideshow-body
 features[field_instance][] = node-slideshow-field_additional_content
 features[field_instance][] = node-slideshow-field_images
 features[field_instance][] = node-slideshow-field_secondary_groups_audiences
-features[field_instance][] = node-slideshow-field_slideshow_gallery
 features[field_instance][] = node-slideshow-og_group_ref
 features[node][] = slideshow
 features[panelizer_defaults][] = node:slideshow:default
