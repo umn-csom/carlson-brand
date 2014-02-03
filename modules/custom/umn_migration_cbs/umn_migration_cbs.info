@@ -1,0 +1,7 @@
+name = CBS Migrate
+description = Provides migration for CBS.
+core = 7.x
+package = UMN
+dependencies[] = migrate
+files[] = umn_migration_cbs_workbench.inc
+files[] = umn_migration_cbs.migrate.inc
