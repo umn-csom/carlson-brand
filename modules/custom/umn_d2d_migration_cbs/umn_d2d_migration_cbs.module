@@ -25,7 +25,7 @@ function umn_d2d_migration_cbs_register_migrations() {
 
   $user_arguments = $common_arguments + array(
     'description' => t('Migration of users from old CBS'),
-    'machine_name' => 'User',
+    'machine_name' => 'CbsUser',
   );
 
   Migration::registerMigration('DrupalUser7Migration', $user_arguments['machine_name'],
