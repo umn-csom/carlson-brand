@@ -34,10 +34,11 @@ function umn_workbench_default_workbench_workflows_events() {
         'name' => 'role',
         'settings' => array(
           'rids' => array(
-            0 => 4,
-            1 => 5,
-            2 => 6,
-            3 => 7,
+            0 => 3,
+            1 => 4,
+            2 => 5,
+            3 => 6,
+            4 => 7,
           ),
         ),
         'context' => 'logged-in-user',
@@ -144,10 +145,11 @@ function umn_workbench_default_workbench_workflows_states() {
         'name' => 'role',
         'settings' => array(
           'rids' => array(
-            0 => 4,
-            1 => 5,
-            2 => 6,
-            3 => 7,
+            0 => 3,
+            1 => 4,
+            2 => 5,
+            3 => 6,
+            4 => 7,
           ),
         ),
         'context' => 'logged-in-user',
@@ -202,8 +204,9 @@ function umn_workbench_default_workbench_workflows_states() {
         'name' => 'role',
         'settings' => array(
           'rids' => array(
-            0 => 4,
-            1 => 6,
+            0 => 3,
+            1 => 4,
+            2 => 6,
           ),
         ),
         'context' => 'logged-in-user',
