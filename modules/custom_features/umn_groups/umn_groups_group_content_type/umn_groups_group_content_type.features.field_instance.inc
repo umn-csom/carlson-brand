@@ -522,19 +522,19 @@ function umn_groups_group_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-group-body'
-  $field_instances['node-group-body'] = array(
+  // Exported field_instance: 'node-group-field_body'
+  $field_instances['node-group-field_body'] = array(
     'bundle' => 'group',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Describe this group.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 7,
       ),
       'featured' => array(
         'label' => 'above',
@@ -543,32 +543,32 @@ function umn_groups_group_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 1,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_body',
+    'label' => 'Description',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
-      'text_processing' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 5,
       ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'type' => 'text_textarea',
+      'weight' => 47,
     ),
   );
 
@@ -939,6 +939,65 @@ function umn_groups_group_content_type_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-group-og_roles_permissions'
+  $field_instances['node-group-og_roles_permissions'] = array(
+    'bundle' => 'group',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Whether to use default Drupal roles and permissions or groups-specific ones.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'og_roles_permissions',
+    'label' => 'Group roles and permissions',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'list_default',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'list_default',
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 48,
     ),
   );
 
@@ -1379,7 +1438,8 @@ function umn_groups_group_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('Describe this group.');
+  t('Description');
   t('Determine if this is an OG group.');
   t('Group');
   t('Group Facebook Page');
@@ -1387,6 +1447,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
   t('Group LinkedIn');
   t('Group RSS Feed');
   t('Group YouTube Channel');
+  t('Group roles and permissions');
   t('If your group has a Facebook Page, please place a link to it here.');
   t('If your group has a LinkedIn Page, please place a link to it here.');
   t('If your group has a RSS feed, please place a link to it here.');
@@ -1397,6 +1458,7 @@ function umn_groups_group_content_type_field_default_field_instances() {
   t('Select additional groups audiences for this content.');
   t('Select the main groups audience for this content.');
   t('This is the text a user may send to the group administrators.');
+  t('Whether to use default Drupal roles and permissions or groups-specific ones.');
 
   return $field_instances;
 }
