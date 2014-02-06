@@ -128,11 +128,12 @@ function umn_groups_faculty_content_type_views_default_views() {
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['relationship'] = 'og_membership_related_node_group';
-  $handler->display->display_options['filters']['title']['operator'] = 'word';
+  $handler->display->display_options['filters']['title']['operator'] = 'allwords';
   $handler->display->display_options['filters']['title']['group'] = 1;
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['label'] = 'Group';
+  $handler->display->display_options['filters']['title']['expose']['use_operator'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'group';
   $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
