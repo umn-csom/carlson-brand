@@ -1,5 +1,0 @@
-name = CBS D2D Migration
-description = Provides migration for CBS via D2D Migration
-core = 7.x
-package = UMN
-dependencies[] = migrate_d2d
