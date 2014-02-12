@@ -580,14 +580,26 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
 /**
  * If running on an Acquia Cloud server, include the settings extension file
- * for that site.  The $SERVER variable includes various AH_ properties for
- * the specific site instance.
+ * for that site. Specifically we want the database credentials, which must
+ * match the domain prefix of the site. The following formats are supported:
+ *
+ * foo-dev.umn.edu
+ * foo-stage.umn.edu
+ * foo-stg.umn.edu
+ * foo.umn.edu
+ *
+ * All of those will map to a database named "foo", in whatever environment
+ * (dev, stage, prod) the site is currently using.
+ *
  */
-if (isset($_ENV['AH_SITE_GROUP'])) {
-  $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
-  $file = "/var/www/site-php/{$site_group}/{$site_group}-settings.inc";
-  if (file_exists($file)) {
-    require ($file);
+if (file_exists('/var/www/site-php')) {
+  if (preg_match('@([^\.]+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+    $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
+    $db_name = $match[1];
+    $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
+    if (file_exists($file)) {
+      require($file);
+    }
   }
 }
 
