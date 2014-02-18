@@ -40,6 +40,7 @@ function umn_basic_settings_default_page_manager_handlers() {
     'site_name_classes' => '',
     'hero_image_region_classes' => '',
     'sub_header_classes' => '',
+    'main_menu_classes' => '',
     'footer_links_classes' => '',
     'sub_footer_classes' => '',
   );
@@ -55,6 +56,7 @@ function umn_basic_settings_default_page_manager_handlers() {
       'sub_footer' => NULL,
       'site_name' => NULL,
       'hero_image_region' => NULL,
+      'main_menu' => NULL,
     ),
   );
   $display->cache = array();
@@ -189,6 +191,28 @@ function umn_basic_settings_default_page_manager_handlers() {
     $display->panels['main'][1] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
+    $pane->panel = 'main_menu';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-umn_customizations-level-one';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'primary_navigation_one',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['main_menu'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
     $pane->panel = 'site_name';
     $pane->type = 'token';
     $pane->subtype = 'variable:site_name';
@@ -211,10 +235,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['site_name'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['site_name'][0] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'sub_header';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-umn_customizations-level-one';
@@ -233,10 +257,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['sub_header'][0] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['sub_header'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_PANE;
-  $display->title_pane = 'new-4';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['site_template_panel_context'] = $handler;
 
@@ -310,7 +334,7 @@ function umn_basic_settings_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-8';
     $pane->panel = 'department_footer';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_group_footer';
@@ -348,10 +372,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['department_footer'][0] = 'new-7';
+    $display->content['new-8'] = $pane;
+    $display->panels['department_footer'][0] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'hero_image_region';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_hero_image';
@@ -393,10 +417,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['hero_image_region'][0] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['hero_image_region'][0] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'hero_image_region';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_hero_image_description';
@@ -434,10 +458,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['hero_image_region'][1] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['hero_image_region'][1] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'main';
     $pane->type = 'pane_messages';
     $pane->subtype = 'pane_messages';
@@ -452,10 +476,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-10'] = $pane;
-    $display->panels['main'][0] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['main'][0] = 'new-11';
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-12';
     $pane->panel = 'main';
     $pane->type = 'page_content';
     $pane->subtype = 'page_content';
@@ -474,10 +498,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = '';
-    $display->content['new-11'] = $pane;
-    $display->panels['main'][1] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['main'][1] = 'new-12';
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'site_name';
     $pane->type = 'token';
     $pane->subtype = 'variable:site_name';
@@ -500,10 +524,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['site_name'][0] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['site_name'][0] = 'new-13';
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-14';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:og_group_ref';
@@ -543,10 +567,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['sub_header'][0] = 'new-13';
+    $display->content['new-14'] = $pane;
+    $display->panels['sub_header'][0] = 'new-14';
     $pane = new stdClass();
-    $pane->pid = 'new-14';
+    $pane->pid = 'new-15';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_group_facebook_page';
@@ -584,10 +608,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['sub_header'][1] = 'new-14';
+    $display->content['new-15'] = $pane;
+    $display->panels['sub_header'][1] = 'new-15';
     $pane = new stdClass();
-    $pane->pid = 'new-15';
+    $pane->pid = 'new-16';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_group_linkedin';
@@ -625,10 +649,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['sub_header'][2] = 'new-15';
+    $display->content['new-16'] = $pane;
+    $display->panels['sub_header'][2] = 'new-16';
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-17';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_group_youtube_channel';
@@ -666,10 +690,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['sub_header'][3] = 'new-16';
+    $display->content['new-17'] = $pane;
+    $display->panels['sub_header'][3] = 'new-17';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-18';
     $pane->panel = 'sub_header';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_group_rss_feed';
@@ -707,10 +731,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['sub_header'][4] = 'new-17';
+    $display->content['new-18'] = $pane;
+    $display->panels['sub_header'][4] = 'new-18';
     $pane = new stdClass();
-    $pane->pid = 'new-18';
+    $pane->pid = 'new-19';
     $pane->panel = 'sub_header';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-umn_customizations-level-one';
@@ -729,10 +753,10 @@ function umn_basic_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
-    $display->content['new-18'] = $pane;
-    $display->panels['sub_header'][5] = 'new-18';
+    $display->content['new-19'] = $pane;
+    $display->panels['sub_header'][5] = 'new-19';
   $display->hide_title = PANELS_TITLE_PANE;
-  $display->title_pane = 'new-11';
+  $display->title_pane = 'new-12';
   $handler->conf['display'] = $display;
   $export['site_template_panel_context_2'] = $handler;
 
