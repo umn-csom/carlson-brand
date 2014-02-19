@@ -11,6 +11,7 @@ function umn_landing_page_content_type_defaultconfig_features() {
   return array(
     'umn_landing_page_content_type' => array(
       'field_default_fields' => 'field_default_fields',
+      'metatag_config_default' => 'metatag_config_default',
       'strongarm' => 'strongarm',
     ),
   );
@@ -115,6 +116,50 @@ function umn_landing_page_content_type_defaultconfig_field_default_fields() {
 }
 
 /**
+ * Implements hook_defaultconfig_metatag_config_default().
+ */
+function umn_landing_page_content_type_defaultconfig_metatag_config_default() {
+  $export = array();
+
+  $config = new stdClass();
+  $config->disabled = FALSE; /* Edit this to true to make a default config disabled initially */
+  $config->api_version = 1;
+  $config->instance = 'node';
+  $config->config = array(
+    'title' => array(
+      'value' => '[node:title] | [site:name]',
+    ),
+    'description' => array(
+      'value' => '[node:body]',
+    ),
+    'dcterms.title' => array(
+      'value' => '[node:title]',
+    ),
+    'dcterms.creator' => array(
+      'value' => '[node:author]',
+    ),
+    'dcterms.date' => array(
+      'value' => '[node:created:custom:Y-m-d\\TH:iP]',
+    ),
+    'dcterms.identifier' => array(
+      'value' => '[current-page:url:absolute]',
+    ),
+    'dcterms.language' => array(
+      'value' => '[node:language]',
+    ),
+    'og:title' => array(
+      'value' => '[node:title]',
+    ),
+    'og:description' => array(
+      'value' => '[node:body]',
+    ),
+  );
+  $export['node'] = $config;
+
+  return $export;
+}
+
+/**
  * Implements hook_defaultconfig_strongarm().
  */
 function umn_landing_page_content_type_defaultconfig_strongarm() {
@@ -183,55 +228,6 @@ function umn_landing_page_content_type_defaultconfig_strongarm() {
   $strongarm->name = 'pathauto_node_landing_page_pattern';
   $strongarm->value = '[node:menu-link:parent]/[node:field_path_slug]';
   $export['pathauto_node_landing_page_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_enable_landing_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_enable_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_required_landing_page';
-  $strongarm->value = 0;
-  $export['scheduler_publish_required_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_revision_landing_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_revision_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_touch_landing_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_touch_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_enable_landing_page';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_enable_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_required_landing_page';
-  $strongarm->value = 0;
-  $export['scheduler_unpublish_required_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_revision_landing_page';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_revision_landing_page'] = $strongarm;
 
   return $export;
 }

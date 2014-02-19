@@ -985,7 +985,7 @@ function umn_news_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title] | [site:name]',
     ),
     'description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:body]',
     ),
     'dcterms.title' => array(
       'value' => '[node:title]',
@@ -1006,7 +1006,7 @@ function umn_news_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title]',
     ),
     'og:description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:body]',
     ),
   );
   $export['node'] = $config;

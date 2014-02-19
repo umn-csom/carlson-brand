@@ -231,12 +231,12 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
         ),
         'rss' => array(
           'label' => 'hidden',
-          'module' => 'invisimail',
+          'module' => 'email',
           'settings' => array(
             'encoder' => 'js_entities',
             'link' => 0,
           ),
-          'type' => 'invisimail_js_entities',
+          'type' => 'email_default',
           'weight' => 2,
         ),
         'teaser' => array(
@@ -1013,9 +1013,10 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
   t('Enter a "teaser" version of this page that will be used in listings elsewhere on the site. If unsure what to use, the first paragraph of the body is often a reasonable default.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the staff member\'s family name. (In Western naming conventions, the surname or last name.)');
-  t('Enter the staff member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.');
+  t('Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('Enter the staff member\'s office address. This will be displayed to the public.');
   t('Enter the staff member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.');
+  t('Enter the staff member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Family name');
   t('Given name');
@@ -1024,7 +1025,6 @@ function umn_staff_content_type_defaultconfig_field_default_fields() {
   t('Portrait picture');
   t('Related content');
   t('Short description');
-  t('Enter the staff member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('This data was imported from UMContent. It will not be visible to site visitors. The content in this field should be replicated to other appropriate fields/panes and removed from here.');
   t('Upload an image to be displayed in a landscape format.');
   t('Upload an image to be displayed in a portrait format');
@@ -1047,7 +1047,7 @@ function umn_staff_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title] | [site:name]',
     ),
     'description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:body]',
     ),
     'dcterms.title' => array(
       'value' => '[node:title]',
@@ -1068,7 +1068,7 @@ function umn_staff_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title]',
     ),
     'og:description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:body]',
     ),
   );
   $export['node'] = $config;
