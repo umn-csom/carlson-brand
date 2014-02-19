@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Set up configuration for umn_workbench.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function umn_workbench_install() {
+  // Content types without a workflow should be ignored by state machine.
+  variable_set('workbench_workflows_default_to_ignore', TRUE);
+}
