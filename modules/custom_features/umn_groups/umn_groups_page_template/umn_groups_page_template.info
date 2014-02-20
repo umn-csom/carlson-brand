@@ -1,7 +1,7 @@
-name = UMN basic settings
-description = Basic settings for a umn site
+name = UMN Group Page Template
+description = Provides a group page variant for UMN group sites.
 core = 7.x
-package = UMN Common Features
+package = UMN Groups Features
 version = 7.x-1.0
 project = umn_groups_page_template
 dependencies[] = ctools
