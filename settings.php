@@ -587,7 +587,6 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * for dev, stage, prod environments available in Acquia subscriptions
  *
  * foo-dev.umn.edu
- * foo-stage.umn.edu
  * foo-stg.umn.edu
  * foo.umn.edu
  *
@@ -595,21 +594,19 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * for dev, stage, prod environments available in Acquia subscriptions
 
  * foo-bar-dev.umn.edu
- * foo-bar-stage.umn.edu
  * foo-bar-stg.umn.edu
  * foo-bar.umn.edu
  *
- * The following map to a database named "foodot_bar"
+ * The following map to a database named "foocar"
  * for dev, stage, prod environments available in Acquia subscriptions
 
- * foodot.bar-dev.umn.edu
- * foodot.bar-stage.umn.edu
- * foodot.bar-stg.umn.edu
- * foodot.bar.umn.edu
+ * foocar-dev.bar.umn.edu
+ * foocar-stg.bar.umn.edu
+ * foocar.bar.umn.edu
  *
  */
 if (file_exists('/var/www/site-php')) {
-  if (preg_match('@(.+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+  if (preg_match('@(.+?)(\-(dev|stage|stg))?(\..+){0,1}\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
     $db_name = str_replace(array('-', '.'), '_', $match[1]);
     $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
