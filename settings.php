@@ -583,23 +583,29 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * for that site. Specifically we want the database credentials, which must
  * match the domain prefix of the site. The following formats are supported:
  *
+ * The following map to a database named "foo"
+ * for dev, stage, prod environments available in Acquia subscriptions
+ *
  * foo-dev.umn.edu
  * foo-stage.umn.edu
  * foo-stg.umn.edu
  * foo.umn.edu
  *
+ * The following map to a database named "foo_bar"
+ * for dev, stage, prod environments available in Acquia subscriptions
+
  * foo-bar-dev.umn.edu
  * foo-bar-stage.umn.edu
  * foo-bar-stg.umn.edu
  * foo-bar.umn.edu
  *
- * foo.bar-dev.umn.edu
- * foo.bar-stage.umn.edu
- * foo.bar-stg.umn.edu
- * foo.bar.umn.edu
- *  *
- * All of those will map to a database named "foo", in whatever environment
- * (dev, stage, prod) the site is currently using.
+ * The following map to a database named "foodot_bar"
+ * for dev, stage, prod environments available in Acquia subscriptions
+
+ * foodot.bar-dev.umn.edu
+ * foodot.bar-stage.umn.edu
+ * foodot.bar-stg.umn.edu
+ * foodot.bar.umn.edu
  *
  */
 if (file_exists('/var/www/site-php')) {
