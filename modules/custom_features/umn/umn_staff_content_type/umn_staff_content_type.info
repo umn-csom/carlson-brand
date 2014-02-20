@@ -101,7 +101,6 @@ features[variable][] = scheduler_publish_touch_staff
 features[variable][] = scheduler_unpublish_enable_staff
 features[variable][] = scheduler_unpublish_required_staff
 features[variable][] = scheduler_unpublish_revision_staff
-features[views_view][] = staff
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][features] = features
 features_exclude[dependencies][image] = image

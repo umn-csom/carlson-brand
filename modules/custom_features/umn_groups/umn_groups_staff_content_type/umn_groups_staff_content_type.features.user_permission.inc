@@ -15,7 +15,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -25,7 +24,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff content',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -35,7 +33,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff context',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -45,7 +42,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff defaults',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -55,7 +51,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff layout',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -65,7 +60,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff overview',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );
@@ -75,7 +69,6 @@ function umn_groups_staff_content_type_user_default_permissions() {
     'name' => 'administer panelizer node staff settings',
     'roles' => array(
       'administrator' => 'administrator',
-      'site manager' => 'site manager',
     ),
     'module' => 'panelizer',
   );

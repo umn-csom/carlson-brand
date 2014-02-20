@@ -11,6 +11,7 @@ function umn_groups_calendar_content_type_defaultconfig_features() {
   return array(
     'umn_groups_calendar_content_type' => array(
       'field_default_fields' => 'field_default_fields',
+      'metatag_config_default' => 'metatag_config_default',
       'strongarm' => 'strongarm',
     ),
   );
@@ -127,6 +128,50 @@ function umn_groups_calendar_content_type_defaultconfig_field_default_fields() {
   t('Place a url for a google calendar. <ol><li>Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar.  </li><li>Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area.  </li><li>Copy the url from the pop-up into this field. </li></ol>Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_metatag_config_default().
+ */
+function umn_groups_calendar_content_type_defaultconfig_metatag_config_default() {
+  $export = array();
+
+  $config = new stdClass();
+  $config->disabled = FALSE; /* Edit this to true to make a default config disabled initially */
+  $config->api_version = 1;
+  $config->instance = 'node';
+  $config->config = array(
+    'title' => array(
+      'value' => '[node:title] | [site:name]',
+    ),
+    'description' => array(
+      'value' => '[node:field_body]',
+    ),
+    'dcterms.title' => array(
+      'value' => '[node:title]',
+    ),
+    'dcterms.creator' => array(
+      'value' => '[node:author]',
+    ),
+    'dcterms.date' => array(
+      'value' => '[node:created:custom:Y-m-d\\TH:iP]',
+    ),
+    'dcterms.identifier' => array(
+      'value' => '[current-page:url:absolute]',
+    ),
+    'dcterms.language' => array(
+      'value' => '[node:language]',
+    ),
+    'og:title' => array(
+      'value' => '[node:title]',
+    ),
+    'og:description' => array(
+      'value' => '[node:field_body]',
+    ),
+  );
+  $export['node'] = $config;
+
+  return $export;
 }
 
 /**
