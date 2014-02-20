@@ -588,14 +588,24 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * foo-stg.umn.edu
  * foo.umn.edu
  *
+ * foo-bar-dev.umn.edu
+ * foo-bar-stage.umn.edu
+ * foo-bar-stg.umn.edu
+ * foo-bar.umn.edu
+ *
+ * foo.bar-dev.umn.edu
+ * foo.bar-stage.umn.edu
+ * foo.bar-stg.umn.edu
+ * foo.bar.umn.edu
+ *  *
  * All of those will map to a database named "foo", in whatever environment
  * (dev, stage, prod) the site is currently using.
  *
  */
 if (file_exists('/var/www/site-php')) {
-  if (preg_match('@([^\.]+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+  if (preg_match('@(.+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
-    $db_name = $match[1];
+    $db_name = str_replace(array('-', '.'), '_', $match[1]);
     $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
     if (file_exists($file)) {
       require($file);
