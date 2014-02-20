@@ -11,7 +11,6 @@ function umn_general_page_content_type_defaultconfig_features() {
   return array(
     'umn_general_page_content_type' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -574,62 +573,4 @@ function umn_general_page_content_type_defaultconfig_field_default_fields() {
   t('You may upload files to attach to this page. Text documents and spreadsheets are allowed. These files will be available to the public once uploaded.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function umn_general_page_content_type_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_enable_general_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_enable_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_required_general_page';
-  $strongarm->value = 0;
-  $export['scheduler_publish_required_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_revision_general_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_revision_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_touch_general_page';
-  $strongarm->value = 1;
-  $export['scheduler_publish_touch_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_enable_general_page';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_enable_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_required_general_page';
-  $strongarm->value = 0;
-  $export['scheduler_unpublish_required_general_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_revision_general_page';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_revision_general_page'] = $strongarm;
-
-  return $export;
 }
