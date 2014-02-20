@@ -22,7 +22,6 @@ features[defaultconfig][] = strongarm:simplesamlphp_auth_user_name
 features[defaultconfig][] = strongarm:theme_default
 features[features_api][] = api:2
 features[page_manager_handlers][] = site_template_panel_context
-features[page_manager_handlers][] = site_template_panel_context_2
 features[variable][] = cache
 features[variable][] = cache_lifetime
 features[variable][] = color_umn_subtheme_palette
