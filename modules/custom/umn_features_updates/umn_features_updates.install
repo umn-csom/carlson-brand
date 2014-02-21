@@ -1,0 +1,41 @@
+<?php
+/**
+ * Reverts featues that where changed for the code release on 2-21-14
+ */
+function umn_features_updates_update_7001($sandbox) {
+  $messages = array();
+  //List of featurs that have been updated and that need to be reverted.
+  $features = array();
+  //Features that are common to both profile/site types
+  $features[] = 'umn_basic_settings';
+  $features[] = 'umn_workbench';
+  //Features that are only for umn
+  $features[] = 'umn_calendar_content_type';
+  $features[] = 'umn_course_content_type';
+  $features[] = 'umn_faculty_content_type';
+  $features[] = 'umn_general_page_content_type';
+  $features[] = 'umn_landing_page_content_type';
+  $features[] = 'umn_news_content_type';
+  $features[] = 'umn_staff_content_type';
+  //Features that are only for umn_groups
+  $features[] = 'umn_groups_calendar_content_type';
+  $features[] = 'umn_groups_course_content_type';
+  $features[] = 'umn_groups_faculty_content_type';
+  $features[] = 'umn_groups_landing_page_content_type';
+  $features[] = 'umn_groups_news_content_type';
+  $features[] = 'umn_groups_page_template';
+  $features[] = 'umn_groups_staff_content_type';
+  $features[] = 'umn_groups_group_content_type';
+
+  //Features to revert
+  $revert = array();
+  foreach ($features as $feature) {
+    if ( module_exists($feature) ) {
+      $revert[] = $feature;
+    }
+  }
+  features_revert($revert);
+
+  return 'The following featurs have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
