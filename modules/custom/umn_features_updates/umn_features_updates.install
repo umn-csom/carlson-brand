@@ -1,6 +1,6 @@
 <?php
 
-function umn_features_updates_insatll() {
+function umn_features_updates_install() {
   //List of featurs that have been updated and that need to be reverted.
   $features = array();
   //Features that are common to both profile/site types
