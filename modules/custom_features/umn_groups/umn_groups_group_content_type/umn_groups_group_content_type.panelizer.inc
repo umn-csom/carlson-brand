@@ -75,17 +75,19 @@ function umn_groups_group_content_type_panelizer_defaults() {
     $pane->pid = 'new-2';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:body';
+    $pane->subtype = 'node:field_body';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'title',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
-      'context' => 'panelizer',
+      'context' => array(),
+      'override_title' => 1,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -244,7 +246,7 @@ function umn_groups_group_content_type_panelizer_defaults() {
     $display->content['new-7'] = $pane;
     $display->panels['sidebar'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-2';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:group:default'] = $panelizer;
 
