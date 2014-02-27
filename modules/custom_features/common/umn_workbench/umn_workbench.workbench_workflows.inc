@@ -29,22 +29,7 @@ function umn_workbench_default_workbench_workflows_events() {
   $event->relationships = array();
   $event->access = array(
     'logic' => 'and',
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 3,
-            1 => 4,
-            2 => 5,
-            3 => 6,
-            4 => 7,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-    ),
+    'plugins' => array(),
   );
   $event->weight = 0;
   $event->target_state = 'draft';
@@ -140,22 +125,7 @@ function umn_workbench_default_workbench_workflows_states() {
   $state->contexts = array();
   $state->relationships = array();
   $state->access = array(
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 3,
-            1 => 4,
-            2 => 5,
-            3 => 6,
-            4 => 7,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-    ),
+    'plugins' => array(),
   );
   $state->weight = 0;
   $export['draft'] = $state;
@@ -201,12 +171,12 @@ function umn_workbench_default_workbench_workflows_states() {
   $state->access = array(
     'plugins' => array(
       0 => array(
-        'name' => 'role',
+        'name' => 'role_name',
         'settings' => array(
-          'rids' => array(
-            0 => 3,
-            1 => 4,
-            2 => 6,
+          'role_names' => array(
+            0 => 'editor',
+            1 => 'senior editor',
+            2 => 'administrator',
           ),
         ),
         'context' => 'logged-in-user',
