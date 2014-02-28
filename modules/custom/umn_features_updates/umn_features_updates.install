@@ -4,6 +4,29 @@
  */
 
 /**
+ * Helper function to prepare features revert array and revert features.
+ */
+function umn_features_updates_features_revert($features = array()) {
+  //Features to revert.
+  foreach ($features as $feature) {
+    if (module_exists($feature)) {
+
+      $info[] = $feature;
+      $components = features_get_feature_components($feature);
+      $revert[$feature] = array();
+      //Set up data so that features can revert the featues.
+      foreach ($components as $key => $component) {
+        $revert[$feature][] = $key;
+      }
+    }
+  }
+
+  features_revert($revert);
+  return $info;
+
+}
+
+/**
  * implements hook_install()
  */
 function umn_features_updates_install() {
@@ -67,4 +90,15 @@ function umn_features_updates_2_21_14() {
 
   features_revert($revert);
   return $info;
+}
+
+/**
+ * Revert features that where changed for the code release on 2-27-14.
+ */
+function umn_features_updates_update_7002() {
+  $messages = array();
+  $features = array('umn_workbench');
+
+  $revert = umn_features_udpates_features_revert($features);
+  return 'The following featurs have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
