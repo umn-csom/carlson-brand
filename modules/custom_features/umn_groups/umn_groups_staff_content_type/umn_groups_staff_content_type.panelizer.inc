@@ -32,13 +32,44 @@ function umn_groups_staff_content_type_panelizer_defaults() {
   $display = new panels_display();
   $display->layout = 'flexible';
   $display->layout_settings = array();
-  $display->panel_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
   $display->cache = array();
   $display->title = '%node:title';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
+    $pane->panel = 'center';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['center'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_body';
@@ -54,15 +85,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['center'][0] = 'new-1';
+    $display->content['new-2'] = $pane;
+    $display->panels['center'][1] = 'new-2';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-3';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_lede';
@@ -78,15 +111,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['center'][1] = 'new-2';
+    $display->content['new-3'] = $pane;
+    $display->panels['center'][2] = 'new-3';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-4';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_givenname';
@@ -102,15 +137,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['center'][2] = 'new-3';
+    $display->content['new-4'] = $pane;
+    $display->panels['center'][3] = 'new-4';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-5';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_familyname';
@@ -126,15 +163,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['center'][3] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['center'][4] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_address';
@@ -155,15 +194,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 5;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][4] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['center'][5] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_email';
@@ -179,15 +220,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 6;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['center'][5] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['center'][6] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_phone';
@@ -203,15 +246,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 7;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['center'][6] = 'new-7';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][7] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_related_content';
@@ -229,15 +274,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 8;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][7] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][8] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_landscape_picture';
@@ -256,15 +303,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 9;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][8] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][9] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_portrait_picture';
@@ -283,15 +332,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 10;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['center'][9] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['center'][10] = 'new-11';
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-12';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_additional_content';
@@ -307,15 +358,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 11;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['center'][10] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['center'][11] = 'new-12';
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_tags';
@@ -331,15 +384,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 12;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['center'][11] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['center'][12] = 'new-13';
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-14';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:og_group_ref';
@@ -357,15 +412,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 13;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['center'][12] = 'new-13';
+    $display->content['new-14'] = $pane;
+    $display->panels['center'][13] = 'new-14';
     $pane = new stdClass();
-    $pane->pid = 'new-14';
+    $pane->pid = 'new-15';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_secondary_groups_audiences';
@@ -383,15 +440,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 14;
     $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['center'][13] = 'new-14';
+    $display->content['new-15'] = $pane;
+    $display->panels['center'][14] = 'new-15';
     $pane = new stdClass();
-    $pane->pid = 'new-15';
+    $pane->pid = 'new-16';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_professional_title';
@@ -407,15 +466,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 15;
     $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['center'][14] = 'new-15';
+    $display->content['new-16'] = $pane;
+    $display->panels['center'][15] = 'new-16';
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-17';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_company';
@@ -431,15 +492,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 16;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['center'][15] = 'new-16';
+    $display->content['new-17'] = $pane;
+    $display->panels['center'][16] = 'new-17';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-18';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_pull_quote';
@@ -455,15 +518,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 17;
     $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['center'][16] = 'new-17';
+    $display->content['new-18'] = $pane;
+    $display->panels['center'][17] = 'new-18';
     $pane = new stdClass();
-    $pane->pid = 'new-18';
+    $pane->pid = 'new-19';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_uploaded_files';
@@ -479,15 +544,17 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 18;
     $pane->locks = array();
-    $display->content['new-18'] = $pane;
-    $display->panels['center'][17] = 'new-18';
+    $display->content['new-19'] = $pane;
+    $display->panels['center'][18] = 'new-19';
     $pane = new stdClass();
-    $pane->pid = 'new-19';
+    $pane->pid = 'new-20';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -502,17 +569,19 @@ function umn_groups_staff_content_type_panelizer_defaults() {
       'context' => 'panelizer',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array(
       'css_class' => 'link-wrapper',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 19;
     $pane->locks = array();
-    $display->content['new-19'] = $pane;
-    $display->panels['center'][18] = 'new-19';
+    $display->content['new-20'] = $pane;
+    $display->panels['center'][19] = 'new-20';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-19';
+  $display->title_pane = 'new-20';
   $panelizer->display = $display;
   $export['node:staff:default'] = $panelizer;
 
@@ -544,7 +613,7 @@ function umn_groups_staff_content_type_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-20';
+    $pane->pid = 'new-21';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_related_content';
@@ -565,10 +634,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['center'][0] = 'new-20';
+    $display->content['new-21'] = $pane;
+    $display->panels['center'][0] = 'new-21';
     $pane = new stdClass();
-    $pane->pid = 'new-21';
+    $pane->pid = 'new-22';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_portrait_picture';
@@ -589,10 +658,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['center'][1] = 'new-21';
+    $display->content['new-22'] = $pane;
+    $display->panels['center'][1] = 'new-22';
     $pane = new stdClass();
-    $pane->pid = 'new-22';
+    $pane->pid = 'new-23';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_phone';
@@ -613,10 +682,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-22'] = $pane;
-    $display->panels['center'][2] = 'new-22';
+    $display->content['new-23'] = $pane;
+    $display->panels['center'][2] = 'new-23';
     $pane = new stdClass();
-    $pane->pid = 'new-23';
+    $pane->pid = 'new-24';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_company';
@@ -637,10 +706,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['center'][3] = 'new-23';
+    $display->content['new-24'] = $pane;
+    $display->panels['center'][3] = 'new-24';
     $pane = new stdClass();
-    $pane->pid = 'new-24';
+    $pane->pid = 'new-25';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_professional_title';
@@ -661,10 +730,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['center'][4] = 'new-24';
+    $display->content['new-25'] = $pane;
+    $display->panels['center'][4] = 'new-25';
     $pane = new stdClass();
-    $pane->pid = 'new-25';
+    $pane->pid = 'new-26';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_uploaded_files';
@@ -685,10 +754,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['center'][5] = 'new-25';
+    $display->content['new-26'] = $pane;
+    $display->panels['center'][5] = 'new-26';
     $pane = new stdClass();
-    $pane->pid = 'new-26';
+    $pane->pid = 'new-27';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_tags';
@@ -709,10 +778,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-26'] = $pane;
-    $display->panels['center'][6] = 'new-26';
+    $display->content['new-27'] = $pane;
+    $display->panels['center'][6] = 'new-27';
     $pane = new stdClass();
-    $pane->pid = 'new-27';
+    $pane->pid = 'new-28';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_pull_quote';
@@ -733,10 +802,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-27'] = $pane;
-    $display->panels['center'][7] = 'new-27';
+    $display->content['new-28'] = $pane;
+    $display->panels['center'][7] = 'new-28';
     $pane = new stdClass();
-    $pane->pid = 'new-28';
+    $pane->pid = 'new-29';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_givenname';
@@ -757,10 +826,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-28'] = $pane;
-    $display->panels['center'][8] = 'new-28';
+    $display->content['new-29'] = $pane;
+    $display->panels['center'][8] = 'new-29';
     $pane = new stdClass();
-    $pane->pid = 'new-29';
+    $pane->pid = 'new-30';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_familyname';
@@ -781,10 +850,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-29'] = $pane;
-    $display->panels['center'][9] = 'new-29';
+    $display->content['new-30'] = $pane;
+    $display->panels['center'][9] = 'new-30';
     $pane = new stdClass();
-    $pane->pid = 'new-30';
+    $pane->pid = 'new-31';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_body';
@@ -805,10 +874,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-30'] = $pane;
-    $display->panels['center'][10] = 'new-30';
+    $display->content['new-31'] = $pane;
+    $display->panels['center'][10] = 'new-31';
     $pane = new stdClass();
-    $pane->pid = 'new-31';
+    $pane->pid = 'new-32';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_additional_content';
@@ -829,10 +898,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-31'] = $pane;
-    $display->panels['center'][11] = 'new-31';
+    $display->content['new-32'] = $pane;
+    $display->panels['center'][11] = 'new-32';
     $pane = new stdClass();
-    $pane->pid = 'new-32';
+    $pane->pid = 'new-33';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:og_group_ref';
@@ -853,10 +922,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-32'] = $pane;
-    $display->panels['center'][12] = 'new-32';
+    $display->content['new-33'] = $pane;
+    $display->panels['center'][12] = 'new-33';
     $pane = new stdClass();
-    $pane->pid = 'new-33';
+    $pane->pid = 'new-34';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_email';
@@ -877,10 +946,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-33'] = $pane;
-    $display->panels['center'][13] = 'new-33';
+    $display->content['new-34'] = $pane;
+    $display->panels['center'][13] = 'new-34';
     $pane = new stdClass();
-    $pane->pid = 'new-34';
+    $pane->pid = 'new-35';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_landscape_picture';
@@ -901,10 +970,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-34'] = $pane;
-    $display->panels['center'][14] = 'new-34';
+    $display->content['new-35'] = $pane;
+    $display->panels['center'][14] = 'new-35';
     $pane = new stdClass();
-    $pane->pid = 'new-35';
+    $pane->pid = 'new-36';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_address';
@@ -925,10 +994,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-35'] = $pane;
-    $display->panels['center'][15] = 'new-35';
+    $display->content['new-36'] = $pane;
+    $display->panels['center'][15] = 'new-36';
     $pane = new stdClass();
-    $pane->pid = 'new-36';
+    $pane->pid = 'new-37';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_lede';
@@ -949,10 +1018,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-36'] = $pane;
-    $display->panels['center'][16] = 'new-36';
+    $display->content['new-37'] = $pane;
+    $display->panels['center'][16] = 'new-37';
     $pane = new stdClass();
-    $pane->pid = 'new-37';
+    $pane->pid = 'new-38';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_secondary_groups_audiences';
@@ -973,10 +1042,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-37'] = $pane;
-    $display->panels['center'][17] = 'new-37';
+    $display->content['new-38'] = $pane;
+    $display->panels['center'][17] = 'new-38';
     $pane = new stdClass();
-    $pane->pid = 'new-38';
+    $pane->pid = 'new-39';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -998,10 +1067,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-38'] = $pane;
-    $display->panels['center'][18] = 'new-38';
+    $display->content['new-39'] = $pane;
+    $display->panels['center'][18] = 'new-39';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-38';
+  $display->title_pane = 'new-39';
   $panelizer->display = $display;
   $export['node:staff:default:featured'] = $panelizer;
 
@@ -1033,7 +1102,7 @@ function umn_groups_staff_content_type_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-39';
+    $pane->pid = 'new-40';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_related_content';
@@ -1054,10 +1123,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-39'] = $pane;
-    $display->panels['center'][0] = 'new-39';
+    $display->content['new-40'] = $pane;
+    $display->panels['center'][0] = 'new-40';
     $pane = new stdClass();
-    $pane->pid = 'new-40';
+    $pane->pid = 'new-41';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_portrait_picture';
@@ -1078,10 +1147,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-40'] = $pane;
-    $display->panels['center'][1] = 'new-40';
+    $display->content['new-41'] = $pane;
+    $display->panels['center'][1] = 'new-41';
     $pane = new stdClass();
-    $pane->pid = 'new-41';
+    $pane->pid = 'new-42';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_phone';
@@ -1102,10 +1171,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-41'] = $pane;
-    $display->panels['center'][2] = 'new-41';
+    $display->content['new-42'] = $pane;
+    $display->panels['center'][2] = 'new-42';
     $pane = new stdClass();
-    $pane->pid = 'new-42';
+    $pane->pid = 'new-43';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_company';
@@ -1126,10 +1195,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-42'] = $pane;
-    $display->panels['center'][3] = 'new-42';
+    $display->content['new-43'] = $pane;
+    $display->panels['center'][3] = 'new-43';
     $pane = new stdClass();
-    $pane->pid = 'new-43';
+    $pane->pid = 'new-44';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_professional_title';
@@ -1150,10 +1219,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-43'] = $pane;
-    $display->panels['center'][4] = 'new-43';
+    $display->content['new-44'] = $pane;
+    $display->panels['center'][4] = 'new-44';
     $pane = new stdClass();
-    $pane->pid = 'new-44';
+    $pane->pid = 'new-45';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_uploaded_files';
@@ -1174,10 +1243,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-44'] = $pane;
-    $display->panels['center'][5] = 'new-44';
+    $display->content['new-45'] = $pane;
+    $display->panels['center'][5] = 'new-45';
     $pane = new stdClass();
-    $pane->pid = 'new-45';
+    $pane->pid = 'new-46';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_tags';
@@ -1198,10 +1267,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-45'] = $pane;
-    $display->panels['center'][6] = 'new-45';
+    $display->content['new-46'] = $pane;
+    $display->panels['center'][6] = 'new-46';
     $pane = new stdClass();
-    $pane->pid = 'new-46';
+    $pane->pid = 'new-47';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_pull_quote';
@@ -1222,10 +1291,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-46'] = $pane;
-    $display->panels['center'][7] = 'new-46';
+    $display->content['new-47'] = $pane;
+    $display->panels['center'][7] = 'new-47';
     $pane = new stdClass();
-    $pane->pid = 'new-47';
+    $pane->pid = 'new-48';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_givenname';
@@ -1246,10 +1315,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-47'] = $pane;
-    $display->panels['center'][8] = 'new-47';
+    $display->content['new-48'] = $pane;
+    $display->panels['center'][8] = 'new-48';
     $pane = new stdClass();
-    $pane->pid = 'new-48';
+    $pane->pid = 'new-49';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_familyname';
@@ -1270,10 +1339,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-48'] = $pane;
-    $display->panels['center'][9] = 'new-48';
+    $display->content['new-49'] = $pane;
+    $display->panels['center'][9] = 'new-49';
     $pane = new stdClass();
-    $pane->pid = 'new-49';
+    $pane->pid = 'new-50';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_body';
@@ -1294,10 +1363,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-49'] = $pane;
-    $display->panels['center'][10] = 'new-49';
+    $display->content['new-50'] = $pane;
+    $display->panels['center'][10] = 'new-50';
     $pane = new stdClass();
-    $pane->pid = 'new-50';
+    $pane->pid = 'new-51';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_additional_content';
@@ -1318,10 +1387,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-50'] = $pane;
-    $display->panels['center'][11] = 'new-50';
+    $display->content['new-51'] = $pane;
+    $display->panels['center'][11] = 'new-51';
     $pane = new stdClass();
-    $pane->pid = 'new-51';
+    $pane->pid = 'new-52';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:og_group_ref';
@@ -1342,10 +1411,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-51'] = $pane;
-    $display->panels['center'][12] = 'new-51';
+    $display->content['new-52'] = $pane;
+    $display->panels['center'][12] = 'new-52';
     $pane = new stdClass();
-    $pane->pid = 'new-52';
+    $pane->pid = 'new-53';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_email';
@@ -1366,10 +1435,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-52'] = $pane;
-    $display->panels['center'][13] = 'new-52';
+    $display->content['new-53'] = $pane;
+    $display->panels['center'][13] = 'new-53';
     $pane = new stdClass();
-    $pane->pid = 'new-53';
+    $pane->pid = 'new-54';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_landscape_picture';
@@ -1390,10 +1459,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-53'] = $pane;
-    $display->panels['center'][14] = 'new-53';
+    $display->content['new-54'] = $pane;
+    $display->panels['center'][14] = 'new-54';
     $pane = new stdClass();
-    $pane->pid = 'new-54';
+    $pane->pid = 'new-55';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_person_address';
@@ -1414,10 +1483,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-54'] = $pane;
-    $display->panels['center'][15] = 'new-54';
+    $display->content['new-55'] = $pane;
+    $display->panels['center'][15] = 'new-55';
     $pane = new stdClass();
-    $pane->pid = 'new-55';
+    $pane->pid = 'new-56';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_lede';
@@ -1438,10 +1507,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-55'] = $pane;
-    $display->panels['center'][16] = 'new-55';
+    $display->content['new-56'] = $pane;
+    $display->panels['center'][16] = 'new-56';
     $pane = new stdClass();
-    $pane->pid = 'new-56';
+    $pane->pid = 'new-57';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_secondary_groups_audiences';
@@ -1462,10 +1531,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-56'] = $pane;
-    $display->panels['center'][17] = 'new-56';
+    $display->content['new-57'] = $pane;
+    $display->panels['center'][17] = 'new-57';
     $pane = new stdClass();
-    $pane->pid = 'new-57';
+    $pane->pid = 'new-58';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -1487,10 +1556,10 @@ function umn_groups_staff_content_type_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-57'] = $pane;
-    $display->panels['center'][18] = 'new-57';
+    $display->content['new-58'] = $pane;
+    $display->panels['center'][18] = 'new-58';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-57';
+  $display->title_pane = 'new-58';
   $panelizer->display = $display;
   $export['node:staff:default:teaser'] = $panelizer;
 
