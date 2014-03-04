@@ -662,14 +662,7 @@ function umn_groups_news_content_type_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_related_content',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -985,7 +978,7 @@ function umn_groups_news_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title] | [site:name]',
     ),
     'description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:field_body]',
     ),
     'dcterms.title' => array(
       'value' => '[node:title]',
@@ -1006,7 +999,7 @@ function umn_groups_news_content_type_defaultconfig_metatag_config_default() {
       'value' => '[node:title]',
     ),
     'og:description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:field_body]',
     ),
   );
   $export['node'] = $config;

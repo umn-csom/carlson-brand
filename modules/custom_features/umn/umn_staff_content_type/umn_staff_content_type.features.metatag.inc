@@ -14,8 +14,11 @@ function umn_staff_content_type_metatag_export_default() {
   $config['node:staff'] = array(
     'instance' => 'node:staff',
     'config' => array(
-      'og:type' => array(
-        'value' => 'profile',
+      'description' => array(
+        'value' => '[node:field_lede]',
+      ),
+      'og:description' => array(
+        'value' => '[node:field_lede]',
       ),
     ),
   );

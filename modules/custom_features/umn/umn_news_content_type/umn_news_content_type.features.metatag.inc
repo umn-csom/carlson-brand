@@ -17,8 +17,8 @@ function umn_news_content_type_metatag_export_default() {
       'description' => array(
         'value' => '[node:field_lede]',
       ),
-      'dcterms.date' => array(
-        'value' => '[node:field_publication_date]',
+      'og:description' => array(
+        'value' => '[node:field_lede]',
       ),
     ),
   );

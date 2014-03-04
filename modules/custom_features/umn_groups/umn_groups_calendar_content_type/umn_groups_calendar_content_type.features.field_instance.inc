@@ -178,6 +178,66 @@ function umn_groups_calendar_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-calendar-field_secondary_groups_audiences'
+  $field_instances['node-calendar-field_secondary_groups_audiences'] = array(
+    'bundle' => 'calendar',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select additional groups audiences for this content.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_secondary_groups_audiences',
+    'label' => 'Secondary groups audiences',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'og_widget' => array(
+          'admin' => array(
+            'widget_type' => 'entityreference_autocomplete',
+          ),
+          'default' => array(
+            'widget_type' => 'options_select',
+          ),
+          'status' => TRUE,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 47,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter some text that will be used at the end of the URL. It should be short, generally 1-2 words. The string will be automatically lower-cased. For example, if you enter "UMN Chemistry Lab", the generated URL for that page might be something like "htp://umn.edu/content/umn-chemistry-lab".');
@@ -186,6 +246,8 @@ function umn_groups_calendar_content_type_field_default_field_instances() {
   t('Path slug');
   t('Place a url for a google calendar. <ol><li>Go to <a target="_blank" href=\'https://www.google.com/calendar\'>www.google.com/calendar</a> and choose a calendar from the left sidebar.  </li><li>Go to calendar settings for your chosen calendar and select the HTML option form the \'Calendar Address\' area.  </li><li>Copy the url from the pop-up into this field. </li></ol>Private google calendars can <strong>not</strong> be embedded; the node will save with but no calendar will be displayed. ');
   t('Related content');
+  t('Secondary groups audiences');
+  t('Select additional groups audiences for this content.');
 
   return $field_instances;
 }

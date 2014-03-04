@@ -136,12 +136,12 @@ function umn_faculty_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'invisimail',
+        'module' => 'email',
         'settings' => array(
           'encoder' => 'js_entities',
           'link' => 1,
         ),
-        'type' => 'invisimail_js_entities',
+        'type' => 'email_default',
         'weight' => 2,
       ),
       'featured' => array(
@@ -152,12 +152,12 @@ function umn_faculty_content_type_field_default_field_instances() {
       ),
       'rss' => array(
         'label' => 'hidden',
-        'module' => 'invisimail',
+        'module' => 'email',
         'settings' => array(
           'encoder' => 'js_entities',
           'link' => 1,
         ),
-        'type' => 'invisimail_js_entities',
+        'type' => 'email_default',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -765,9 +765,9 @@ function umn_faculty_content_type_field_default_field_instances() {
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter necessary biographical text about this person. Separate different sections with a header. Recommended sections have been pre-populated.');
   t('Enter the faculty member\'s family name. (In Western naming conventions, the surname or last name.)');
-  t('Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.');
   t('Enter the faculty member\'s office address. This will be displayed to the public.');
   t('Enter the faculty member\'s office e-mail address. This will be displayed to the public. Must be a valid e-mail address.');
+  t('Enter the faculty member\'s office phone number. This will be displayed to the public. Must be a valid phone number with country code, including "+" sign. If none is provided, USA country code (+1) will be added.');
   t('Enter the title of content that is related to this content. The system will suggest pieces of content that match the title via autocomplete.');
   t('Faculty member\'s given name. (In Western naming conventions, usually the first name or forename.)');
   t('Family name');

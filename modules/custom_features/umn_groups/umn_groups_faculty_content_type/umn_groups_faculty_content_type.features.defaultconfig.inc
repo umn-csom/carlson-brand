@@ -218,12 +218,12 @@ function umn_groups_faculty_content_type_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'invisimail',
+          'module' => 'email',
           'settings' => array(
             'encoder' => 'js_entities',
             'link' => 1,
           ),
-          'type' => 'invisimail_js_entities',
+          'type' => 'email_default',
           'weight' => 2,
         ),
         'featured' => array(
@@ -234,12 +234,12 @@ function umn_groups_faculty_content_type_defaultconfig_field_default_fields() {
         ),
         'rss' => array(
           'label' => 'hidden',
-          'module' => 'invisimail',
+          'module' => 'email',
           'settings' => array(
             'encoder' => 'js_entities',
             'link' => 1,
           ),
-          'type' => 'invisimail_js_entities',
+          'type' => 'email_default',
           'weight' => 2,
         ),
         'teaser' => array(
@@ -918,14 +918,7 @@ function umn_groups_faculty_content_type_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_related_content',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -1052,7 +1045,7 @@ function umn_groups_faculty_content_type_defaultconfig_metatag_config_default() 
       'value' => '[node:title] | [site:name]',
     ),
     'description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:field_body]',
     ),
     'dcterms.title' => array(
       'value' => '[node:title]',
@@ -1073,7 +1066,7 @@ function umn_groups_faculty_content_type_defaultconfig_metatag_config_default() 
       'value' => '[node:title]',
     ),
     'og:description' => array(
-      'value' => '[node:field_lede]',
+      'value' => '[node:field_body]',
     ),
   );
   $export['node'] = $config;
@@ -1114,55 +1107,6 @@ function umn_groups_faculty_content_type_defaultconfig_strongarm() {
   $strongarm->name = 'ant_php_faculty';
   $strongarm->value = 0;
   $export['ant_php_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_enable_faculty';
-  $strongarm->value = 1;
-  $export['scheduler_publish_enable_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_required_faculty';
-  $strongarm->value = 0;
-  $export['scheduler_publish_required_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_revision_faculty';
-  $strongarm->value = 0;
-  $export['scheduler_publish_revision_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_touch_faculty';
-  $strongarm->value = 1;
-  $export['scheduler_publish_touch_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_enable_faculty';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_enable_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_required_faculty';
-  $strongarm->value = 0;
-  $export['scheduler_unpublish_required_faculty'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_revision_faculty';
-  $strongarm->value = 1;
-  $export['scheduler_unpublish_revision_faculty'] = $strongarm;
 
   return $export;
 }

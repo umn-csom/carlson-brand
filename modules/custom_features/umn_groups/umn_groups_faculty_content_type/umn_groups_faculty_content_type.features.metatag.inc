@@ -14,6 +14,12 @@ function umn_groups_faculty_content_type_metatag_export_default() {
   $config['node:faculty'] = array(
     'instance' => 'node:faculty',
     'config' => array(
+      'description' => array(
+        'value' => '[node:field_lede]',
+      ),
+      'og:description' => array(
+        'value' => '[node:field_lede]',
+      ),
       'og:type' => array(
         'value' => 'profile',
       ),
