@@ -41,6 +41,7 @@ features[field_instance][] = node-landing_page-field_hero_image_description
 features[field_instance][] = node-landing_page-field_path_slug
 features[field_instance][] = node-landing_page-field_secondary_groups_audiences
 features[field_instance][] = node-landing_page-og_group_ref
+features[image][] = hero_800x300
 features[metatag][] = node:landing_page
 features[node][] = landing_page
 features[panelizer_defaults][] = node:landing_page:default
