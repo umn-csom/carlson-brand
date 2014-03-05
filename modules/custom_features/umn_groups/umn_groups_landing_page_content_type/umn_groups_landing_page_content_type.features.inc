@@ -19,7 +19,7 @@ function umn_groups_landing_page_content_type_ctools_plugin_api($module = NULL, 
 /**
  * Implements hook_image_default_styles().
  */
-function umn_landing_page_content_type_image_default_styles() {
+function umn_groups_landing_page_content_type_image_default_styles() {
   $styles = array();
 
   // Exported image style: hero_800x300.
