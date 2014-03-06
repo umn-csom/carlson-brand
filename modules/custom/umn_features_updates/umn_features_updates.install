@@ -99,6 +99,17 @@ function umn_features_updates_update_7002() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_udpates_features_revert($features);
-  return 'The following featurs have been reverted: <br />' . implode(', ', $revert) . '<br />';
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Revert features that where changed for #22948.
+ */
+function umn_features_updates_update_7003() {
+  $messages = array();
+  $features = array('umn_groups_landing_page_content_type');
+
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
