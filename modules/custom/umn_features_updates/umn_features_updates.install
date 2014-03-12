@@ -42,7 +42,7 @@ function umn_features_updates_install() {
 function umn_features_updates_update_7001($sandbox) {
   $messages = array();
   $revert = umn_features_updates_2_21_14();
-  return 'The following featurs have been reverted: <br />' . implode(', ', $revert) . '<br />';
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
 
 /*
@@ -99,10 +99,9 @@ function umn_features_updates_update_7002() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_updates_features_revert($features);
+  $revert = umn_features_udpates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
-
 /**
  * Revert features that where changed for #22948.
  */
@@ -111,5 +110,22 @@ function umn_features_updates_update_7003() {
   $features = array('umn_groups_landing_page_content_type');
 
   $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Revert staff and faculty content types to add title to their panilizer settings.
+ */
+function umn_features_updates_update_7004() {
+  $features = array();
+  //Non organic groups
+  $features[] = 'umn_faculty_content_type';
+  $features[] = 'umn_staff_content_type';
+
+  //Organic groups
+  $features[] = 'umn_groups_staff_content_type';
+  $features[] = 'umn_groups_faculty_content_type';
+
+  $revert = umn_features_udpates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
