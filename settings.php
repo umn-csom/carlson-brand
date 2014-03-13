@@ -583,19 +583,32 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * for that site. Specifically we want the database credentials, which must
  * match the domain prefix of the site. The following formats are supported:
  *
+ * The following map to a database named "foo"
+ * for dev, stage, prod environments available in Acquia subscriptions
+ *
  * foo-dev.umn.edu
- * foo-stage.umn.edu
  * foo-stg.umn.edu
  * foo.umn.edu
  *
- * All of those will map to a database named "foo", in whatever environment
- * (dev, stage, prod) the site is currently using.
+ * The following map to a database named "foo_bar"
+ * for dev, stage, prod environments available in Acquia subscriptions
+
+ * foo-bar-dev.umn.edu
+ * foo-bar-stg.umn.edu
+ * foo-bar.umn.edu
+ *
+ * The following map to a database named "foocar"
+ * for dev, stage, prod environments available in Acquia subscriptions
+
+ * foocar-dev.bar.umn.edu
+ * foocar-stg.bar.umn.edu
+ * foocar.bar.umn.edu
  *
  */
 if (file_exists('/var/www/site-php')) {
-  if (preg_match('@([^\.]+?)(\-(dev|stage|stg))?\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+  if (preg_match('@(.+?)(\-(dev|stage|stg))?(\..+){0,1}\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
-    $db_name = $match[1];
+    $db_name = str_replace(array('-', '.'), '_', $match[1]);
     $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
     if (file_exists($file)) {
       require($file);
