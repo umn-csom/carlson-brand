@@ -179,6 +179,28 @@ function umn_basic_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'footer_left_text';
+  $strongarm->value = '<p>&copy; 2013 Regents of the University of Minnesota. All rights reserved.</p>';
+  $export['footer_left_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'footer_right_text';
+  $strongarm->value = '<span>Twin Cities Campus: </span>
+      <ul class=\'umnhf\'>
+          <li class=\'umnhf\'><a class=\'umnhf\' href=\'http://www.umn.edu/twincities/maps/index.html\'>Maps&nbsp;&amp;&nbsp;Directions</a></li>
+          <li class=\'umnhf\'><a class=\'umnhf\' href=\'http://www1.umn.edu/pts/\'>Parking&nbsp;&amp;&nbsp;Transportation</a></li>
+          <li class=\'umnhf\'><a class=\'umnhf\' href=\'http://www.umn.edu/twincities/contact/\'>Contact&nbsp;U&nbsp;of&nbsp;M</a></li>
+          <li class=\'umnhf\'><a class=\'umnhf\' href=\'http://www1.umn.edu/twincities/privacy/\'>Privacy</a></li>
+          <li class=\'umnhf\'><a class=\'umnhf\' href=\'http://www.directory.umn.edu/\'>Directories</a></li>
+      </ul>
+    ';
+  $export['footer_right_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'on_the_web_delicious_page';
   $strongarm->value = '';
   $export['on_the_web_delicious_page'] = $strongarm;
