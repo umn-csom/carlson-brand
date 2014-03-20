@@ -129,3 +129,14 @@ function umn_features_updates_update_7004() {
   $revert = umn_features_udpates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
+
+/**
+ * Revert UMN Workbench feature so that the correct access is applied to user roles.
+ */
+function umn_features_updates_update_7005() {
+  $messages = array();
+  $features = array('umn_workbench');
+
+  $revert = umn_features_udpates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
