@@ -99,7 +99,7 @@ function umn_features_updates_update_7002() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
 /**
@@ -114,7 +114,7 @@ function umn_features_updates_update_7003() {
 }
 
 /**
- * Revert staff and faculty content types to add title to their panilizer settings.
+ * Revert staff and faculty content types to add title to their panelizer settings.
  */
 function umn_features_updates_update_7004() {
   $features = array();
@@ -126,7 +126,7 @@ function umn_features_updates_update_7004() {
   $features[] = 'umn_groups_staff_content_type';
   $features[] = 'umn_groups_faculty_content_type';
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
 
@@ -137,6 +137,6 @@ function umn_features_updates_update_7005() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
