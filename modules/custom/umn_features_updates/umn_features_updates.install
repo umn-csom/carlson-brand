@@ -34,6 +34,12 @@ function umn_features_updates_install() {
   $revert = umn_features_updates_2_21_14();
   watchdog('umn_features_updates', 'The following features have been reverted:
    <br />' . implode(', ', $revert) . '<br />');
+  $features = array();
+  $features[] = 'news';
+
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+
 }
 
 /**
