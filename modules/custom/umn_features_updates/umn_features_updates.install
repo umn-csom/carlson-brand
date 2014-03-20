@@ -136,7 +136,7 @@ function umn_features_updates_update_7004() {
 function umn_features_updates_update_7006(&$sandbox) {
 
   $features = array();
-  $features[] = 'umn_wysiwyg';
+  $features[] = 'news';
 
   $revert = umn_features_updates_features_revert($features);
 
