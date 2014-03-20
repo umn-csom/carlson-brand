@@ -126,6 +126,17 @@ function umn_features_updates_update_7004() {
   $features[] = 'umn_groups_staff_content_type';
   $features[] = 'umn_groups_faculty_content_type';
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Revert WYSIWYG feature.
+ */
+function umn_features_updates_update_7005(&$sandbox) {
+  $features = 'umn_wysiwyg';
+
+  $revert = umn_features_updates_features_revert($features);
+
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
