@@ -71,6 +71,8 @@ function umn_features_updates_2_21_14() {
   $features[] = 'umn_landing_page_content_type';
   $features[] = 'umn_news_content_type';
   $features[] = 'umn_staff_content_type';
+  $features[] = 'umn_landing_page_content_type';
+
   //Features that are only for umn_groups.
   $features[] = 'umn_groups_calendar_content_type';
   $features[] = 'umn_groups_course_content_type';
@@ -80,6 +82,7 @@ function umn_features_updates_2_21_14() {
   $features[] = 'umn_groups_page_template';
   $features[] = 'umn_groups_staff_content_type';
   $features[] = 'umn_groups_group_content_type';
+  $features[] = 'umn_groups_landing_page_content_type';
 
   $revert = array();
   $info = array();
@@ -158,6 +161,20 @@ function umn_features_updates_update_7006(&$sandbox) {
   $features = array();
   $features[] = 'umn_groups_news_content_type';
   $features[] = 'umn_news_content_type';
+
+  $revert = umn_features_updates_features_revert($features);
+
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Reverts landing pages to add wysiwyg to the hero image description field
+ */
+function umn_features_updates_update_7007(&$sandbox) {
+
+  $features = array();
+  $features[] = 'umn_groups_landing_page_content_type';
+  $features[] = 'umn_landing_page_content_type';
 
   $revert = umn_features_updates_features_revert($features);
 
