@@ -8,6 +8,8 @@
  */
 function umn_features_updates_features_revert($features = array()) {
   //Features to revert.
+  $info = array();
+
   foreach ($features as $feature) {
     if (module_exists($feature)) {
 
@@ -106,7 +108,7 @@ function umn_features_updates_update_7002() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
 /**
@@ -121,7 +123,7 @@ function umn_features_updates_update_7003() {
 }
 
 /**
- * Revert staff and faculty content types to add title to their panilizer settings.
+ * Revert staff and faculty content types to add title to their panelizer settings.
  */
 function umn_features_updates_update_7004() {
   $features = array();
@@ -132,6 +134,17 @@ function umn_features_updates_update_7004() {
   //Organic groups
   $features[] = 'umn_groups_staff_content_type';
   $features[] = 'umn_groups_faculty_content_type';
+
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Revert UMN Workbench feature so that the correct access is applied to user roles.
+ */
+function umn_features_updates_update_7005() {
+  $messages = array();
+  $features = array('umn_workbench');
 
   $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';

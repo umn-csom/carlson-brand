@@ -214,22 +214,7 @@ function umn_workbench_default_workbench_workflows_workflows() {
   $workflow->contexts = array();
   $workflow->relationships = array();
   $workflow->access = array(
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 3,
-            1 => 4,
-            2 => 5,
-            3 => 6,
-            4 => 7,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-    ),
+    'plugins' => array(),
   );
   $workflow->weight = 2;
   $workflow->category = '';
