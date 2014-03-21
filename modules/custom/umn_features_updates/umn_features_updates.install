@@ -8,6 +8,8 @@
  */
 function umn_features_updates_features_revert($features = array()) {
   //Features to revert.
+  $info = array();
+
   foreach ($features as $feature) {
     if (module_exists($feature)) {
 
