@@ -8,6 +8,8 @@
  */
 function umn_features_updates_features_revert($features = array()) {
   //Features to revert.
+  $info = array();
+
   foreach ($features as $feature) {
     if (module_exists($feature)) {
 
@@ -34,6 +36,13 @@ function umn_features_updates_install() {
   $revert = umn_features_updates_2_21_14();
   watchdog('umn_features_updates', 'The following features have been reverted:
    <br />' . implode(', ', $revert) . '<br />');
+  $features = array();
+  $features[] = 'umn_groups_news_content_type';
+  $features[] = 'umn_news_content_type';
+
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+
 }
 
 /**
@@ -62,6 +71,8 @@ function umn_features_updates_2_21_14() {
   $features[] = 'umn_landing_page_content_type';
   $features[] = 'umn_news_content_type';
   $features[] = 'umn_staff_content_type';
+  $features[] = 'umn_landing_page_content_type';
+
   //Features that are only for umn_groups.
   $features[] = 'umn_groups_calendar_content_type';
   $features[] = 'umn_groups_course_content_type';
@@ -71,6 +82,7 @@ function umn_features_updates_2_21_14() {
   $features[] = 'umn_groups_page_template';
   $features[] = 'umn_groups_staff_content_type';
   $features[] = 'umn_groups_group_content_type';
+  $features[] = 'umn_groups_landing_page_content_type';
 
   $revert = array();
   $info = array();
@@ -99,7 +111,7 @@ function umn_features_updates_update_7002() {
   $messages = array();
   $features = array('umn_workbench');
 
-  $revert = umn_features_udpates_features_revert($features);
+  $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
 /**
@@ -114,7 +126,7 @@ function umn_features_updates_update_7003() {
 }
 
 /**
- * Revert staff and faculty content types to add title to their panilizer settings.
+ * Revert staff and faculty content types to add title to their panelizer settings.
  */
 function umn_features_updates_update_7004() {
   $features = array();
@@ -131,9 +143,48 @@ function umn_features_updates_update_7004() {
 }
 
 /**
+ * Revert UMN Workbench feature so that the correct access is applied to user roles.
+ */
+function umn_features_updates_update_7005() {
+  $messages = array();
+  $features = array('umn_workbench');
+
+  $revert = umn_features_updates_features_revert($features);
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Reverts News view.
+ */
+function umn_features_updates_update_7006(&$sandbox) {
+
+  $features = array();
+  $features[] = 'umn_groups_news_content_type';
+  $features[] = 'umn_news_content_type';
+
+  $revert = umn_features_updates_features_revert($features);
+
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
+ * Reverts landing pages to add wysiwyg to the hero image description field
+ */
+function umn_features_updates_update_7007(&$sandbox) {
+
+  $features = array();
+  $features[] = 'umn_groups_landing_page_content_type';
+  $features[] = 'umn_landing_page_content_type';
+
+  $revert = umn_features_updates_features_revert($features);
+
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
+
+/**
  * Revert WYSIWYG feature.
  */
-function umn_features_updates_update_7005(&$sandbox) {
+function umn_features_updates_update_7008(&$sandbox) {
   $features = 'umn_wysiwyg';
 
   $revert = umn_features_updates_features_revert($features);
