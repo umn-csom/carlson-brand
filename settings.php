@@ -313,10 +313,10 @@ ini_set('session.cookie_lifetime', 32400);
 # ini_set('pcre.recursion_limit', 200000);
 
 /**
- * Conditional increase of php memory limit for admin pages.
+ * Conditional increase of php memory limit for admin, install and update pages.
  * https://docs.acquia.com/articles/conditionally-increasing-memory-limits
  */
-if (isset($_GET['q']) && strpos($_GET['q'], 'admin') === 0) {
+if (isset($_GET['q']) && (strpos($_GET['q'], 'admin') === 0) || strpos($_GET['q'], 'install.php') || strpos($_GET['q'], 'update.php')) {
   ini_set('memory_limit', '512M');
 }
 /**
