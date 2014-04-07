@@ -605,7 +605,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  * foocar.bar.umn.edu
  *
  */
-if (file_exists('/var/www/site-php')) {
+/*if (file_exists('/var/www/site-php')) {
   if (preg_match('@(.+?)(\-(dev|stage|stg))?(\..+){0,1}\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
     $db_name = str_replace(array('-', '.'), '_', $match[1]);
@@ -614,7 +614,12 @@ if (file_exists('/var/www/site-php')) {
       require($file);
     }
   }
+}*/
+
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/umnstandard/it2-settings.inc');
 }
+
 
 // The SimpleSaml module needs an absolute path to the library, but that is
 // variable depending on the environment. Derive it dynamically based on "it's
