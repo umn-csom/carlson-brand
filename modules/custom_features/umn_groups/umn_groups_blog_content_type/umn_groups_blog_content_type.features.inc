@@ -17,6 +17,13 @@ function umn_groups_blog_content_type_ctools_plugin_api($module = NULL, $api = N
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function umn_groups_blog_content_type_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function umn_groups_blog_content_type_node_info() {
