@@ -191,3 +191,14 @@ function umn_features_updates_update_7008(&$sandbox) {
 
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
 }
+
+/**
+ * Revert WYSIWYG feature to include abbr tag.
+ */
+function umn_features_updates_update_7009(&$sandbox) {
+  $features = 'umn_wysiwyg';
+
+  $revert = umn_features_updates_features_revert($features);
+
+  return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
+}
