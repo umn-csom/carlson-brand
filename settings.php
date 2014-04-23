@@ -313,6 +313,21 @@ ini_set('session.cookie_lifetime', 32400);
 # ini_set('pcre.recursion_limit', 200000);
 
 /**
+ * Conditional increase of php memory limit for admin pages.
+ * https://docs.acquia.com/articles/conditionally-increasing-memory-limits
+ */
+if (isset($_GET['q']) && (strpos($_GET['q'], 'admin') === 0) || strpos($_SERVER['SCRIPT_NAME'], 'install.php') || strpos($_SERVER['SCRIPT_NAME'], 'update.php') || (strpos($_GET['q'], 'batch') === 0)) {
+  ini_set('memory_limit', '512M');
+}
+/**
+ * Conditional increase of php memory limit for Drush
+ * https://docs.acquia.com/articles/conditionally-increasing-memory-limits
+ */
+if (drupal_is_cli()) {
+  ini_set('memory_limit', '512M');
+}
+
+/**
  * Drupal automatically generates a unique session cookie name for each site
  * based on its full domain name. If you have multiple domains pointing at the
  * same Drupal site, you can either redirect them all to a single domain (see

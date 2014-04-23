@@ -64,6 +64,8 @@ function umn_wysiwyg_wysiwyg_default_profiles() {
           'justifyright' => 1,
           'bullist' => 1,
           'numlist' => 1,
+          'outdent' => 1,
+          'indent' => 1,
           'undo' => 1,
           'redo' => 1,
           'link' => 1,
