@@ -232,9 +232,7 @@ table,th,tr,td,
 sub,sup,',
           'allow_comments' => 0,
           'nofollow_policy' => 'whitelist',
-          'nofollow_domains' => array(
-            0 => 'umn.morgan.sandbox',
-          ),
+          'nofollow_domains' => array(),
           'style_color' => array(
             'color' => 0,
             'background' => 0,
