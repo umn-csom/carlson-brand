@@ -221,6 +221,7 @@ img[!src|title|alt|style|width|height|class|hspace|vspace],
         'status' => 1,
         'settings' => array(
           'valid_elements' => 'a[!href|target<_blank|title|style|class],
+abbr[title|id|class|style|dir|lang]
 div[style|class|align<center?justify?left?right],
 br,em,i,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,
 span[style],p[style|class],
