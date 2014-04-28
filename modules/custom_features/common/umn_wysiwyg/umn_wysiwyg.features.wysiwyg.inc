@@ -86,6 +86,9 @@ function umn_wysiwyg_wysiwyg_default_profiles() {
         'table' => array(
           'tablecontrols' => 1,
         ),
+        'xhtmlxtras' => array(
+          'abbr' => 1,
+        ),
         'linkit' => array(
           'linkit' => 1,
         ),
