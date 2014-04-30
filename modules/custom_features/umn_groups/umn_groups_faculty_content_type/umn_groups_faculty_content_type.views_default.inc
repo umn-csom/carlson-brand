@@ -12,7 +12,7 @@ function umn_groups_faculty_content_type_views_default_views() {
 
   $view = new view();
   $view->name = 'og_faculty';
-  $view->description = 'A list of facuty members';
+  $view->description = 'A list of faculty members';
   $view->tag = 'umn';
   $view->base_table = 'node';
   $view->human_name = 'OG Faculty';
@@ -44,13 +44,6 @@ function umn_groups_faculty_content_type_views_default_views() {
   $handler->display->display_options['relationships']['og_membership_related_node_group']['table'] = 'og_membership';
   $handler->display->display_options['relationships']['og_membership_related_node_group']['field'] = 'og_membership_related_node_group';
   $handler->display->display_options['relationships']['og_membership_related_node_group']['relationship'] = 'og_membership_rel';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Landscape picture */
   $handler->display->display_options['fields']['field_landscape_picture']['id'] = 'field_landscape_picture';
   $handler->display->display_options['fields']['field_landscape_picture']['table'] = 'field_data_field_landscape_picture';
@@ -73,6 +66,13 @@ function umn_groups_faculty_content_type_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Short description */
   $handler->display->display_options['fields']['field_lede']['id'] = 'field_lede';
   $handler->display->display_options['fields']['field_lede']['table'] = 'field_data_field_lede';
@@ -111,14 +111,6 @@ function umn_groups_faculty_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['label'] = '';
   $handler->display->display_options['fields']['field_phone']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_phone']['delta_offset'] = '0';
-  /* Field: Group */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'og_membership_related_node_group';
-  $handler->display->display_options['fields']['title_1']['ui_name'] = 'Group';
-  $handler->display->display_options['fields']['title_1']['label'] = '';
-  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Family name (field_person_familyname) */
   $handler->display->display_options['sorts']['field_person_familyname_value']['id'] = 'field_person_familyname_value';
   $handler->display->display_options['sorts']['field_person_familyname_value']['table'] = 'field_data_field_person_familyname';
