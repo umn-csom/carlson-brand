@@ -34,17 +34,6 @@ function umn_faculty_content_type_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Landscape picture */
-  $handler->display->display_options['fields']['field_landscape_picture']['id'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['table'] = 'field_data_field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['field'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_landscape_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_landscape_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_landscape_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => 'content',
-  );
   /* Field: Content: Portrait picture */
   $handler->display->display_options['fields']['field_portrait_picture']['id'] = 'field_portrait_picture';
   $handler->display->display_options['fields']['field_portrait_picture']['table'] = 'field_data_field_portrait_picture';
@@ -53,7 +42,7 @@ function umn_faculty_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_portrait_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_portrait_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_portrait_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'medium',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -63,19 +52,6 @@ function umn_faculty_content_type_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Address */
-  $handler->display->display_options['fields']['field_person_address']['id'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['table'] = 'field_data_field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['field'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['label'] = '';
-  $handler->display->display_options['fields']['field_person_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_person_address']['click_sort_column'] = 'country';
-  $handler->display->display_options['fields']['field_person_address']['settings'] = array(
-    'use_widget_handlers' => 1,
-    'format_handlers' => array(
-      'address' => 'address',
-    ),
-  );
   /* Field: Content: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
