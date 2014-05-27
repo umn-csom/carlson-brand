@@ -659,3 +659,11 @@ if (isset($databases['default']['default']['database'])) {
     $conf['memcache_key_prefix'] = $databases['default']['default']['database'];
   }
 }
+
+// Set private files path
+// code snippet from Acquia:
+// https://docs.acquia.com/articles/setting-private-file-directory-acquia-cloud
+if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
+  $files_private_conf_path = conf_path();
+  $conf['file_private_path'] = '/mnt/files/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'] . '/' . $files_private_conf_path . '/files-private';
+}
