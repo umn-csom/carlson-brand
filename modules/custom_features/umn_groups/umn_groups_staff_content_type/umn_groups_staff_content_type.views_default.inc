@@ -44,17 +44,6 @@ function umn_groups_staff_content_type_views_default_views() {
   $handler->display->display_options['relationships']['og_membership_related_node_group']['table'] = 'og_membership';
   $handler->display->display_options['relationships']['og_membership_related_node_group']['field'] = 'og_membership_related_node_group';
   $handler->display->display_options['relationships']['og_membership_related_node_group']['relationship'] = 'og_membership_rel';
-  /* Field: Content: Landscape picture */
-  $handler->display->display_options['fields']['field_landscape_picture']['id'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['table'] = 'field_data_field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['field'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_landscape_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_landscape_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_landscape_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => 'content',
-  );
   /* Field: Content: Portrait picture */
   $handler->display->display_options['fields']['field_portrait_picture']['id'] = 'field_portrait_picture';
   $handler->display->display_options['fields']['field_portrait_picture']['table'] = 'field_data_field_portrait_picture';
@@ -63,7 +52,7 @@ function umn_groups_staff_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_portrait_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_portrait_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_portrait_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'medium',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -73,7 +62,6 @@ function umn_groups_staff_content_type_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Short description */
   $handler->display->display_options['fields']['field_lede']['id'] = 'field_lede';
@@ -81,19 +69,6 @@ function umn_groups_staff_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_lede']['field'] = 'field_lede';
   $handler->display->display_options['fields']['field_lede']['label'] = '';
   $handler->display->display_options['fields']['field_lede']['element_label_colon'] = FALSE;
-  /* Field: Content: Address */
-  $handler->display->display_options['fields']['field_person_address']['id'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['table'] = 'field_data_field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['field'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['label'] = '';
-  $handler->display->display_options['fields']['field_person_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_person_address']['click_sort_column'] = 'country';
-  $handler->display->display_options['fields']['field_person_address']['settings'] = array(
-    'use_widget_handlers' => 1,
-    'format_handlers' => array(
-      'address' => 'address',
-    ),
-  );
   /* Field: Content: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
