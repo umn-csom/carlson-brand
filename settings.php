@@ -658,4 +658,4 @@ if (isset($databases['default']['default']['database'])) {
     $conf['memcache_key_prefix'] = $databases['default']['default']['database'];
   }
 }
-$conf['securepages_enable'] = FALSE;
+
