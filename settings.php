@@ -604,6 +604,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  *
  * foo-dev.umn.edu
  * foo-stg.umn.edu
+ * foo-prd.umn.edu
  * foo.umn.edu
  *
  * The following map to a database named "foo_bar"
@@ -611,6 +612,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
  * foo-bar-dev.umn.edu
  * foo-bar-stg.umn.edu
+ * foo-bar-prd.umn.edu
  * foo-bar.umn.edu
  *
  * The following map to a database named "foocar"
@@ -618,6 +620,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
  * foocar-dev.bar.umn.edu
  * foocar-stg.bar.umn.edu
+ * foocar-prd.bar.umn.edu
  * foocar.bar.umn.edu
  *
  */
