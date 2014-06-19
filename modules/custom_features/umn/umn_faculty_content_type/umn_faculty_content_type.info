@@ -103,6 +103,7 @@ features[variable][] = scheduler_publish_touch_faculty
 features[variable][] = scheduler_unpublish_enable_faculty
 features[variable][] = scheduler_unpublish_required_faculty
 features[variable][] = scheduler_unpublish_revision_faculty
+features[views_view][] = faculty
 features_exclude[dependencies][umn_news_content_type] = umn_news_content_type
 features_exclude[field_base][field_body] = field_body
 features_exclude[field_base][field_lede] = field_lede
