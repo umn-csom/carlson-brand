@@ -313,7 +313,8 @@ ini_set('session.cookie_lifetime', 32400);
 # ini_set('pcre.recursion_limit', 200000);
 
 /**
- * Conditional increase of php memory limit for admin pages.
+ * Increase the PHP memory limit for admin, install, update pages
+ * and batch processes.
  * https://docs.acquia.com/articles/conditionally-increasing-memory-limits
  */
 if (isset($_GET['q']) && (strpos($_GET['q'], 'admin') === 0) || strpos($_SERVER['SCRIPT_NAME'], 'install.php') || strpos($_SERVER['SCRIPT_NAME'], 'update.php') || (strpos($_GET['q'], 'batch') === 0)) {
@@ -603,6 +604,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
  *
  * foo-dev.umn.edu
  * foo-stg.umn.edu
+ * foo-prd.umn.edu
  * foo.umn.edu
  *
  * The following map to a database named "foo_bar"
@@ -610,6 +612,7 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
  * foo-bar-dev.umn.edu
  * foo-bar-stg.umn.edu
+ * foo-bar-prd.umn.edu
  * foo-bar.umn.edu
  *
  * The following map to a database named "foocar"
@@ -617,12 +620,13 @@ if (file_exists('/var/www/site-scripts/site-info.php')) {
 
  * foocar-dev.bar.umn.edu
  * foocar-stg.bar.umn.edu
+ * foocar-prd.bar.umn.edu
  * foocar.bar.umn.edu
  *
  */
 
 if (file_exists('/var/www/site-php')) {
-  if (preg_match('@(.+?)(\-(dev|stage|stg))?(\..+){0,1}\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
+  if (preg_match('@(.+?)(\-(dev|stage|stg|prd))?(\..+){0,1}\.umn\.edu$@', $_SERVER['HTTP_HOST'], $match)) {
     $site_group = str_replace(array('..', '/'), '', $_ENV['AH_SITE_GROUP']);
     $db_name = str_replace(array('-', '.'), '_', $match[1]);
     $file = "/var/www/site-php/{$site_group}/{$db_name}-settings.inc";
@@ -657,5 +661,13 @@ if (isset($databases['default']['default']['database'])) {
   if (!isset($_ENV['AH_SITE_GROUP'])) {
     $conf['memcache_key_prefix'] = $databases['default']['default']['database'];
   }
+}
+
+// Set private files path
+// code snippet from Acquia:
+// https://docs.acquia.com/articles/setting-private-file-directory-acquia-cloud
+if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
+  $files_private_conf_path = conf_path();
+  $conf['file_private_path'] = '/mnt/files/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'] . '/' . $files_private_conf_path . '/files-private';
 }
 

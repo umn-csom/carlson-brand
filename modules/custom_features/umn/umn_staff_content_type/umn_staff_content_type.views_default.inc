@@ -12,7 +12,7 @@ function umn_staff_content_type_views_default_views() {
 
   $view = new view();
   $view->name = 'staff';
-  $view->description = 'A list of facuty members';
+  $view->description = 'A list of staff members';
   $view->tag = 'umn';
   $view->base_table = 'node';
   $view->human_name = 'Staff';
@@ -34,24 +34,6 @@ function umn_staff_content_type_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Landscape picture */
-  $handler->display->display_options['fields']['field_landscape_picture']['id'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['table'] = 'field_data_field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['field'] = 'field_landscape_picture';
-  $handler->display->display_options['fields']['field_landscape_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_landscape_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_landscape_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_landscape_picture']['settings'] = array(
-    'image_style' => '',
-    'image_link' => 'content',
-  );
   /* Field: Content: Portrait picture */
   $handler->display->display_options['fields']['field_portrait_picture']['id'] = 'field_portrait_picture';
   $handler->display->display_options['fields']['field_portrait_picture']['table'] = 'field_data_field_portrait_picture';
@@ -60,28 +42,16 @@ function umn_staff_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_portrait_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_portrait_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_portrait_picture']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'medium',
     'image_link' => 'content',
   );
-  /* Field: Content: Short description */
-  $handler->display->display_options['fields']['field_lede']['id'] = 'field_lede';
-  $handler->display->display_options['fields']['field_lede']['table'] = 'field_data_field_lede';
-  $handler->display->display_options['fields']['field_lede']['field'] = 'field_lede';
-  $handler->display->display_options['fields']['field_lede']['label'] = '';
-  $handler->display->display_options['fields']['field_lede']['element_label_colon'] = FALSE;
-  /* Field: Content: Address */
-  $handler->display->display_options['fields']['field_person_address']['id'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['table'] = 'field_data_field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['field'] = 'field_person_address';
-  $handler->display->display_options['fields']['field_person_address']['label'] = '';
-  $handler->display->display_options['fields']['field_person_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_person_address']['click_sort_column'] = 'country';
-  $handler->display->display_options['fields']['field_person_address']['settings'] = array(
-    'use_widget_handlers' => 1,
-    'format_handlers' => array(
-      'address' => 'address',
-    ),
-  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
@@ -101,6 +71,12 @@ function umn_staff_content_type_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['label'] = '';
   $handler->display->display_options['fields']['field_phone']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_phone']['delta_offset'] = '0';
+  /* Field: Content: Short description */
+  $handler->display->display_options['fields']['field_lede']['id'] = 'field_lede';
+  $handler->display->display_options['fields']['field_lede']['table'] = 'field_data_field_lede';
+  $handler->display->display_options['fields']['field_lede']['field'] = 'field_lede';
+  $handler->display->display_options['fields']['field_lede']['label'] = '';
+  $handler->display->display_options['fields']['field_lede']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
