@@ -114,9 +114,8 @@ function umn_features_updates_update_7002() {
 
   $revert = umn_features_updates_features_revert($features);
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
-<<<<<<< HEAD
-=======
 }
+
 /**
  * Revert features that where changed for #22948.
  */
@@ -168,7 +167,6 @@ function umn_features_updates_update_7006(&$sandbox) {
   $revert = umn_features_updates_features_revert($features);
 
   return 'The following features have been reverted: <br />' . implode(', ', $revert) . '<br />';
->>>>>>> release-sprint-10
 }
 
 /**
