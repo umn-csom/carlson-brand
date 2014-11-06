@@ -126,10 +126,10 @@ function umn_basic_settings_strongarm() {
       'linkit_profiles' => 'ffe7a0901035c2a56b42916404526cc9',
     ),
     'umn_basic_settings' => array(
-      'variable' => '1ce00948b0af4c2041c146ef6603d2b8',
+      'variable' => 'bfdcdd37d9938f1d827c9ac1362a4247',
       'defaultconfig' => 'd54c37513cc9af0d03f7d676e1ca8606',
       'dependencies' => '5b51416f5617baa5670a3c4809608d9e',
-      'page_manager_handlers' => '6b6bc9732af5b59eba266ea741e167bb',
+      'page_manager_handlers' => '87f08420da3590ab30242293892cf77e',
     ),
     'umn_general_page_content_type' => array(
       'variable' => '519bfec7a6528b5bd4d1aef03ab64a4f',
