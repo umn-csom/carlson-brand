@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the UMN Groups Blog content type feature.
- */
-
-include_once 'umn_groups_blog_content_type.features.inc';

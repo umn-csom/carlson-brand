@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the UMN Groups Gallery content type feature.
- */
-
-include_once 'umn_groups_gallery_content_type.features.inc';
