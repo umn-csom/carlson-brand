@@ -19,3 +19,8 @@ regions:
   footer_top: 'Footer Top'
   footer_bottom: 'Footer Bottom'
 libraries-override:
+
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/style.css
