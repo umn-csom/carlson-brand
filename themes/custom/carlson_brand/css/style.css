@@ -1,7 +1,7 @@
 @font-face {
  font-family: 'Neutraface Text';
- src: url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff2/NeutraText-Book.woff2") format("woff2"),
- url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff/NeutraText-Book.woff") format("woff");
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-Book.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-Book.woff") format("woff");
  font-style: normal;
  font-weight: normal;
  font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
  font-family: 'Neutraface Text';
- src: url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff2/NeutraText-BookItalic.woff2") format("woff2"),
- url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff/NeutraText-BookItalic.woff") format("woff");
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-BookItalic.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-BookItalic.woff") format("woff");
  font-style: italic;
  font-weight: normal;
  font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
  font-family: 'Neutraface Text';
- src: url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff2/NeutraText-Demi.woff2") format("woff2"),
- url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff/NeutraText-Demi.woff") format("woff");
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-Demi.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-Demi.woff") format("woff");
  font-style: normal;
  font-weight: 600;
  font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
  font-family: 'Neutraface Text';
- src: url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff2/NeutraText-DemiItalic.woff2") format("woff2"),
- url("/sites/brand.carlsonschool.umn.edu/themes/custom/carlson_refresh/fonts/NeutrafaceFont/woff/NeutraText-DemiItalic.woff") format("woff");
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-DemiItalic.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-DemiItalic.woff") format("woff");
  font-style: italic;
  font-weight: 600;
  font-display: swap;
