@@ -1,3 +1,16 @@
+:root {
+  --accent-color: #e6e0d2 /* ivory */
+}
+
+#site-header{
+    background-color: var(--accent-color);
+}
+
+.callout-background {
+    background-color: var(--accent-color);
+}
+
+
 @font-face {
  font-family: 'Neutraface Text';
  src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-Book.woff2") format("woff2"),
