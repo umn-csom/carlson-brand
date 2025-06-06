@@ -10,6 +10,12 @@
     background-color: var(--accent-color);
 }
 
+#views-exposed-form-resources-page-1 .form-checkboxes.bef-checkboxes
+ {
+    column-count: 4;
+    column-width: 300px;
+}
+
 
 @font-face {
  font-family: 'Neutraface Text';
