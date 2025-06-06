@@ -1,0 +1,26 @@
+name: Carlson Brand
+type: theme
+description: This is a sub theme of Folwell
+# Defines the base theme
+base theme: folwell
+core_version_requirement: ^9 || ^10 || ^11
+# Defines libraries group in which we can add css/js.
+libraries:
+  - carlson_brand/global-styling
+# Regions
+regions:
+  identity: Site Identity
+  header: Navigation
+  featured: Featured
+  breadcrumb: Breadcrumb
+  sidebar_first: 'Sidebar first'
+  content: Content
+  sidebar_second: 'Sidebar second'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+libraries-override:
+
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/style.css

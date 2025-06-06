@@ -1,5 +1,9 @@
-.DS_Store
-files/
-.idea/
+settings.php
 settings.local.php
+.vscode/*
+files/*
+vendor/*
 
+.DS_Store
+drushrc.php
+settings.ddev.php

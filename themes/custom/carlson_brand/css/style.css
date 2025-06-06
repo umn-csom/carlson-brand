@@ -1,0 +1,47 @@
+@font-face {
+ font-family: 'Neutraface Text';
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-Book.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-Book.woff") format("woff");
+ font-style: normal;
+ font-weight: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'Neutraface Text';
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-BookItalic.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-BookItalic.woff") format("woff");
+ font-style: italic;
+ font-weight: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'Neutraface Text';
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-Demi.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-Demi.woff") format("woff");
+ font-style: normal;
+ font-weight: 600;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'Neutraface Text';
+ src: url("../fonts/NeutrafaceFont/woff2/NeutrafaceText-DemiItalic.woff2") format("woff2"),
+ url("../fonts/NeutrafaceFont/woff/NeutrafaceText-DemiItalic.woff") format("woff");
+ font-style: italic;
+ font-weight: 600;
+ font-display: swap;
+}
+
+span.neutraface {
+    font-family: 'Neutraface Text', sans-serif;
+}
+
+span.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
