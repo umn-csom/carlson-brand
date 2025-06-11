@@ -1,21 +1,3 @@
-:root {
-  --accent-color: #e6e0d2 /* ivory */
-}
-
-#site-header{
-    background-color: var(--accent-color);
-}
-
-.callout-background {
-    background-color: var(--accent-color);
-}
-
-#views-exposed-form-resources-page-1 .form-checkboxes.bef-checkboxes
- {
-    column-count: 4;
-    column-width: 300px;
-}
-
 
 @font-face {
  font-family: 'Neutraface Text';
@@ -63,4 +45,44 @@ span.arial {
 
 span.georgia {
     font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+:root {
+  --accent-color: #e6e0d2 /* ivory */
+}
+
+#site-header{
+    background-color: var(--accent-color);
+}
+
+.callout-background {
+    background-color: var(--accent-color);
+}
+
+#views-exposed-form-resources-page-1 .form-checkboxes.bef-checkboxes
+ {
+    column-count: 4;
+    column-width: 300px;
+}
+
+.resource-page {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.resource-page .view-content{
+    width: 100%;
+}
+
+
+@media (min-width: 40em) {
+    .resource-page .view-filters {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    
+    .resource-page .view-content{
+        flex-basis: 75%;
+        max-width: 75%;
+    }
 }
