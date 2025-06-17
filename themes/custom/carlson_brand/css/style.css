@@ -52,8 +52,17 @@ span.georgia {
 }
 
 #site-header{
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
 }
+
+#site-header .navigation .block-superfish {
+    background-color: var(--accent-color) !important;
+}
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+    background-color: var(--accent-color) !important;
+}
+
 
 .callout-background {
     background-color: var(--accent-color);
@@ -86,3 +95,4 @@ span.georgia {
         max-width: 75%;
     }
 }
+
