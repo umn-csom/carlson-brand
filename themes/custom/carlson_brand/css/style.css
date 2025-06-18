@@ -52,15 +52,15 @@ span.georgia {
 }
 
 #site-header{
-    background-color: var(--accent-color) !important;
+    background-color: var(--accent-color)
 }
 
 #site-header .navigation .block-superfish {
-    background-color: var(--accent-color) !important;
+    background-color: var(--accent-color)
 }
 
 ul.sf-menu a, ul.sf-menu span.nolink {
-    background-color: var(--accent-color) !important;
+    background-color: var(--accent-color)
 }
 
 
@@ -96,3 +96,14 @@ ul.sf-menu a, ul.sf-menu span.nolink {
     }
 }
 
+/* extlink overrides */
+
+svg.ext {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+svg.ext path, svg.mailto path, svg.tel path {
+    stroke: currentColor;
+}

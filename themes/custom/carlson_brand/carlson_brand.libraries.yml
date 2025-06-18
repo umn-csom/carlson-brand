@@ -1,4 +1,4 @@
 global-styling: 
   css:
-    base:
+    theme:
       css/style.css: {}
