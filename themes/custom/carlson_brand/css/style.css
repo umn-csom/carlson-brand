@@ -148,3 +148,13 @@ svg.ext path, svg.mailto path, svg.tel path {
     margin-right: .5em;
 }
 
+a:visited {
+    color: #900021;
+    border-bottom: 1px solid #900021;
+}
+
+.callout-maroon a:visited, .callout-hmaroon a:visited, .callout-omaroon a:visited {
+    color: #ffde7a;
+    border-bottom: 1px solid #ffde7a;
+}
+
